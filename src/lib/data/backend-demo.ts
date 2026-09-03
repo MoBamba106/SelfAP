@@ -698,7 +698,20 @@ interface SearchRow {
   rank: number;
 }
 
-function demoSearch(store: Map<string, Row[]>, query: string, limit: number): SearchRow[] {
+/**
+ * Curriculum is global and public; notes are not.
+ *
+ * The Postgres version relies on `security invoker` plus row-level security
+ * to scope the notes branch to the caller. This in-memory backend has no
+ * RLS, so it filters explicitly on the user it is searching for — otherwise
+ * the two backends would disagree about whose notes are visible.
+ */
+function demoSearch(
+  store: Map<string, Row[]>,
+  query: string,
+  limit: number,
+  userId: string,
+): SearchRow[] {
   const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
   if (!terms.length) return [];
   const hit = (text: string) => {
@@ -734,6 +747,7 @@ function demoSearch(store: Map<string, Row[]>, query: string, limit: number): Se
     }
   }
   for (const note of store.get('notes') ?? []) {
+    if (String(note.user_id) !== userId) continue;
     if (hit(`${note.title} ${note.body}`)) {
       out.push({
         kind: 'note',
@@ -807,6 +821,9 @@ export const demoBackend: Backend = {
         getStore(),
         String(args?.query ?? ''),
         Number(args?.max_rows ?? 24),
+        /* This backend models exactly one account, so the caller is whoever
+         * the backend says it is. */
+        DEMO_USER_ID,
       );
       return { data: rows as unknown as T[], error: null };
     }
