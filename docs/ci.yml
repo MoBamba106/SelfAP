@@ -10,9 +10,9 @@
 # the file yourself) and it will run as written.
 #
 # Verified locally: it parses, and every command it runs was executed first --
-# `npm ci` installs 420 packages from the lockfile, typecheck and lint are
-# clean, 73 tests pass, the build succeeds, and both dry-run scripts report
-# the expected counts.
+# `npm ci` installs 421 packages from the lockfile, typecheck and lint are
+# clean, 98 tests pass (including the migrations and RLS on a real Postgres),
+# the build succeeds, and both dry-run scripts report the expected counts.
 
 name: CI
 

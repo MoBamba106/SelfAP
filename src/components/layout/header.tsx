@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { Search } from 'lucide-react';
 import { signOut } from '@/lib/actions/auth';
 import { getSessionUser } from '@/lib/auth/session';
-import { backendKind } from '@/lib/supabase/env';
 import { DesktopNav, MobileTabBar } from './app-nav';
+import { DemoBadge } from './setup-notice';
 import { ThemeToggle } from './theme-toggle';
 
 /** The mark: a ruled sheet with a pencil spine. Drawn, not an icon font. */
@@ -41,7 +41,6 @@ export function Wordmark({ compact }: { compact?: boolean }) {
 
 export async function AppHeader() {
   const user = await getSessionUser();
-  const demo = backendKind() === 'demo';
 
   return (
     <header className="no-print sticky top-0 z-40 border-b border-line bg-paper/90 backdrop-blur-[6px]">
@@ -80,6 +79,8 @@ export async function AppHeader() {
 
           <ThemeToggle />
 
+          <DemoBadge />
+
           {user ? (
             <div className="flex items-center gap-1.5">
               <Link
@@ -104,9 +105,6 @@ export async function AppHeader() {
             </div>
           ) : (
             <div className="flex items-center gap-1.5">
-              {demo ? (
-                <span className="badge badge-ochre hidden sm:inline-flex">Demo data</span>
-              ) : null}
               <Link href="/login" className="btn btn-quiet btn-sm">
                 Sign in
               </Link>

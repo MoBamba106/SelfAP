@@ -1,9 +1,11 @@
 import { AppHeader, MobileTabBar } from '@/components/layout/header';
 import { AppFooter } from '@/components/layout/footer';
+import { SetupNotice } from '@/components/layout/setup-notice';
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex min-h-dvh flex-col">
+      <SetupNotice />
       <AppHeader />
       <MobileTabBar />
       <main id="main" className="flex-1 pb-20 md:pb-0">

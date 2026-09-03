@@ -37,9 +37,12 @@ SelfAP answers three questions and tries hard not to answer anything else:
 ## Screenshots
 
 **`docs/screenshots/` is empty in this repository.** The images are generated rather than
-committed by hand, so they cannot drift from the UI — and the machine this was built on could not
-produce them. There is no browser binary installed, and the Playwright download is unreachable
-(`SSL_ERROR_SYSCALL` against `cdn.playwright.dev`). Generate them on any machine with a browser:
+committed by hand, so they cannot drift from the UI — and the machine this was built on cannot
+produce them. Checked rather than assumed: no browser binary exists on `PATH`; `sudo` works but
+`apt-get update` cannot reach `deb.debian.org`, so Chromium's system libraries cannot be
+installed; and `cdn.playwright.dev` and `cdn.npmmirror.com` both fail with `SSL_ERROR_SYSCALL`
+(HTTP 000), so a browser cannot be downloaded either. Generate them on any machine with a
+browser:
 
 ```bash
 npm i -D playwright
@@ -161,9 +164,20 @@ banks. A new subject declares the tools it wants.
 | AP US Government and Politics | 5 | 57 | 7 |
 | AP English Language and Composition | 9 | 36 | 4 |
 | AP English Literature and Composition | 9 | 42 | 3 |
+| AP Psychology | 5 | 35 | 9 |
 
-AP Statistics follows the **redesigned** framework taking effect for the 2026–27 school year
-(five units, first digital exam May 2027), not the older nine-unit outline.
+Two of these follow **redesigned** frameworks, and both are easy to get wrong from memory:
+
+- **AP Statistics** uses the Fall 2026 framework — five units, fully digital in Bluebook from
+  May 2027 — not the older nine-unit outline.
+- **AP Psychology** uses the 2024 framework: five units weighted equally at 15–25%, research
+  methods folded into the science practices, and two free-response questions (the Article
+  Analysis Question and the Evidence-Based Question) in place of the old pair. The retired
+  nine-unit structure still dominates search results, so it is worth checking before you trust
+  any study guide.
+
+Exam dates are the published 2027 schedule: US Government 4 May, English Literature 5 May,
+Statistics 11 May, English Language 12 May, Psychology 14 May.
 
 ---
 
@@ -227,12 +241,19 @@ Import the repository into Vercel and set the same environment variables. `next.
 already sends a Content-Security-Policy, `X-Frame-Options: DENY` and `X-Content-Type-Options:
 nosniff`.
 
+Set the Vercel domain as the Site URL under **Authentication → URL Configuration** in Supabase,
+and add preview domains to the redirect allowlist if password-reset emails should work there too.
+
+The same runbook ships inside the app at **`/setup`**, including a five-point check that the
+deployment is really wired up — the fastest of which is that the amber notice at the top of the
+page has gone away.
+
 ---
 
 ## Demo mode
 
 Set `NEXT_PUBLIC_DEMO=1` and the app runs against a seeded in-memory store instead of Postgres —
-a student with four courses, eight weeks of study history, practice attempts, notes and pacing
+a student with five courses, eight weeks of study history, practice attempts, notes and pacing
 plans already in place. Useful for looking at the UI without provisioning anything.
 
 ```bash
@@ -241,6 +262,11 @@ NEXT_PUBLIC_DEMO=1 npm run dev
 
 Demo mode is selected automatically whenever the Supabase variables are absent. It never touches
 the network and never persists anything.
+
+That fallback is convenient and dangerous in equal measure — on a real deployment it would look
+like a working site that silently forgets everything. So it announces itself: an amber notice
+runs across the top of every page, the header carries a **Demo data** badge, and the server logs
+the same warning at boot. All three disappear the moment the Supabase variables are set.
 
 ---
 
@@ -281,6 +307,18 @@ Design points worth knowing:
   heartbeat, and a `discarded` flag rather than a delete.
 - **Curriculum is global and read-only to students.** Adding a subject is a row insert, not a
   schema change.
+
+The migrations are not only reviewed — they are **executed**. `tests/schema.pglite.test.ts` boots
+Postgres in-process (PGlite, a WASM build with no native dependencies), applies all five files in
+filename order, and asserts the properties the security model rests on: RLS on every table, the
+view running as its invoker, one student unable to read or write another's rows, no self-promotion
+to admin, no student writes to curriculum. It then pushes the real curriculum through the same
+`buildRows()` that `npm run seed` uses.
+
+That suite found a genuine bug on its first run: `global_search` ordered by a column alias that
+only existed as a `RETURNS TABLE` name, so `create function` failed with
+`column "rank" does not exist`. The function would not have been created at all on a real
+project. It is fixed, and now covered.
 
 ---
 
@@ -405,7 +443,7 @@ would not expose a single row.
 | `npm run start` | Serve the production build |
 | `npm run lint` | ESLint (flat config, Next 16 native) |
 | `npm run typecheck` | `tsc --noEmit` |
-| `npm run test` | Vitest — 73 tests over mastery, grading, pacing, id derivation, the data layer, recommendations and search |
+| `npm run test` | Vitest — 98 tests: the SQL migrations and RLS against a real Postgres, plus mastery, grading, pacing, ids, the data layer, recommendations and search |
 | `npm run db:push` | Apply `supabase/migrations/*.sql` via the Management API |
 | `npm run seed` | Upsert `content/courses/*.json` via PostgREST |
 
@@ -415,8 +453,10 @@ Both database scripts accept `--dry-run`.
 
 [`docs/ci.yml`](docs/ci.yml) is a ready GitHub Actions workflow: typecheck, lint, test and build
 in one job, curriculum validation and migration ordering in another. It sits in `docs/` because
-this repository's automation token lacks the `workflows` scope, so GitHub rejects pushes that
-create files under `.github/workflows/`. Move it into place to turn it on:
+the automation token driving this repository lacks the `workflows` scope. Both routes were tried
+and both are refused — `git push` (`refusing to allow a GitHub App to create or update workflow
+… without 'workflows' permission`) and the contents API (`403 Resource not accessible by
+integration`). Move it into place yourself to turn it on:
 
 ```bash
 mkdir -p .github/workflows && mv docs/ci.yml .github/workflows/ci.yml
@@ -437,6 +477,13 @@ mkdir -p .github/workflows && mv docs/ci.yml .github/workflows/ci.yml
   behind-by counts topics that should already be done.
 - **`tests/deterministic-id.test.ts`** — pins the exact id values, because the app and
   `scripts/seed.mjs` must agree byte-for-byte or every seeded foreign key breaks.
+- **`tests/repository.test.ts`** — the data layer against the demo backend: a weekly reset
+  recomputes the current bucket while every earlier bucket survives, an abandoned session closes
+  at its last heartbeat rather than at now, and a second start discards the first.
+- **`tests/recommendation.test.ts`** — the "what next" engine always resolves to a real topic
+  with stated reasons, is deterministic, moves on after six correct answers, and keeps
+  recommending a topic whose accuracy is still poor even once its lesson is ticked off.
+- **`tests/schema.pglite.test.ts`** — the SQL itself, on a real Postgres. See *Database* above.
 
 ---
 
