@@ -2,7 +2,7 @@
   "name": "selfap",
   "version": "0.1.0",
   "private": true,
-  "description": "SelfAP \u2014 an independent study workspace for AP students (Next.js + Supabase)",
+  "description": "SelfAP — an independent study workspace for AP students (Next.js + Supabase)",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -27,6 +27,7 @@
     "zod": "4.5.4"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
     "@tailwindcss/postcss": "4.3.3",
     "@types/node": "24.10.1",
     "@types/react": "19.2.14",

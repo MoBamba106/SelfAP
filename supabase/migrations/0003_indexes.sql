@@ -143,7 +143,7 @@ as $$
       t.code || ' · ' || t.title,
       c.short_name || ' → Unit ' || u.code,
       '/courses/' || c.slug || '/topics/' || t.code,
-      ts_rank(t.search_vector, q.tsq) + 0.1
+      ts_rank(t.search_vector, q.tsq) + 0.1 as rank
     from public.topics t
     join public.units u on u.id = t.unit_id
     join public.courses c on c.id = t.course_id
@@ -160,7 +160,7 @@ as $$
       l.title,
       c.short_name || ' → Topic ' || t.code,
       '/learn/' || l.id,
-      ts_rank(l.search_vector, q.tsq)
+      ts_rank(l.search_vector, q.tsq) as rank
     from public.lessons l
     join public.topics t on t.id = l.topic_id
     join public.courses c on c.id = l.course_id
@@ -177,7 +177,7 @@ as $$
       n.title,
       'Your notes',
       '/notes/' || n.id,
-      ts_rank(n.search_vector, q.tsq) - 0.05
+      ts_rank(n.search_vector, q.tsq) - 0.05 as rank
     from public.notes n
     cross join q
     where q.tsq @@ n.search_vector and n.user_id = auth.uid()

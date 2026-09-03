@@ -23,7 +23,7 @@
 
 import { readdir, readFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { deterministicId, seeds } from '../shared/deterministic-id.js';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -42,7 +42,9 @@ const id = {
  * curriculum JSON → table rows
  * ------------------------------------------------------------------ */
 
-function buildRows(raw) {
+/* Exported so tests/schema.pglite.test.ts can push the same rows the script
+ * would push into a real Postgres, proving the payload fits the schema. */
+export function buildRows(raw) {
   const slug = String(raw.slug);
   const cId = id.course(slug);
   const exam = raw.exam ?? {};
@@ -277,7 +279,10 @@ async function main() {
   else console.log('Done. Curriculum is published and readable by the app.');
 }
 
-main().catch((error) => {
-  console.error(error.message ?? error);
-  process.exit(1);
-});
+// Run only when executed directly, so tests can import buildRows.
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((error) => {
+    console.error(error.message ?? error);
+    process.exit(1);
+  });
+}
