@@ -405,6 +405,17 @@ would not expose a single row.
 
 Both database scripts accept `--dry-run`.
 
+### Continuous integration
+
+[`docs/ci.yml`](docs/ci.yml) is a ready GitHub Actions workflow: typecheck, lint, test and build
+in one job, curriculum validation and migration ordering in another. It sits in `docs/` because
+this repository's automation token lacks the `workflows` scope, so GitHub rejects pushes that
+create files under `.github/workflows/`. Move it into place to turn it on:
+
+```bash
+mkdir -p .github/workflows && mv docs/ci.yml .github/workflows/ci.yml
+```
+
 ### Tests
 
 `npm run test` covers the logic that would be expensive to get wrong and is cheap to verify:
