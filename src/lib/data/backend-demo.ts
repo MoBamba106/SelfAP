@@ -38,6 +38,24 @@ interface Filter {
   value: unknown;
 }
 
+/**
+ * Ordering for range filters.
+ *
+ * Numeric when both sides are finite numbers, otherwise lexicographic on the
+ * string form. The string branch is what makes ISO-8601 timestamps compare
+ * correctly: `Number('2026-07-19T19:41:00.000Z')` is NaN, and every
+ * comparison against NaN is false, so a naive numeric coercion silently
+ * drops every row from a date range query.
+ */
+function compareValues(a: unknown, b: unknown): number {
+  const na = Number(a);
+  const nb = Number(b);
+  if (Number.isFinite(na) && Number.isFinite(nb)) return na - nb;
+  const sa = String(a ?? '');
+  const sb = String(b ?? '');
+  return sa < sb ? -1 : sa > sb ? 1 : 0;
+}
+
 function testFilter(row: Row, f: Filter): boolean {
   const v = row[f.column];
   switch (f.kind) {
@@ -48,13 +66,13 @@ function testFilter(row: Row, f: Filter): boolean {
     case 'in':
       return Array.isArray(f.value) && f.value.includes(v);
     case 'gte':
-      return Number(v) >= Number(f.value);
+      return v !== null && v !== undefined && compareValues(v, f.value) >= 0;
     case 'gt':
-      return Number(v) > Number(f.value);
+      return v !== null && v !== undefined && compareValues(v, f.value) > 0;
     case 'lte':
-      return Number(v) <= Number(f.value);
+      return v !== null && v !== undefined && compareValues(v, f.value) <= 0;
     case 'lt':
-      return Number(v) < Number(f.value);
+      return v !== null && v !== undefined && compareValues(v, f.value) < 0;
     case 'is':
       return f.value === null ? v === null || v === undefined : v === f.value;
     case 'ilike': {
