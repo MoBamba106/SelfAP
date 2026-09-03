@@ -373,7 +373,7 @@ matter more than a skeleton, so the file is deliberately absent.
 
 **Row Level Security is the boundary, not application code.**
 
-- All 16 tables have RLS enabled. The 8 student-owned tables get a single `owner all` policy on
+- All 17 tables have RLS enabled. The 8 student-owned tables get a single `owner all` policy on
   `user_id = auth.uid()`.
 - `anon` has no access to any student table — the grants are revoked explicitly.
 - Curriculum is `select` for `anon` and `authenticated`; writes require an admin role that the
@@ -399,7 +399,7 @@ would not expose a single row.
 | `npm run start` | Serve the production build |
 | `npm run lint` | ESLint (flat config, Next 16 native) |
 | `npm run typecheck` | `tsc --noEmit` |
-| `npm run test` | Vitest — 40 tests over mastery, grading, pacing and id derivation |
+| `npm run test` | Vitest — 73 tests over mastery, grading, pacing, id derivation, the data layer, recommendations and search |
 | `npm run db:push` | Apply `supabase/migrations/*.sql` via the Management API |
 | `npm run seed` | Upsert `content/courses/*.json` via PostgREST |
 
