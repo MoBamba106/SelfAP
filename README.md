@@ -36,15 +36,21 @@ SelfAP answers three questions and tries hard not to answer anything else:
 
 ## Screenshots
 
-Screenshots live in [`docs/screenshots/`](docs/screenshots/). They are generated, not committed by
-hand, so they cannot drift from the UI:
+**`docs/screenshots/` is empty in this repository.** The images are generated rather than
+committed by hand, so they cannot drift from the UI — and the machine this was built on could not
+produce them. There is no browser binary installed, and the Playwright download is unreachable
+(`SSL_ERROR_SYSCALL` against `cdn.playwright.dev`). Generate them on any machine with a browser:
 
 ```bash
-npm run screenshots   # needs a browser: npx playwright install chromium
+npm i -D playwright
+npx playwright install chromium
+
+NEXT_PUBLIC_DEMO=1 npm run dev      # in another terminal
+npm run screenshots                 # writes 01-dashboard.png … 10-mobile-dashboard.png
 ```
 
-That captures the dashboard, a course page, a lesson, a practice set, the pacing schedule,
-progress and the mobile layout into `docs/screenshots/`.
+The script drives the demo account, waits for entrance animations to settle, emulates
+`prefers-reduced-motion`, and writes nothing to a database.
 
 | Screen | What it shows |
 | --- | --- |
