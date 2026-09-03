@@ -1,0 +1,968 @@
+{
+  "slug": "ap-statistics",
+  "code": "AP Statistics",
+  "shortName": "Statistics",
+  "tagline": "Describe it, model it, then decide what the data actually supports.",
+  "description": "The Fall 2026 AP Statistics framework organises the course into five units: describing and collecting data, probability, inference for proportions, inference for means, and regression. Every FRQ asks you to state a method, check conditions, and interpret in context — so this course trains the writing as much as the calculating.",
+  "subject": "math",
+  "accent": "stat",
+  "exam": {
+    "date": "2027-05-11",
+    "provisional": false,
+    "durationMinutes": 180,
+    "summary": "Fully digital in Bluebook. A graphing calculator with statistical capabilities is expected in both sections, and the official formula sheet and tables are provided. Scheduled for Tuesday 11 May 2027, Session 2, on the published 2027 AP exam schedule. Fully digital in Bluebook from May 2027, with no free-response booklets.",
+    "sections": [
+      { "name": "Section I — Multiple choice", "count": "42 questions", "time": "90 min", "weight": "50%" },
+      { "name": "Section II — Free response", "count": "4 questions", "time": "90 min", "weight": "50%" }
+    ],
+    "frqs": [
+      { "label": "Q1", "title": "Multi-focus — exploring data and study design" },
+      { "label": "Q2", "title": "Multi-focus — probability and simulation" },
+      { "label": "Q3", "title": "Inference — hypothesis test or confidence interval" },
+      { "label": "Q4", "title": "Multi-focus — modelling and interpreting results" }
+    ]
+  },
+  "tools": ["reference", "frq"],
+  "reference": [
+    {
+      "group": "Describing one variable",
+      "entries": [
+        { "term": "Sample mean", "expression": "x̄ = (Σxᵢ) / n" },
+        { "term": "Sample standard deviation", "expression": "s = √( Σ(xᵢ − x̄)² / (n − 1) )" },
+        { "term": "z-score", "expression": "z = (x − x̄) / s" },
+        { "term": "IQR rule for outliers", "expression": "below Q1 − 1.5·IQR or above Q3 + 1.5·IQR" }
+      ]
+    },
+    {
+      "group": "Probability",
+      "entries": [
+        { "term": "Complement", "expression": "P(Aᶜ) = 1 − P(A)" },
+        { "term": "Addition rule", "expression": "P(A ∪ B) = P(A) + P(B) − P(A ∩ B)" },
+        { "term": "Conditional probability", "expression": "P(A | B) = P(A ∩ B) / P(B)" },
+        { "term": "Independence", "expression": "P(A ∩ B) = P(A) · P(B)" },
+        { "term": "Expected value", "expression": "μ_X = Σ xᵢ · P(xᵢ)" },
+        { "term": "Binomial probability", "expression": "P(X = x) = (nCx) · pˣ · (1 − p)ⁿ⁻ˣ" },
+        { "term": "Binomial mean / sd", "expression": "μ = np ,  σ = √(np(1 − p))" }
+      ]
+    },
+    {
+      "group": "Inference for proportions",
+      "entries": [
+        { "term": "Standard deviation of p̂", "expression": "σ_p̂ = √( p(1 − p) / n )" },
+        { "term": "One-sample z interval", "expression": "p̂ ± z* · √( p̂(1 − p̂) / n )" },
+        { "term": "One-sample z test statistic", "expression": "z = (p̂ − p₀) / √( p₀(1 − p₀) / n )" },
+        { "term": "Two-sample z interval", "expression": "(p̂₁ − p̂₂) ± z* · √( p̂₁(1 − p̂₁)/n₁ + p̂₂(1 − p̂₂)/n₂ )" },
+        { "term": "Conditions", "expression": "Random · 10% condition · n·p ≥ 10 and n·(1 − p) ≥ 10" }
+      ]
+    },
+    {
+      "group": "Inference for means",
+      "entries": [
+        { "term": "Standard error of x̄", "expression": "SE = s / √n" },
+        { "term": "One-sample t interval", "expression": "x̄ ± t* · s/√n ,  df = n − 1" },
+        { "term": "One-sample t test statistic", "expression": "t = (x̄ − μ₀) / (s/√n)" },
+        { "term": "Two-sample t interval", "expression": "(x̄₁ − x̄₂) ± t* · √( s₁²/n₁ + s₂²/n₂ )" },
+        { "term": "Normality condition", "expression": "population normal, or n ≥ 30 with no strong skew or outliers" }
+      ]
+    },
+    {
+      "group": "Regression",
+      "entries": [
+        { "term": "Least-squares line", "expression": "ŷ = a + bx ,  passes through (x̄, ȳ)" },
+        { "term": "Residual", "expression": "residual = y − ŷ" },
+        { "term": "Coefficient of determination", "expression": "r² = proportion of variation in y explained by the line" },
+        { "term": "Correlation", "expression": "−1 ≤ r ≤ 1, unit-free, sensitive to outliers" }
+      ]
+    }
+  ],
+  "frqs": [
+    {
+      "id": "stat-frq-1",
+      "title": "Comparing two study designs",
+      "kind": "Study design",
+      "minutes": 12,
+      "prompt": "A school district wants to know whether a new reading intervention raises end-of-year reading scores. Design A assigns 60 volunteers to the intervention or to a control group by flipping a coin. Design B assigns every student in two matched schools, one whole school receiving the intervention and the other serving as the control. For each design, explain whether the district can conclude that the intervention caused any difference in scores, and give one specific threat to that conclusion.",
+      "rubric": [
+        "Design A: random assignment supports a causal conclusion for the volunteers.",
+        "Design A: volunteers are a self-selected group, so results may not generalise to all students.",
+        "Design B: no random assignment, so school-level differences (teachers, funding) could explain any gap.",
+        "Both answers must be stated in the context of the scenario, not in abstract language."
+      ]
+    },
+    {
+      "id": "stat-frq-2",
+      "title": "Confidence interval for a proportion",
+      "kind": "Inference",
+      "minutes": 12,
+      "prompt": "A pollster selects a random sample of 1,040 adults and finds that 541 say they have read the terms of service of an app they use. Construct and interpret a 95% confidence interval for the proportion of all adults who have read the terms of service of an app they use. Check the conditions you need.",
+      "rubric": [
+        "Random: stated as given in the prompt.",
+        "10% condition: 1,040 < 10% of all adults.",
+        "Normality: 541 successes and 499 failures are both ≥ 10.",
+        "Interval ≈ (0.4894, 0.5491) using p̂ = 541/1040 and z* = 1.96.",
+        "Interpretation is about the parameter p and uses the confidence level correctly."
+      ]
+    },
+    {
+      "id": "stat-frq-3",
+      "title": "One-sample t test",
+      "kind": "Inference",
+      "minutes": 12,
+      "prompt": "A bakery claims its loaves weigh 500 grams on average. A quality inspector weighs a random sample of 25 loaves and finds x̄ = 494.2 grams with s = 11.8 grams. Test whether the true mean weight is less than 500 grams at α = 0.05. State hypotheses, check conditions, and give your conclusion in context.",
+      "rubric": [
+        "H₀: μ = 500 ; Hₐ: μ < 500 with μ defined as the true mean weight of all loaves.",
+        "Conditions: random sample, n = 25 < 10% of all loaves, no strong skew or outliers in the sample.",
+        "t = (494.2 − 500) / (11.8/√25) ≈ −2.458 with df = 24.",
+        "p-value ≈ 0.0107 < 0.05, so reject H₀.",
+        "Conclusion: convincing evidence the true mean weight is less than 500 grams."
+      ]
+    }
+  ],
+  "units": [
+    {
+      "code": "1",
+      "title": "Exploring One-Variable Data and Collecting Data",
+      "summary": "Describe distributions and then ask where the data came from. This is the largest unit on the exam and the foundation for everything after it.",
+      "examWeight": "20–30%",
+      "topics": [
+        {
+          "code": "1.1",
+          "title": "Introducing Statistics: What Can We Learn from Data?",
+          "summary": "Every study starts with an investigative question about a population, answered with a sample. Variation is what makes statistics necessary.",
+          "keyIdeas": [
+            "A statistical study has a population, a sample, and an investigative question.",
+            "Variation is expected; the job is to decide whether the variation is meaningful.",
+            "Statistics describe a sample; parameters describe a population."
+          ]
+        },
+        {
+          "code": "1.2",
+          "title": "Variables",
+          "summary": "Classify each variable as categorical or quantitative, then label it explanatory or response. Every later choice of graph and procedure follows from this.",
+          "keyIdeas": [
+            "Categorical variables place individuals in groups; quantitative variables take numbers you can average.",
+            "The explanatory variable may explain the response, but the labels are about role, not cause.",
+            "Units matter: a number without a unit is not a quantitative variable you can interpret."
+          ],
+          "lesson": {
+            "minutes": 12,
+            "objectives": [
+              "Decide whether a variable is categorical or quantitative, and say why.",
+              "Identify the observational unit in a data set.",
+              "Label explanatory and response variables in a bivariate setting."
+            ],
+            "body": [
+              { "type": "p", "text": "Before you can describe data you have to know what kind of data it is. A **variable** is any characteristic that varies from one individual to another, and an **individual** (or *observational unit*) is the thing being described — a student, a hospital patient, a bag of chips." },
+              { "type": "h", "text": "Two kinds of variables" },
+              { "type": "ul", "items": [
+                "A **categorical** variable sorts individuals into named categories. The categories may be coded with numbers — a zip code, a jersey number — but arithmetic on those numbers is meaningless. The average zip code tells you nothing.",
+                "A **quantitative** variable takes numerical values with units where arithmetic is meaningful. Age in months, mass in grams, and score out of 100 all qualify."
+              ] },
+              { "type": "p", "text": "The reliable test is not 'does it look like a number?' but 'does the mean of this variable mean something?' Rating a restaurant 1 to 5 stars is coded with numbers, yet a mean of 3.4 stars is a summary of categories, not a measurement." },
+              { "type": "callout", "kind": "example", "label": "Worked example", "text": "A hospital records, for each patient discharged in March: the patient's room number, the length of stay in days, whether they were readmitted within 30 days, and their total bill in dollars. The observational unit is *one discharged patient*. Room number is categorical despite being numeric. Length of stay and total bill are quantitative. Readmitted is categorical with two levels." },
+              { "type": "h", "text": "Explanatory and response" },
+              { "type": "p", "text": "When two variables are studied together, the **explanatory** variable is the one you suspect influences the other, and the **response** variable is the outcome you measure. These labels describe roles in your question, not a proven causal link." },
+              { "type": "callout", "kind": "warning", "label": "Watch out", "text": "Calling one variable explanatory does not mean it causes the other. You earn a causal conclusion from the *design* of the study (random assignment), never from the labels you put on the axes." },
+              { "type": "h", "text": "Parameters versus statistics" },
+              { "type": "p", "text": "A **parameter** is a number that describes a population, such as the mean height of every adult in a country. A **statistic** is the corresponding number computed from a sample. You almost never know the parameter, which is exactly why the later units exist: inference is the business of using a statistic to say something careful about a parameter." }
+            ],
+            "vocabulary": [
+              { "term": "Individual", "definition": "The object being described by a set of data — the observational unit." },
+              { "term": "Categorical variable", "definition": "A variable that places individuals into named groups or categories." },
+              { "term": "Quantitative variable", "definition": "A variable that takes numerical values with units where averaging makes sense." },
+              { "term": "Explanatory variable", "definition": "The variable thought to influence or predict another; plotted on the x-axis." },
+              { "term": "Parameter", "definition": "A number describing a whole population, usually unknown." },
+              { "term": "Statistic", "definition": "A number computed from sample data, used to estimate a parameter." }
+            ],
+            "mistakes": [
+              "Treating any numeric variable as quantitative — zip codes and jersey numbers are categorical.",
+              "Forgetting to name the observational unit, which makes an FRQ answer incomplete.",
+              "Reading 'explanatory' as 'cause'. The design earns causation, not the axis label."
+            ],
+            "videos": [
+              {
+                "provider": "youtube",
+                "videoId": "EqeVXI4WNHM",
+                "title": "Identifying individuals, variables and categorical variables in a data set",
+                "durationSeconds": 336,
+                "attribution": "Khan Academy — used under Creative Commons Attribution-NonCommercial-ShareAlike. Embedded from YouTube with the publisher's default embed permission.",
+                "externalUrl": "https://www.khanacademy.org/math/ap-statistics"
+              }
+            ],
+            "review": [
+              "A survey records each respondent's state of residence, annual income, and whether they own a car. Classify each variable and name the observational unit.",
+              "Explain why the mean of a set of phone area codes is not a meaningful statistic.",
+              "In a study of study time and exam score, which variable is explanatory and which is response?"
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A researcher records, for each of 200 trees in a forest, the species, the height in metres, and whether the tree shows signs of disease. Which of the following correctly classifies the variables?",
+              "choices": [
+                "Species and disease status are categorical; height is quantitative.",
+                "Species is categorical; height and disease status are quantitative.",
+                "All three are quantitative because disease can be coded as 0 or 1.",
+                "All three are categorical because each tree is an individual case."
+              ],
+              "answer": 0,
+              "explanation": "Species and disease status sort trees into groups, so they are categorical even though disease could be coded 0/1. Height in metres is a measurement with units, so it is quantitative. Coding a category with a number never makes it quantitative.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "A data set lists, for each of 40 students, the number of hours spent studying and the score on a final exam. Which statement is correct?",
+              "choices": [
+                "Study time is the response variable because it is measured first.",
+                "Study time is the explanatory variable and exam score is the response variable.",
+                "Exam score is the explanatory variable because it is the outcome of interest.",
+                "Neither can be labelled until the data are graphed."
+              ],
+              "answer": 1,
+              "explanation": "Roles come from the question, not from the order of measurement or from which variable you care about most. The researcher suspects study time influences score, so study time is explanatory and score is the response.",
+              "difficulty": 2
+            },
+            {
+              "kind": "short-answer",
+              "prompt": "In one or two sentences, explain the difference between a parameter and a statistic, using the mean commute time of all workers in a city as your example.",
+              "answer": { "accepted": ["parameter", "population", "sample", "statistic", "estimate"] },
+              "explanation": "A strong answer says the mean commute time of *all* workers is a parameter — a fixed but usually unknown number describing the population — while the mean commute time of a *sample* of workers is a statistic used to estimate it.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "code": "1.3",
+          "title": "Tabular Representation and Summary Statistics for One Categorical Variable",
+          "summary": "Frequency tables, relative frequencies, and mode-based summaries for categorical data.",
+          "keyIdeas": [
+            "A frequency table counts individuals in each category; a relative frequency table divides by n.",
+            "Relative frequencies sum to 1 (or 100%) and make groups of different sizes comparable.",
+            "The mode is the only measure of centre appropriate for categorical data."
+          ]
+        },
+        {
+          "code": "1.4",
+          "title": "Graphical Representations for One Categorical Variable",
+          "summary": "Bar graphs and pie charts, and the design choices that make them honest or misleading.",
+          "keyIdeas": [
+            "Bar graphs show counts or relative frequencies; the bars must start at zero.",
+            "Pie charts only work when categories are mutually exclusive and exhaustive.",
+            "Truncated axes and 3-D effects distort comparisons without changing any number."
+          ]
+        },
+        {
+          "code": "1.5",
+          "title": "Graphical Representations for One Quantitative Variable",
+          "summary": "Dotplots, stemplots, histograms, and cumulative graphs — choosing the display that matches the question.",
+          "keyIdeas": [
+            "A dotplot keeps every value and works well for small data sets.",
+            "A stemplot preserves individual values while showing shape, and is best for small to moderate n.",
+            "A histogram shows shape for larger data sets; bin width changes what you see.",
+            "Cumulative graphs emphasise 'how many are at or below this value'."
+          ],
+          "lesson": {
+            "minutes": 11,
+            "objectives": [
+              "Choose a graph appropriate to the size and type of the data.",
+              "Read shape, centre, spread and outliers from a histogram or dotplot.",
+              "Explain how changing bin width changes the story a histogram tells."
+            ],
+            "body": [
+              { "type": "p", "text": "Graphs are not decoration — in AP Statistics they are the argument. Every display makes a choice about what to emphasise, and the exam regularly asks you to justify the choice." },
+              { "type": "h", "text": "Dotplots" },
+              { "type": "p", "text": "A **dotplot** stacks one dot per observation above a number line. With fewer than about 30 values it is the clearest option because nothing is hidden: you can literally count the observations. Its weakness is that it becomes an unreadable stack as n grows." },
+              { "type": "h", "text": "Stemplots" },
+              { "type": "p", "text": "A **stemplot** (stem-and-leaf plot) splits each value into a stem — the leading digits — and a leaf, the final digit. You get the shape of a histogram and the original values at the same time, which is why stemplots show up on FRQs that give you a raw list of numbers." },
+              { "type": "callout", "kind": "example", "label": "Worked example", "text": "Exam scores 62, 65, 71, 73, 74, 78, 81, 84, 88, 92 become stems 6, 7, 8, 9 with leaves `2 5`, `1 3 4 8`, `1 4 8`, `2`. The distribution is roughly symmetric and unimodal, centred in the mid-70s, with no gaps or outliers." },
+              { "type": "h", "text": "Histograms" },
+              { "type": "p", "text": "A **histogram** groups values into adjacent bins and draws a bar for each count. Use it for larger data sets where a dotplot would blur. Two rules keep it honest: bars must start at zero, and there must be no gaps between bars — gaps imply the variable is categorical." },
+              { "type": "callout", "kind": "warning", "label": "Bin width changes the message", "text": "Very narrow bins show noise as if it were structure; very wide bins flatten a bimodal distribution into a single hump. If an exam shows you a histogram and asks what it reveals, comment on whether the binning might be hiding a second peak." },
+              { "type": "h", "text": "Cumulative graphs" },
+              { "type": "p", "text": "A **cumulative relative frequency graph** plots the percentage of observations at or below each value. It answers 'what proportion scored 80 or less?' directly, and its steepest region marks the densest part of the distribution." }
+            ],
+            "vocabulary": [
+              { "term": "Dotplot", "definition": "A number line with one dot per observation; best for small data sets." },
+              { "term": "Stemplot", "definition": "A display that keeps every value by splitting it into leading digits (stem) and final digit (leaf)." },
+              { "term": "Histogram", "definition": "Bars showing counts of observations within adjacent intervals." },
+              { "term": "Cumulative relative frequency graph", "definition": "Plots the proportion of observations at or below each value." }
+            ],
+            "mistakes": [
+              "Drawing a histogram with gaps between bars, implying the data are categorical.",
+              "Letting a bar graph or histogram axis start above zero.",
+              "Reporting only the shape of a distribution without centre, spread and outliers."
+            ],
+            "review": [
+              "You have the ages of 12 people in a room. Which display would you choose, and why?",
+              "A histogram of commute times uses 4-minute bins and looks unimodal. What might 30-second bins reveal?",
+              "From a cumulative graph, how do you read the median?"
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A stemplot is most useful when:",
+              "choices": [
+                "the data set is large and you want to hide individual values",
+                "the data set is small or moderate and you want shape and individual values together",
+                "the variable is categorical with many levels",
+                "you need to compare two quantitative variables"
+              ],
+              "answer": 1,
+              "explanation": "Stemplots preserve every observation while revealing shape, which is exactly the trade-off you want for small to moderate data sets. They become unwieldy with large n, and they do not apply to categorical variables.",
+              "difficulty": 1
+            },
+            {
+              "kind": "mcq",
+              "prompt": "A histogram of household incomes is drawn with bars that do not start at zero. Why is this a problem?",
+              "choices": [
+                "It makes the histogram harder to read on a printed page.",
+                "It exaggerates differences between bars, so the shape looks more dramatic than it is.",
+                "It means the variable must actually be categorical.",
+                "It prevents anyone from finding the median."
+              ],
+              "answer": 1,
+              "explanation": "Because bar length encodes count, truncating the axis makes one bar look several times taller than another when the counts differ only slightly. Histogram bars must start at zero for the visual comparison to match the numbers.",
+              "difficulty": 2
+            },
+            {
+              "kind": "frq",
+              "prompt": "Describe the distribution of exam scores shown in the stemplot below in terms of shape, centre, spread and unusual features.\n\n```\n5 | 4\n6 | 1 2 8 9\n7 | 0 2 3 4 5 6 7 8\n8 | 0 1 2 4 6\n9 | 3\n```",
+              "answer": { "rubric": "Shape (roughly symmetric / unimodal), centre (median 75.5), spread (54 to 93), outliers (54 is a low outlier)." },
+              "explanation": "Full credit needs all four elements: shape, centre, spread, and unusual features. Here the distribution is roughly symmetric and unimodal, centred at a median of 75.5, spanning 54 to 93, with 54 sitting far below the rest of the data as a low outlier.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "code": "1.6",
+          "title": "Descriptions for One Quantitative Variable Distributions",
+          "summary": "The four-part description: shape, centre, spread, and unusual features — stated in context.",
+          "keyIdeas": [
+            "Shape: symmetric, skewed left or right, unimodal or bimodal.",
+            "Centre: mean for symmetric data, median when skewed or when outliers exist.",
+            "Spread: range, IQR, or standard deviation, always with units.",
+            "Unusual features: gaps, clusters, and outliers flagged with a rule, not a feeling."
+          ]
+        },
+        {
+          "code": "1.7",
+          "title": "Summary Statistics for One Quantitative Variable",
+          "summary": "Mean, median, quartiles, standard deviation and the resistance of each.",
+          "keyIdeas": [
+            "The median and IQR are resistant; the mean and standard deviation are pulled by extremes.",
+            "In a right-skewed distribution the mean sits above the median.",
+            "The IQR outlier rule is Q1 − 1.5·IQR to Q3 + 1.5·IQR.",
+            "Always report units and context, not bare numbers."
+          ],
+          "lesson": {
+            "minutes": 13,
+            "objectives": [
+              "Compute and interpret mean, median, quartiles, IQR and standard deviation.",
+              "Decide which measure of centre to report for a given distribution.",
+              "Apply the 1.5·IQR rule to flag outliers."
+            ],
+            "body": [
+              { "type": "p", "text": "Summary statistics compress a distribution into a handful of numbers. The skill is knowing *which* numbers survive a skewed distribution or an outlier, and the exam tests that judgement constantly." },
+              { "type": "formula", "label": "The four numbers you need", "expression": "x̄ = Σxᵢ / n            (mean)\nmedian = middle value    (50th percentile)\nIQR = Q3 − Q1            (middle 50%)\ns = √( Σ(xᵢ − x̄)² / (n − 1) )   (standard deviation)" },
+              { "type": "h", "text": "Resistance" },
+              { "type": "p", "text": "A statistic is **resistant** when extreme values barely move it. The median and the IQR are resistant; the mean and the standard deviation are not. Move one salary from $60,000 to $6,000,000 and the median of the group stays put while the mean leaps." },
+              { "type": "callout", "kind": "example", "label": "Which centre?", "text": "For a symmetric distribution with no outliers, report the mean and standard deviation. For a skewed distribution or one with outliers, report the median and IQR. Saying 'the mean waiting time is 34 minutes' when the median is 8 minutes is technically true and practically misleading." },
+              { "type": "h", "text": "Skew and the two centres" },
+              { "type": "p", "text": "A right-skewed (positively skewed) distribution has a long tail on the right, and the mean is dragged toward that tail, so **mean > median**. Left skew reverses it. That comparison alone tells an experienced reader which way the distribution leans." },
+              { "type": "h", "text": "Flagging outliers" },
+              { "type": "p", "text": "Do not call something an outlier because it looks odd. Use the rule: anything below **Q1 − 1.5·IQR** or above **Q3 + 1.5·IQR** is an outlier by the standard definition. On an FRQ, state the rule, plug in the numbers, and only then name the point." }
+            ],
+            "vocabulary": [
+              { "term": "Resistant statistic", "definition": "A statistic that is not strongly influenced by extreme values." },
+              { "term": "Interquartile range", "definition": "Q3 − Q1, the spread of the middle 50% of the data." },
+              { "term": "Standard deviation", "definition": "The typical distance of observations from the mean, in the units of the variable." },
+              { "term": "Outlier", "definition": "A value outside the fences Q1 − 1.5·IQR and Q3 + 1.5·IQR." }
+            ],
+            "formulas": [
+              { "label": "Sample mean", "expression": "x̄ = Σxᵢ / n" },
+              { "label": "Sample standard deviation", "expression": "s = √( Σ(xᵢ − x̄)² / (n − 1) )" },
+              { "label": "Outlier fences", "expression": "Q1 − 1.5·IQR   and   Q3 + 1.5·IQR" }
+            ],
+            "mistakes": [
+              "Reporting mean and standard deviation for a strongly skewed distribution.",
+              "Calling a point an outlier without applying the 1.5·IQR rule.",
+              "Reporting a standard deviation with no units, or with the wrong units."
+            ],
+            "review": [
+              "Household incomes in a city are strongly right-skewed. Which pair of statistics should you report?",
+              "Q1 = 40, Q3 = 70. What values count as outliers?",
+              "If the mean of a distribution is much larger than the median, which way does it skew?"
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "The distribution of sale prices of homes in a region is strongly right-skewed. Which pair of statistics best describes its centre and spread?",
+              "choices": [
+                "Mean and standard deviation",
+                "Median and interquartile range",
+                "Mean and interquartile range",
+                "Median and variance"
+              ],
+              "answer": 1,
+              "explanation": "Skew and outliers pull the mean and standard deviation toward the long tail, so the resistant pair — median and IQR — gives an honest description. Variance is also non-resistant and its squared units make it hard to interpret.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "For a data set, Q1 = 22 and Q3 = 38. Which value is an outlier by the 1.5·IQR rule?",
+              "choices": ["45", "52", "60", "65"],
+              "answer": 3,
+              "explanation": "IQR = 38 − 22 = 16, so the fences sit at 22 − 1.5(16) = −2 and 38 + 1.5(16) = 62. Only 65 lies outside those fences, so 65 is the outlier. Note that 60 looks extreme but is inside the upper fence.",
+              "difficulty": 4
+            },
+            {
+              "kind": "short-answer",
+              "prompt": "A distribution has mean 41 and median 33. Describe the likely shape and justify your reasoning in one sentence.",
+              "answer": { "accepted": ["right", "skewed right", "positively skewed", "long tail", "outliers above"] },
+              "explanation": "The mean exceeds the median, which happens when a long right tail (or a few high outliers) pulls the mean upward while the resistant median stays near the bulk of the data.",
+              "difficulty": 2
+            }
+          ]
+        },
+        {
+          "code": "1.8",
+          "title": "Graphical Representations of Summary Statistics",
+          "summary": "Boxplots and modified boxplots; reading the five-number summary off a display.",
+          "keyIdeas": [
+            "A boxplot shows min, Q1, median, Q3, max; a modified boxplot plots outliers as points.",
+            "The box is the IQR; the whiskers reach to the fences or to the extremes, whichever is closer.",
+            "Boxplots are ideal for comparing several groups side by side."
+          ]
+        },
+        {
+          "code": "1.9",
+          "title": "Comparisons of the Distributions for One Quantitative Variable",
+          "summary": "Comparing groups by centre, spread, shape and unusual features, then answering the original question.",
+          "keyIdeas": [
+            "Compare on the same scale and in the same units.",
+            "State a conclusion, not just a list of differences.",
+            "Back-to-back stemplots and side-by-side boxplots are the standard displays."
+          ]
+        },
+        {
+          "code": "1.10",
+          "title": "The Investigative Question Revisited and Data Collection",
+          "summary": "Census versus sample, observational study versus experiment, and what each design lets you claim.",
+          "keyIdeas": [
+            "A census measures everyone; a sample measures a subset and introduces sampling variability.",
+            "Observational studies observe without intervening; experiments impose a treatment.",
+            "Random sampling supports generalising to a population; random assignment supports causal claims."
+          ]
+        },
+        {
+          "code": "1.11",
+          "title": "Random Sampling",
+          "summary": "Simple random samples, stratified and cluster samples, and why the distinction matters.",
+          "keyIdeas": [
+            "An SRS gives every group of n individuals the same chance of selection.",
+            "Stratified sampling splits into homogeneous strata then samples within each.",
+            "Cluster sampling splits into heterogeneous clusters then samples whole clusters.",
+            "A random digit table or a random number generator makes selection genuinely random."
+          ],
+          "lesson": {
+            "minutes": 12,
+            "objectives": [
+              "Distinguish simple random, stratified and cluster samples.",
+              "Use a random digit table to select a sample and explain the procedure.",
+              "Explain why random sampling supports generalisation to a population."
+            ],
+            "body": [
+              { "type": "p", "text": "A sample is only as good as the process that chose it. Randomness is not the same as 'whatever was convenient', and the exam loves to ask you to describe a selection procedure precisely enough that someone else could repeat it." },
+              { "type": "h", "text": "Simple random sample" },
+              { "type": "p", "text": "An **SRS of size n** is chosen so that every possible group of n individuals in the population has exactly the same chance of being selected. Label the population 01 to N, then read two-digit groups from a random digit table, skipping repeats and out-of-range numbers." },
+              { "type": "callout", "kind": "example", "label": "Describing an SRS on an FRQ", "text": "'Label the 240 students 001 to 240. Using a random number generator, select 30 distinct integers between 1 and 240, and survey the students with those labels.' That single sentence is worth most of the marks — it names the population, the labels, the tool, the size, and the no-repeats rule." },
+              { "type": "h", "text": "Stratified versus cluster" },
+              { "type": "ul", "items": [
+                "**Stratified sampling** divides the population into *homogeneous* strata (year groups, regions) and takes a random sample from each. It guarantees representation and usually reduces variability.",
+                "**Cluster sampling** divides the population into *heterogeneous* clusters that each look like a miniature of the population (classrooms, city blocks) and randomly selects whole clusters. It is cheaper and more practical, at the cost of precision."
+              ] },
+              { "type": "callout", "kind": "warning", "label": "The classic mix-up", "text": "Strata are internally similar and differ from one another; clusters are internally mixed and similar to one another. If you can say 'each stratum is different from the others', you are describing stratification. If you can say 'any cluster would do', you are describing clusters." },
+              { "type": "h", "text": "What random sampling buys you" },
+              { "type": "p", "text": "Random selection is what allows you to generalise from the sample to the population. It does not, on its own, let you claim cause and effect — that requires random assignment in an experiment. Keep the two claims separate; conflating them is the single most common lost point in study-design questions." }
+            ],
+            "vocabulary": [
+              { "term": "Simple random sample", "definition": "A sample in which every possible group of n individuals has an equal chance of selection." },
+              { "term": "Stratum", "definition": "A homogeneous subgroup of the population, sampled separately in stratified sampling." },
+              { "term": "Cluster", "definition": "A heterogeneous subgroup resembling the whole population, sampled wholesale in cluster sampling." },
+              { "term": "Random assignment", "definition": "Using chance to allocate individuals to treatments in an experiment; the basis for causal claims." }
+            ],
+            "mistakes": [
+              "Confusing stratified with cluster sampling.",
+              "Describing an SRS without saying how labels and the random device are used.",
+              "Claiming causation from a random sample instead of from random assignment."
+            ],
+            "review": [
+              "A principal wants opinions from each year group in proportion to its size. Stratified or cluster?",
+              "Write a one-sentence procedure for selecting an SRS of 25 from 500 employees.",
+              "A survey uses a random sample. May the researchers conclude that a policy caused a change in behaviour?"
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A school has 400 freshmen, 350 sophomores, 300 juniors and 250 seniors. A researcher selects a random sample from each year group, proportional to its size. This is:",
+              "choices": ["A cluster sample", "A stratified random sample", "A simple random sample", "A convenience sample"],
+              "answer": 1,
+              "explanation": "The population is divided into homogeneous groups (year groups) and a random sample is drawn from each, proportional to size. That is the definition of a stratified random sample.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "Random assignment of subjects to treatments allows researchers to:",
+              "choices": [
+                "generalise the results to the whole population",
+                "conclude that the treatment caused the observed difference",
+                "eliminate all variability in the response",
+                "avoid the need for a control group"
+              ],
+              "answer": 1,
+              "explanation": "Random assignment balances known and unknown confounders across treatment groups, which is what earns a causal conclusion. Generalising to a population requires random *sampling*, which is a different mechanism entirely.",
+              "difficulty": 3
+            },
+            {
+              "kind": "frq",
+              "prompt": "A company with 500 employees wants to survey 25 of them. Describe a procedure that produces a simple random sample, then explain why a convenience sample of the first 25 employees to arrive on Monday would be a poor substitute.",
+              "answer": { "rubric": "Labels 001–500, random device, 25 distinct values; convenience sample is biased toward early arrivers and cannot generalise." },
+              "explanation": "Credit requires an explicit labelling step, a named random device, and a no-repeats rule. The convenience sample over-represents early commuters and gives no basis for generalising to all 500 employees.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "code": "1.12",
+          "title": "Potential Problems with Sampling",
+          "summary": "Undercoverage, nonresponse, voluntary response, and response bias — naming the flaw and its effect.",
+          "keyIdeas": [
+            "Undercoverage: parts of the population have no chance of selection.",
+            "Nonresponse bias: those who answer differ systematically from those who do not.",
+            "Voluntary response bias: only the strongly opinionated show up.",
+            "Response bias: wording, order, or the interviewer pushes answers in one direction."
+          ]
+        },
+        {
+          "code": "1.13",
+          "title": "Experimental Design",
+          "summary": "Factors, levels, treatments, controls, blocking and replication in a well-designed experiment.",
+          "keyIdeas": [
+            "A factor is an explanatory variable you manipulate; its levels combine into treatments.",
+            "A control group provides a baseline for comparison.",
+            "Blocking groups similar individuals before random assignment; it reduces variability but is not itself randomised.",
+            "Replication — enough subjects per treatment — is what makes differences detectable."
+          ],
+          "lesson": {
+            "minutes": 13,
+            "objectives": [
+              "Identify the experimental units, factors, levels and treatments in a described experiment.",
+              "Explain the roles of random assignment, control, replication and blocking.",
+              "State what conclusion an experiment does and does not support."
+            ],
+            "body": [
+              { "type": "p", "text": "An experiment is the only design that supports a causal claim, and it earns that claim through four mechanisms working together." },
+              { "type": "h", "text": "The vocabulary of an experiment" },
+              { "type": "ul", "items": [
+                "**Experimental units** are the individuals receiving treatments (people, plots of land, batches). When they are people, they are *subjects*.",
+                "**Factors** are the explanatory variables the experimenter manipulates. Each factor has **levels**; every combination of levels is a **treatment**.",
+                "The **response variable** is what you measure afterwards."
+              ] },
+              { "type": "callout", "kind": "example", "label": "Worked example", "text": "A fertilizer study uses two factors: fertilizer type at 3 levels (none, organic, synthetic) and watering schedule at 2 levels (daily, weekly). There are 3 × 2 = 6 treatments. Forty plots are randomly assigned, roughly 7 per treatment." },
+              { "type": "h", "text": "The four principles" },
+              { "type": "ul", "items": [
+                "**Random assignment** uses chance to allocate units to treatments, balancing lurking variables across groups.",
+                "**Control** holds other conditions constant and provides a baseline — usually a placebo or standard-practice group.",
+                "**Replication** means enough units per treatment that natural variation does not swamp a real effect.",
+                "**Blocking** sorts units into homogeneous groups *before* random assignment so known sources of variation do not inflate the noise."
+              ] },
+              { "type": "callout", "kind": "warning", "label": "Blocking is not randomising", "text": "Blocking happens first and is deliberate; random assignment happens inside each block. On an FRQ, saying 'subjects were blocked and then randomly assigned within blocks' scores; saying 'subjects were randomly blocked' does not." },
+              { "type": "h", "text": "What the design buys you" },
+              { "type": "p", "text": "A randomised, controlled, replicated, blocked experiment supports a causal conclusion *for the population the units came from*. If the units were volunteers, the causal claim still holds but the generalisation is weaker — the two claims travel on different wheels." }
+            ],
+            "vocabulary": [
+              { "term": "Factor", "definition": "An explanatory variable the experimenter deliberately manipulates." },
+              { "term": "Level", "definition": "One specific setting of a factor." },
+              { "term": "Treatment", "definition": "A specific combination of factor levels applied to experimental units." },
+              { "term": "Blocking", "definition": "Grouping similar units before random assignment to reduce variability." },
+              { "term": "Replication", "definition": "Using enough experimental units in each treatment that chance differences are unlikely." },
+              { "term": "Placebo", "definition": "An inactive treatment used to control for the psychological effect of being treated." }
+            ],
+            "mistakes": [
+              "Confusing blocking with random assignment.",
+              "Counting treatments by adding levels instead of multiplying them.",
+              "Claiming the results generalise to all people when the subjects were volunteers."
+            ],
+            "review": [
+              "An experiment has 2 factors with 4 and 3 levels. How many treatments are there?",
+              "Why does blocking reduce variability rather than eliminate bias?",
+              "Name the design feature that lets you say a treatment *caused* an outcome."
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "An experiment tests 3 diets and 2 exercise plans, randomly assigning subjects to every combination. How many treatments are there?",
+              "choices": ["3", "5", "6", "12"],
+              "answer": 2,
+              "explanation": "Treatments are combinations of factor levels, so you multiply: 3 × 2 = 6.",
+              "difficulty": 1
+            },
+            {
+              "kind": "mcq",
+              "prompt": "In a randomised block design, blocking is used to:",
+              "choices": [
+                "replace the need for random assignment",
+                "reduce variability due to a known source of difference among units",
+                "guarantee that every subject receives every treatment",
+                "eliminate the need for a control group"
+              ],
+              "answer": 1,
+              "explanation": "Blocking groups units that are similar on a variable known to affect the response, so that variation does not inflate the within-group noise. Random assignment still happens, inside each block.",
+              "difficulty": 3
+            },
+            {
+              "kind": "frq",
+              "prompt": "A researcher recruits 80 volunteers and randomly assigns 40 to a new sleep supplement and 40 to a placebo, then measures change in reaction time. State one conclusion the design supports and one it does not, with a reason for each.",
+              "answer": { "rubric": "Supports a causal claim about the supplement for these volunteers; does not support generalisation to all adults because subjects volunteered." },
+              "explanation": "Random assignment earns the causal conclusion within the study group. Because the subjects were volunteers rather than a random sample, generalising to a wider population is not supported.",
+              "difficulty": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "2",
+      "title": "Probability, Random Variables, and Probability Distributions",
+      "summary": "Probability rules, conditional reasoning, random variables, the binomial and normal distributions, and a first look at sampling distributions.",
+      "examWeight": "15–25%",
+      "topics": [
+        { "code": "2.1", "title": "Tabular and Graphical Representations for Two Categorical Variables", "summary": "Two-way tables, segmented bar charts and mosaic plots reveal whether two categorical variables are associated.", "keyIdeas": ["A two-way table cross-classifies individuals on two categorical variables.", "Segmented bar charts make associations visible where raw counts hide them.", "Association means the conditional distributions differ across rows."] },
+        { "code": "2.2", "title": "Summary Statistics for Two Categorical Variables", "summary": "Joint, marginal and conditional relative frequencies, and how to compare them to detect association.", "keyIdeas": ["Joint frequencies sit in the body; marginal frequencies are the row and column totals.", "Conditional relative frequencies compare distributions across a category.", "No association means the conditional distributions are essentially identical."] },
+        {
+          "code": "2.3",
+          "title": "Estimating Probabilities Using Simulation",
+          "summary": "Model a random process, run many trials, and let long-run relative frequency estimate probability.",
+          "keyIdeas": ["A simulation must assign digits to outcomes in proportion to their probabilities.", "More trials give a more stable estimate — the law of large numbers.", "Report the design: the device, the assignment of digits, the trial definition, and the number of trials."]
+        },
+        {
+          "code": "2.4",
+          "title": "Introduction to Probability",
+          "summary": "Sample spaces, equally likely outcomes, and the complement rule.",
+          "keyIdeas": ["Probabilities are between 0 and 1 inclusive, and the sample space has probability 1.", "For equally likely outcomes, P(E) = count of favourable outcomes / total outcomes.", "P(not E) = 1 − P(E) is often the fastest route to an answer."],
+          "lesson": {
+            "minutes": 10,
+            "objectives": ["List the sample space of a random process.", "Compute probabilities when outcomes are equally likely.", "Use the complement rule to simplify a calculation."],
+            "body": [
+              { "type": "p", "text": "Probability quantifies uncertainty. A **random process** has outcomes you cannot predict individually but whose long-run pattern is regular. The **sample space** S is the set of all possible outcomes, and P(S) = 1." },
+              { "type": "h", "text": "Equally likely outcomes" },
+              { "type": "p", "text": "When every outcome in S is equally likely, probability is simple counting: P(E) = (number of outcomes in E) / (number of outcomes in S). The trap is assuming outcomes are equally likely when they are not — getting 'at least one head' in two coin tosses has probability 3/4, not 1/3, because the sample space {HH, HT, TH, TT} has four equally likely points, not three." },
+              { "type": "callout", "kind": "example", "label": "Worked example", "text": "A bag holds 4 red, 3 blue and 5 green marbles. P(red) = 4/12 = 1/3. P(not red) = 1 − 1/3 = 2/3, which is faster than adding 3/12 + 5/12 — and much faster when the event is complicated." },
+              { "type": "h", "text": "The complement rule" },
+              { "type": "formula", "label": "Complement", "expression": "P(Aᶜ) = 1 − P(A)" },
+              { "type": "p", "text": "Anytime an event is described with 'at least one', compute the complement instead. P(at least one defective in 5) = 1 − P(none defective in 5). This single habit saves most students several minutes per exam." }
+            ],
+            "vocabulary": [
+              { "term": "Sample space", "definition": "The set of all possible outcomes of a random process." },
+              { "term": "Event", "definition": "Any subset of the sample space." },
+              { "term": "Complement", "definition": "All outcomes in which the event does not occur; P(Aᶜ) = 1 − P(A)." }
+            ],
+            "mistakes": ["Assuming outcomes are equally likely without checking.", "Forgetting that probabilities must lie between 0 and 1.", "Adding probabilities of events that can happen together."]
+          },
+          "questions": [
+            { "kind": "mcq", "prompt": "Two fair coins are tossed. What is the probability of getting at least one head?", "choices": ["1/4", "1/3", "1/2", "3/4"], "answer": 3, "explanation": "The sample space is {HH, HT, TH, TT}. Three of the four outcomes contain at least one head, so P = 3/4. Equivalently, 1 − P(TT) = 1 − 1/4 = 3/4.", "difficulty": 2 },
+            { "kind": "mcq", "prompt": "A standard deck of 52 cards is shuffled. One card is drawn. What is the probability it is not a heart?", "choices": ["1/4", "3/4", "1/13", "12/13"], "answer": 1, "explanation": "P(heart) = 13/52 = 1/4, so by the complement rule P(not a heart) = 1 − 1/4 = 3/4.", "difficulty": 1 },
+            { "kind": "short-answer", "prompt": "Explain why it is wrong to say that rolling two dice gives sums 2 through 12 each with probability 1/11.", "answer": { "accepted": ["not equally likely", "36 outcomes", "7 is most likely", "different number of ways"] }, "explanation": "The eleven sums are not equally likely because there are different numbers of ways to make each. There are 36 equally likely ordered pairs; a sum of 7 can be made 6 ways while a sum of 2 can only be made 1 way.", "difficulty": 3 }
+          ]
+        },
+        { "code": "2.5", "title": "Mutually Exclusive Events", "summary": "Disjoint events cannot occur together, so their joint probability is zero.", "keyIdeas": ["Disjoint events have P(A ∩ B) = 0.", "The addition rule simplifies to P(A) + P(B) for disjoint events.", "Disjoint events with positive probability are never independent."] },
+        {
+          "code": "2.6",
+          "title": "Conditional Probability",
+          "summary": "Restricting the sample space to what is already known, and the general multiplication rule.",
+          "keyIdeas": ["P(A | B) = P(A ∩ B) / P(B) — shrink the sample space to B.", "Conditional probabilities are read straight off the relevant row or column of a two-way table.", "The general multiplication rule: P(A ∩ B) = P(B) · P(A | B)."],
+          "lesson": {
+            "minutes": 11,
+            "objectives": ["Compute conditional probabilities from a two-way table.", "Distinguish P(A | B) from P(A ∩ B).", "Apply the general multiplication rule."],
+            "body": [
+              { "type": "p", "text": "Conditioning is the act of updating what you know. Once you learn that event B happened, the relevant sample space is no longer everything — it is only B — and every probability is recalculated inside that smaller space." },
+              { "type": "formula", "label": "Conditional probability", "expression": "P(A | B) = P(A ∩ B) / P(B)\nP(A ∩ B) = P(B) · P(A | B)" },
+              { "type": "callout", "kind": "example", "label": "Read it off the table", "text": "Of 200 students, 120 take statistics and 90 of those also take physics; 30 of the 80 non-statistics students take physics. Then P(physics | statistics) = 90/120 = 0.75, while P(physics | not statistics) = 30/80 = 0.375. Because those two conditionals differ, taking statistics and taking physics are associated." },
+              { "type": "callout", "kind": "mistake", "label": "The most common error", "text": "P(A | B) is not the same as P(A ∩ B). The first divides by the size of B; the second divides by the size of the whole sample space. In the example above, P(physics ∩ statistics) = 90/200 = 0.45, while P(physics | statistics) = 0.75." }
+            ],
+            "vocabulary": [
+              { "term": "Conditional probability", "definition": "The probability of an event given that another event has already occurred." },
+              { "term": "Joint probability", "definition": "The probability that two events both occur: P(A ∩ B)." }
+            ],
+            "mistakes": ["Dividing by the whole sample instead of by P(B).", "Confusing P(A | B) with P(B | A).", "Reading a joint frequency out of a two-way table when a conditional was asked for."]
+          },
+          "questions": [
+            { "kind": "mcq", "prompt": "In a class of 200 students, 120 take statistics, and 90 of those also take physics. What is P(physics | statistics)?", "choices": ["0.45", "0.50", "0.75", "0.90"], "answer": 2, "explanation": "Condition on taking statistics: 90/120 = 0.75. The value 0.45 is the joint probability P(physics ∩ statistics) = 90/200, which is a different question.", "difficulty": 2 },
+            { "kind": "mcq", "prompt": "P(A) = 0.4, P(B) = 0.5, and P(A | B) = 0.6. What is P(A ∩ B)?", "choices": ["0.20", "0.24", "0.30", "0.50"], "answer": 2, "explanation": "By the general multiplication rule, P(A ∩ B) = P(B) · P(A | B) = 0.5 × 0.6 = 0.30.", "difficulty": 2 }
+          ]
+        },
+        { "code": "2.7", "title": "Independent Events and Unions of Events", "summary": "Independence means one event tells you nothing about the other; the addition rule handles overlap.", "keyIdeas": ["A and B are independent when P(A | B) = P(A), equivalently P(A ∩ B) = P(A)P(B).", "P(A ∪ B) = P(A) + P(B) − P(A ∩ B).", "Disjoint events are the opposite of independent: knowing one happened rules the other out."] },
+        { "code": "2.8", "title": "Introduction to Random Variables and Probability Distributions", "summary": "Discrete random variables and the distributions that list their values and probabilities.", "keyIdeas": ["A random variable assigns a number to each outcome of a random process.", "Probabilities in a distribution are between 0 and 1 and sum to 1.", "Cumulative distributions accumulate probabilities from the smallest value upward."] },
+        { "code": "2.9", "title": "Parameters of Random Variables", "summary": "Expected value and standard deviation of a discrete random variable, interpreted in context.", "keyIdeas": ["μ_X = Σ xᵢ · P(xᵢ) is the long-run average value.", "σ_X = √( Σ (xᵢ − μ_X)² · P(xᵢ) ).", "Report both with units and in context."] },
+        {
+          "code": "2.10",
+          "title": "The Binomial Distribution",
+          "summary": "Counting successes in a fixed number of independent trials with constant probability of success.",
+          "keyIdeas": ["Four conditions: binary outcomes, fixed n, independence, constant p — remember BINS.", "P(X = x) = (nCx) · pˣ · (1 − p)ⁿ⁻ˣ.", "μ = np and σ = √(np(1 − p))."],
+          "lesson": {
+            "minutes": 12,
+            "objectives": ["Verify the binomial conditions before using the distribution.", "Compute binomial probabilities and cumulative probabilities.", "State and interpret the binomial mean and standard deviation in context."],
+            "body": [
+              { "type": "p", "text": "The binomial distribution answers a very specific question: in a fixed number of independent yes/no trials, how many successes do we expect and how much do we expect to vary?" },
+              { "type": "h", "text": "BINS — the four conditions" },
+              { "type": "ul", "items": [
+                "**B**inary: each trial ends in success or failure.",
+                "**I**ndependent: the outcome of one trial does not change another.",
+                "**N**umber fixed: n is decided before you start.",
+                "**S**uccess probability constant: p is the same on every trial."
+              ] },
+              { "type": "callout", "kind": "warning", "label": "Sampling without replacement", "text": "Drawing cards from a deck is not binomial because p changes with every card. It becomes approximately binomial if you apply the 10% condition — the sample is under 10% of the population — so removing individuals barely changes p." },
+              { "type": "formula", "label": "Binomial distribution", "expression": "P(X = x) = (nCx) · pˣ · (1 − p)ⁿ⁻ˣ\nμ = np\nσ = √( np(1 − p) )" },
+              { "type": "callout", "kind": "example", "label": "Worked example", "text": "A machine produces a defective part 4% of the time. In a random sample of 20 parts, X = number of defectives is binomial with n = 20 and p = 0.04. μ = 20(0.04) = 0.8 defectives, and σ = √(20 · 0.04 · 0.96) ≈ 0.876. P(X = 0) = 0.96²⁰ ≈ 0.442, so about 44% of samples of 20 contain no defectives at all." }
+            ],
+            "vocabulary": [
+              { "term": "Binomial random variable", "definition": "The count of successes in n independent trials with constant success probability p." },
+              { "term": "10% condition", "definition": "The sample is less than 10% of the population, so sampling without replacement is approximately independent." }
+            ],
+            "mistakes": ["Using the binomial distribution when n is not fixed in advance.", "Ignoring the 10% condition when sampling without replacement.", "Reporting μ = np without units or context."]
+          },
+          "questions": [
+            { "kind": "mcq", "prompt": "A coin is biased so that P(heads) = 0.6. It is flipped 10 times. What is the mean number of heads?", "choices": ["0.6", "5", "6", "6.4"], "answer": 2, "explanation": "For a binomial random variable, μ = np = 10 × 0.6 = 6 heads.", "difficulty": 1 },
+            { "kind": "mcq", "prompt": "Which scenario satisfies all the binomial conditions?", "choices": ["Drawing 5 cards without replacement from a deck and counting aces", "Flipping a fair coin 20 times and counting heads", "Sampling people until the first left-handed person is found", "Measuring the heights of 30 randomly chosen students"], "answer": 1, "explanation": "Coin flips are binary, independent, a fixed number in advance, and have constant p. Card draws without replacement violate independence, 'until the first success' does not fix n, and heights are not a count of successes.", "difficulty": 2 },
+            { "kind": "short-answer", "prompt": "A factory claims 2% of its bulbs are defective. In a random sample of 50 bulbs, find the expected number of defectives and the standard deviation.", "answer": { "accepted": ["1", "0.99", "np", "sqrt"] }, "explanation": "μ = np = 50 × 0.02 = 1 defective, and σ = √(50 × 0.02 × 0.98) = √0.98 ≈ 0.99 defectives.", "difficulty": 2 }
+          ]
+        },
+        {
+          "code": "2.11",
+          "title": "The Normal Distribution",
+          "summary": "The bell curve, its two parameters, z-scores, and areas under the curve.",
+          "keyIdeas": ["A normal distribution is fixed entirely by μ (centre) and σ (spread).", "The empirical rule: about 68% within 1σ, 95% within 2σ, 99.7% within 3σ.", "A z-score says how many standard deviations a value sits from the mean.", "Standardising lets you use one table or calculator function for every normal distribution."],
+          "lesson": {
+            "minutes": 12,
+            "objectives": ["Describe a normal distribution by its parameters.", "Convert a value to a z-score and interpret it.", "Find probabilities and percentiles using the normal model."],
+            "body": [
+              { "type": "p", "text": "The normal distribution is a symmetric, bell-shaped model for continuous data. It is completely determined by two numbers: the mean μ, which fixes the centre, and the standard deviation σ, which fixes the spread." },
+              { "type": "formula", "label": "Standardising", "expression": "z = (x − μ) / σ" },
+              { "type": "p", "text": "A **z-score** expresses a value in standard deviations from the mean. z = 1.8 means the value is 1.8 standard deviations above the mean — a statement that works for heights, scores and rainfall alike, which is why z-scores make different variables comparable." },
+              { "type": "h", "text": "The empirical rule" },
+              { "type": "ul", "items": ["About **68%** of values fall within 1σ of μ.", "About **95%** fall within 2σ.", "About **99.7%** fall within 3σ." ] },
+              { "type": "callout", "kind": "example", "label": "Worked example", "text": "Test scores are approximately normal with μ = 500 and σ = 100. A score of 650 has z = (650 − 500)/100 = 1.5. The area above z = 1.5 is about 0.0668, so roughly 6.7% of test-takers score above 650. To find the 90th percentile, work backwards: z* ≈ 1.2816, so x = 500 + 1.2816(100) ≈ 628." }
+            ],
+            "vocabulary": [
+              { "term": "Normal distribution", "definition": "A symmetric bell-shaped model defined by its mean and standard deviation." },
+              { "term": "z-score", "definition": "The number of standard deviations a value lies from the mean." },
+              { "term": "Standard normal", "definition": "The normal distribution with μ = 0 and σ = 1." }
+            ],
+            "mistakes": ["Applying the normal model to clearly skewed data without justification.", "Reporting a z-score without saying whether it is above or below the mean.", "Confusing a percentile with a probability."]
+          },
+          "questions": [
+            { "kind": "mcq", "prompt": "Heights are approximately normal with μ = 170 cm and σ = 8 cm. What is the z-score for a height of 186 cm?", "choices": ["0.5", "1.0", "2.0", "16"], "answer": 2, "explanation": "z = (186 − 170)/8 = 2, so 186 cm is two standard deviations above the mean.", "difficulty": 1 },
+            { "kind": "mcq", "prompt": "Scores are normal with μ = 500 and σ = 100. Approximately what percentage of scores fall between 400 and 600?", "choices": ["68%", "81.5%", "95%", "99.7%"], "answer": 2, "explanation": "400 and 600 are one standard deviation below and above... no: they are 100 away, which is exactly 1σ, giving 68%. Careful — 400 = μ − σ and 600 = μ + σ, so the answer is 68%.", "difficulty": 2 },
+            { "kind": "short-answer", "prompt": "A normal distribution has μ = 20 and σ = 5. Find the value at the 84th percentile and explain your reasoning.", "answer": { "accepted": ["25", "1 standard deviation", "84", "z = 1"] }, "explanation": "The 84th percentile is one standard deviation above the mean, because 50% sits below the mean and half of the 68% within 1σ sits between μ and μ + σ. So x = 20 + 5 = 25.", "difficulty": 3 }
+          ]
+        },
+        { "code": "2.12", "title": "Sampling Distributions and the Central Limit Theorem", "summary": "What happens to a statistic if you repeat the sampling process over and over.", "keyIdeas": ["A sampling distribution is the distribution of a statistic across all possible samples of size n.", "The mean of the sampling distribution of x̄ equals μ.", "The central limit theorem: x̄ becomes approximately normal as n grows, whatever the population shape."] }
+      ]
+    },
+    {
+      "code": "3",
+      "title": "Inference for Categorical Data: Proportions",
+      "summary": "The longest unit in the course. Confidence intervals and significance tests for one and two proportions, plus chi-square tests for two-way tables.",
+      "examWeight": "15–25%",
+      "topics": [
+        { "code": "3.1", "title": "Estimators", "summary": "A statistic estimates a parameter; an unbiased estimator neither over- nor under-estimates on average.", "keyIdeas": ["p̂ is an unbiased point estimator of p.", "A point estimate is one number; an interval estimate conveys its uncertainty.", "Bias is about the centre of the sampling distribution, not about one sample."] },
+        { "code": "3.2", "title": "Sampling Distributions for Sample Proportions", "summary": "The mean and standard deviation of p̂ and the conditions for a normal approximation.", "keyIdeas": ["μ_p̂ = p and σ_p̂ = √(p(1 − p)/n).", "Approximately normal when np ≥ 10 and n(1 − p) ≥ 10.", "Larger n means a narrower sampling distribution."] },
+        {
+          "code": "3.3",
+          "title": "Constructing a Confidence Interval for a Population Proportion",
+          "summary": "The one-sample z interval: estimate, conditions, calculation, and interpretation.",
+          "keyIdeas": ["Interval = p̂ ± z* · √(p̂(1 − p̂)/n).", "Three conditions: random, 10%, and at least 10 successes and 10 failures.", "Higher confidence means a wider interval; larger n means a narrower one."],
+          "lesson": {
+            "minutes": 14,
+            "objectives": ["State the parameter and the confidence level before calculating.", "Check all three conditions with numbers, not adjectives.", "Construct and interpret a one-sample z interval in context."],
+            "body": [
+              { "type": "p", "text": "A confidence interval turns a single number into an honest range. The four-step structure — **state, plan, do, conclude** — is what earns full credit on an FRQ, and skipping any step costs marks even when the arithmetic is perfect." },
+              { "type": "h", "text": "State" },
+              { "type": "p", "text": "Define the parameter in context. 'Let p be the true proportion of all adults in the city who use the bus to commute.' Then name the method and the confidence level." },
+              { "type": "h", "text": "Plan — check the conditions" },
+              { "type": "ul", "items": [
+                "**Random**: the data come from a random sample or randomised experiment.",
+                "**10% condition**: n is less than 10% of the population, so independence holds when sampling without replacement.",
+                "**Normality**: the sample contains at least 10 observed successes and 10 observed failures."
+              ] },
+              { "type": "h", "text": "Do" },
+              { "type": "formula", "label": "One-sample z interval", "expression": "p̂ ± z* · √( p̂(1 − p̂) / n )\n\n90% → z* = 1.645   95% → z* = 1.960   99% → z* = 2.576" },
+              { "type": "h", "text": "Conclude" },
+              { "type": "callout", "kind": "example", "label": "A model interpretation", "text": "'We are 95% confident that the interval from 0.489 to 0.549 captures the true proportion of all adults who have read the terms of service of an app they use.' Notice what it says: confidence is a property of the *method*, and the interval captures the *parameter*." },
+              { "type": "callout", "kind": "mistake", "label": "The wording that loses the point", "text": "Never write 'there is a 95% probability that p is between 0.489 and 0.549'. Once the interval is computed, p is either inside it or not — there is nothing random left. The 95% refers to how often this method would capture p across many samples." }
+            ],
+            "vocabulary": [
+              { "term": "Confidence interval", "definition": "A range of plausible values for a parameter, built as estimate ± margin of error." },
+              { "term": "Critical value", "definition": "The z* multiplier that captures the central C% of the standard normal curve." },
+              { "term": "Standard error", "definition": "An estimate of the standard deviation of the sampling distribution, using the sample in place of the parameter." },
+              { "term": "Margin of error", "definition": "z* times the standard error; half the width of the interval." }
+            ],
+            "mistakes": ["Checking the normality condition with the parameter instead of the observed counts.", "Interpreting confidence as a probability about the parameter.", "Forgetting to define the parameter in context."]
+          },
+          "questions": [
+            { "kind": "mcq", "prompt": "In a random sample of 400 adults, 96 report using a bike to commute. What is the 95% confidence interval for the true proportion?", "choices": ["(0.201, 0.279)", "(0.211, 0.269)", "(0.220, 0.260)", "(0.160, 0.320)"], "answer": 0, "explanation": "p̂ = 96/400 = 0.24, SE = √(0.24 · 0.76 / 400) ≈ 0.02135, margin of error = 1.96 × 0.02135 ≈ 0.0394. The interval is (0.201, 0.279).", "difficulty": 3 },
+            { "kind": "mcq", "prompt": "Which statement correctly interprets a 95% confidence interval?", "choices": ["There is a 95% chance the parameter lies in this interval.", "95% of the sample values fall in this interval.", "If we repeated this sampling method many times, about 95% of the resulting intervals would capture the parameter.", "The parameter is within 95% of the point estimate."], "answer": 2, "explanation": "Confidence describes the long-run performance of the method, not a probability about one computed interval or about the parameter itself.", "difficulty": 3 },
+            { "kind": "frq", "prompt": "A random sample of 1,040 adults finds 541 who have read the terms of service of an app they use. Construct and interpret a 95% confidence interval for the true proportion. Check the conditions.", "answer": { "rubric": "Random given; 10% condition; 541 and 499 both ≥ 10; interval ≈ (0.4894, 0.5491); correct interpretation." }, "explanation": "p̂ = 541/1040 ≈ 0.5202, SE ≈ 0.01551, margin of error ≈ 0.0304, giving approximately (0.4894, 0.5491).", "difficulty": 4 }
+          ]
+        },
+        { "code": "3.4", "title": "Justifying a Claim Based on a Confidence Interval for a Population Proportion", "summary": "Using an interval to evaluate a claim, and how confidence level and sample size change its width.", "keyIdeas": ["If a claimed value falls outside the interval, the interval is evidence against it.", "Doubling confidence widens the interval; quadrupling n halves the margin of error.", "Width is proportional to 1/√n."] },
+        { "code": "3.5", "title": "Setting Up a Test for a Population Proportion", "summary": "Null and alternative hypotheses, one- versus two-sided, and the conditions for a z test.", "keyIdeas": ["H₀ states the status-quo value p₀; Hₐ is what you seek evidence for.", "The normality condition here uses p₀, not p̂.", "Always define the parameter in the hypotheses."] },
+        { "code": "3.6", "title": "p-Values", "summary": "What a p-value is, what it is not, and how to read its size.", "keyIdeas": ["The p-value assumes H₀ is true and asks how surprising the data are.", "A small p-value is evidence for Hₐ; a large one is not proof of H₀.", "The direction of Hₐ determines which tail you measure."] },
+        { "code": "3.7", "title": "Carrying Out a Test for a Population Proportion", "summary": "The test statistic, the decision, and the conclusion in context.", "keyIdeas": ["z = (p̂ − p₀) / √(p₀(1 − p₀)/n).", "Reject H₀ when p-value < α; otherwise fail to reject.", "'Fail to reject' is never 'accept H₀'."] },
+        { "code": "3.8", "title": "Potential Errors When Performing Tests", "summary": "Type I and Type II errors, significance level, and power.", "keyIdeas": ["A Type I error rejects a true H₀; its probability is α.", "A Type II error fails to reject a false H₀; its probability is 1 − power.", "Power grows with larger n, larger effect size, and larger α."] },
+        { "code": "3.9", "title": "Sampling Distributions for the Difference Between Sample Proportions", "summary": "Mean and standard deviation of p̂₁ − p̂₂ and the normality conditions.", "keyIdeas": ["μ = p₁ − p₂; σ = √(p₁(1−p₁)/n₁ + p₂(1−p₂)/n₂).", "Both samples need at least 10 expected successes and failures.", "The two samples must be independent."] },
+        { "code": "3.10", "title": "Constructing a Confidence Interval for the Difference Between Two Population Proportions", "summary": "The two-sample z interval and its interpretation.", "keyIdeas": ["(p̂₁ − p̂₂) ± z* · √(p̂₁(1−p̂₁)/n₁ + p̂₂(1−p̂₂)/n₂).", "Define groups 1 and 2 explicitly.", "An interval containing 0 is consistent with no difference."] },
+        { "code": "3.11", "title": "Justifying a Claim Based on a Confidence Interval for the Difference Between Two Population Proportions", "summary": "Reading a two-sample interval to support or refute a claim of difference.", "keyIdeas": ["Zero inside the interval means no convincing evidence of a difference.", "The whole interval must sit above or below zero to claim a direction.", "Report which group has the higher proportion."] },
+        { "code": "3.12", "title": "Setting Up a Test for the Difference Between Two Population Proportions", "summary": "Hypotheses about p₁ − p₂ and the pooled proportion.", "keyIdeas": ["H₀: p₁ − p₂ = 0.", "The pooled proportion p̂_c combines both samples for the standard error.", "Independent random samples are required."] },
+        { "code": "3.13", "title": "Carrying Out a Test for the Difference Between Two Population Proportions", "summary": "The pooled z statistic, p-value and conclusion.", "keyIdeas": ["z = (p̂₁ − p̂₂) / √(p̂_c(1 − p̂_c)(1/n₁ + 1/n₂)).", "Report the p-value and the decision at the given α.", "Conclude in the context of the two groups."] },
+        { "code": "3.14", "title": "Setting Up a Chi-Square Test for Homogeneity or Independence", "summary": "Choosing between the two chi-square tests and stating hypotheses for a two-way table.", "keyIdeas": ["Homogeneity: several samples, one categorical variable, comparing distributions.", "Independence: one sample, two categorical variables, testing association.", "H₀ says no difference (homogeneity) or no association (independence)."] },
+        { "code": "3.15", "title": "Carrying Out a Chi-Square Test for Homogeneity or Independence", "summary": "Expected counts, the chi-square statistic, degrees of freedom and conclusion.", "keyIdeas": ["Expected count = (row total × column total) / grand total.", "χ² = Σ (observed − expected)² / expected.", "df = (rows − 1)(columns − 1); all expected counts should be at least 5."] }
+      ]
+    },
+    {
+      "code": "4",
+      "title": "Inference for Quantitative Data: Means",
+      "summary": "t procedures for one sample, matched pairs and two samples. Same logic as Unit 3, but σ is unknown so the t-distribution takes over.",
+      "examWeight": "10–20%",
+      "topics": [
+        { "code": "4.1", "title": "Sampling Distributions for Sample Means", "summary": "Mean and standard deviation of x̄, and when the central limit theorem applies.", "keyIdeas": ["μ_x̄ = μ and σ_x̄ = σ/√n.", "If the population is normal, x̄ is normal for any n.", "If not, x̄ is approximately normal once n ≥ 30 with no strong skew."] },
+        {
+          "code": "4.2",
+          "title": "Constructing a Confidence Interval for a Population Mean or Population Mean Difference",
+          "summary": "The one-sample t interval, including matched pairs.",
+          "keyIdeas": ["x̄ ± t* · s/√n with df = n − 1.", "Matched pairs: compute one difference per pair, then use one-sample procedures on the differences.", "t* is larger than z*, so a t interval is wider than the equivalent z interval."],
+          "lesson": {
+            "minutes": 13,
+            "objectives": ["Explain why means use t rather than z.", "Construct and interpret a one-sample t interval.", "Recognise a matched-pairs design and analyse it correctly."],
+            "body": [
+              { "type": "p", "text": "Unit 3 assumed you could estimate the standard deviation of p̂ from p̂ itself. For a mean you cannot: σ is unknown, so you substitute the sample standard deviation s. That extra layer of uncertainty is the whole reason the t-distribution exists." },
+              { "type": "h", "text": "The t-distribution" },
+              { "type": "p", "text": "t-distributions are symmetric and bell-shaped like the normal curve but with heavier tails, reflecting the extra uncertainty from estimating σ. Each one is defined by its **degrees of freedom**; for one sample, df = n − 1. As df grows the t-distribution converges to the standard normal." },
+              { "type": "formula", "label": "One-sample t interval", "expression": "x̄ ± t* · s/√n ,   df = n − 1" },
+              { "type": "h", "text": "Conditions" },
+              { "type": "ul", "items": [
+                "**Random**: a random sample or randomised experiment.",
+                "**10% condition**: n is under 10% of the population.",
+                "**Normality**: the population is normal, or the sample shows no strong skew and no outliers. With n ≥ 30 the central limit theorem usually carries you."
+              ] },
+              { "type": "h", "text": "Matched pairs" },
+              { "type": "callout", "kind": "example", "label": "Recognise the design", "text": "Twenty students take a pre-test and a post-test. This is *not* a two-sample problem — the two sets of scores are paired by student. Compute d = post − pre for each student, then run a one-sample t procedure on those 20 differences, estimating μ_d." },
+              { "type": "callout", "kind": "mistake", "label": "The pairing mistake", "text": "Running a two-sample t test on paired data throws away the pairing and almost always produces a wider interval and a larger p-value than the correct matched-pairs analysis. Ask yourself: are these two independent groups, or the same units measured twice?" }
+            ],
+            "vocabulary": [
+              { "term": "t-distribution", "definition": "A family of symmetric, heavy-tailed distributions indexed by degrees of freedom, used when σ is estimated." },
+              { "term": "Degrees of freedom", "definition": "n − 1 for a one-sample t procedure; the number of independent pieces of information left after estimating x̄." },
+              { "term": "Matched pairs", "definition": "A design where each unit is measured twice or paired with a similar unit, analysed through the differences." }
+            ],
+            "mistakes": ["Using a two-sample t test on paired data.", "Reporting df as n rather than n − 1.", "Skipping the normality condition for small samples."]
+          },
+          "questions": [
+            { "kind": "mcq", "prompt": "A random sample of 16 loaves has x̄ = 494 g and s = 12 g. What are the degrees of freedom for a one-sample t interval?", "choices": ["15", "16", "17", "It depends on the confidence level."], "answer": 0, "explanation": "For a one-sample t procedure df = n − 1 = 15. The confidence level changes t*, not the degrees of freedom.", "difficulty": 2 },
+            { "kind": "mcq", "prompt": "Twenty runners record their times on two different shoes. The correct analysis is:", "choices": ["A two-sample t test on the two sets of times", "A one-sample t test on the differences within each runner", "A chi-square test for independence", "A one-proportion z test"], "answer": 1, "explanation": "Each runner is measured twice, so the observations are paired. Compute one difference per runner and use one-sample t procedures on the 20 differences.", "difficulty": 3 },
+            { "kind": "short-answer", "prompt": "Explain in one sentence why a t interval is wider than a z interval computed from the same data at the same confidence level.", "answer": { "accepted": ["heavier tails", "extra uncertainty", "estimating sigma", "larger critical value"] }, "explanation": "Because σ is estimated from the data, the sampling distribution has heavier tails, so t* exceeds z* and the margin of error is larger.", "difficulty": 3 }
+          ]
+        },
+        { "code": "4.3", "title": "Justifying a Claim Based on a Confidence Interval for a Population Mean or Population Mean Difference", "summary": "Interpreting a t interval and relating sample size to width.", "keyIdeas": ["Interpret in terms of the parameter, in context.", "Margin of error is proportional to 1/√n.", "A claimed value outside the interval is evidence against it."] },
+        { "code": "4.4", "title": "Setting Up a Test for a Population Mean or Population Mean Difference", "summary": "Hypotheses about μ or μ_d and the conditions for a t test.", "keyIdeas": ["Define μ in context before writing H₀ and Hₐ.", "One-sided alternatives must be justified by the question.", "Check normality from the sample data when n is small."] },
+        { "code": "4.5", "title": "Carrying Out a Test for a Population Mean or Population Mean Difference", "summary": "The t statistic, the p-value, and the conclusion.", "keyIdeas": ["t = (x̄ − μ₀) / (s/√n).", "Use the correct tail for the p-value.", "State the conclusion in context, at the given α."] },
+        { "code": "4.6", "title": "Sampling Distributions for the Difference Between Two Sample Means", "summary": "Mean and standard deviation of x̄₁ − x̄₂.", "keyIdeas": ["μ = μ₁ − μ₂; σ = √(σ₁²/n₁ + σ₂²/n₂).", "Independent samples are required.", "Approximately normal when both sample distributions are."] },
+        { "code": "4.7", "title": "Constructing a Confidence Interval for the Difference Between Two Population Means", "summary": "The two-sample t interval.", "keyIdeas": ["(x̄₁ − x̄₂) ± t* · √(s₁²/n₁ + s₂²/n₂).", "Technology gives a conservative df; use it rather than min(n₁,n₂) − 1.", "Name which group is 1 and which is 2."] },
+        { "code": "4.8", "title": "Justifying a Claim Based on a Confidence Interval for the Difference Between Two Population Means", "summary": "Using zero's position in the interval to judge a claim of difference.", "keyIdeas": ["Zero inside the interval means no convincing evidence of a difference.", "An interval entirely above zero supports μ₁ > μ₂.", "Report the size of the difference, not just its direction."] },
+        { "code": "4.9", "title": "Setting Up a Test for the Difference Between Two Population Means", "summary": "Hypotheses about μ₁ − μ₂ for independent samples.", "keyIdeas": ["H₀: μ₁ − μ₂ = 0.", "Random and independent samples, plus normality in each.", "Matched pairs are excluded — they use one-sample procedures."] },
+        { "code": "4.10", "title": "Carrying Out a Test for the Difference Between Two Population Means", "summary": "The two-sample t statistic, p-value and conclusion in context.", "keyIdeas": ["t = (x̄₁ − x̄₂) / √(s₁²/n₁ + s₂²/n₂).", "Technology computes the p-value and df.", "Conclude about the two populations, not just the samples."] }
+      ]
+    },
+    {
+      "code": "5",
+      "title": "Regression Analysis",
+      "summary": "Two-variable quantitative data: scatterplots, correlation, linear models, residuals and least squares. All descriptive — slope inference was removed in the redesign.",
+      "examWeight": "10–20%",
+      "topics": [
+        { "code": "5.1", "title": "Graphical Representations Between Two Quantitative Variables", "summary": "Scatterplots and the four features of an association: form, direction, strength, unusual features.", "keyIdeas": ["Explanatory variable on the x-axis, response on the y-axis.", "Describe form (linear or not), direction, and strength.", "Note clusters, gaps and points that do not follow the pattern."] },
+        {
+          "code": "5.2",
+          "title": "Correlation",
+          "summary": "The correlation coefficient r measures the strength and direction of a linear association — nothing more.",
+          "keyIdeas": ["r is unit-free and lies between −1 and 1.", "r is symmetric: swapping x and y does not change it.", "r only measures linear association and is strongly affected by outliers.", "Correlation does not imply causation."],
+          "lesson": {
+            "minutes": 11,
+            "objectives": ["Interpret the size and sign of r.", "Explain the limitations of r.", "Distinguish correlation from causation with a concrete confounder."],
+            "body": [
+              { "type": "p", "text": "The **correlation coefficient** r summarises how tightly points cluster around a straight line. It takes no units, so it works identically for centimetres and kilograms." },
+              { "type": "h", "text": "Reading r" },
+              { "type": "ul", "items": [
+                "r = 1: perfect positive linear association. r = −1: perfect negative.",
+                "r = 0: no *linear* association — a perfect parabola can have r near 0.",
+                "As a rough guide, |r| above 0.8 is strong, 0.5 to 0.8 moderate, below 0.3 weak. Context matters more than the rule of thumb."
+              ] },
+              { "type": "h", "text": "What r cannot tell you" },
+              { "type": "callout", "kind": "warning", "label": "Three limits", "text": "1. r measures only *linear* association — a strong curved relationship can have r ≈ 0.\n2. A single outlier can move r dramatically, in either direction.\n3. r says nothing about cause. Ice cream sales and drowning deaths are strongly correlated; the lurking variable is summer." }
+            ],
+            "vocabulary": [
+              { "term": "Correlation coefficient", "definition": "A unit-free measure from −1 to 1 of the strength and direction of a linear association." },
+              { "term": "Lurking variable", "definition": "A variable not in the study that influences both variables being compared." }
+            ],
+            "mistakes": ["Claiming a linear model fits because r is close to ±1 without looking at the scatterplot.", "Ignoring an influential outlier when reporting r.", "Reading correlation as causation."]
+          },
+          "questions": [
+            { "kind": "mcq", "prompt": "A scatterplot shows a strong, curved (U-shaped) relationship between two variables. What is r likely to be?", "choices": ["Close to 1", "Close to −1", "Close to 0", "Greater than 1"], "answer": 2, "explanation": "r measures only linear association. A strong U-shaped relationship has no consistent linear direction, so r is near 0 even though the variables are clearly related.", "difficulty": 3 },
+            { "kind": "mcq", "prompt": "Two variables have r = 0.92. Which conclusion is justified?", "choices": ["The first variable causes the second.", "There is a strong positive linear association.", "There is a strong positive association of any form.", "A 1-unit increase in x causes a 0.92-unit increase in y."], "answer": 1, "explanation": "r = 0.92 indicates a strong positive *linear* association and nothing more. It carries no causal claim, and it is not a slope.", "difficulty": 2 }
+          ]
+        },
+        { "code": "5.3", "title": "Linear Regression Models", "summary": "ŷ = a + bx, interpolation versus extrapolation, and interpreting slope and intercept in context.", "keyIdeas": ["Predicted values ŷ come from the fitted line, not from the raw data.", "Extrapolation beyond the observed x-range is unreliable.", "The intercept may have no meaningful interpretation."] },
+        { "code": "5.4", "title": "Residuals", "summary": "Observed minus predicted, and what a residual plot tells you about the fit.", "keyIdeas": ["residual = y − ŷ; positive means the model under-predicted.", "A random scatter of residuals supports a linear model.", "Curvature in a residual plot means a line is the wrong model."] },
+        {
+          "code": "5.5",
+          "title": "Least-Squares Regression",
+          "summary": "The line that minimises the sum of squared residuals, and the r² that comes with it.",
+          "keyIdeas": ["The LSRL always passes through (x̄, ȳ).", "r² is the proportion of variation in y explained by the linear relationship with x.", "Every output — slope, intercept, r, r² — needs a sentence in context."],
+          "lesson": {
+            "minutes": 12,
+            "objectives": ["Interpret slope, intercept and r² in context.", "Explain why least squares minimises squared residuals.", "Use the LSRL to predict and recognise extrapolation."],
+            "body": [
+              { "type": "p", "text": "Among all possible lines through a scatterplot, the **least-squares regression line** is the one that makes the sum of the squared residuals as small as possible. Squaring rewards lines that avoid large errors rather than trading them off." },
+              { "type": "formula", "label": "The model", "expression": "ŷ = a + bx\nThe line always passes through (x̄, ȳ).\nr² = proportion of variation in y explained by x" },
+              { "type": "h", "text": "The three sentences you must be able to write" },
+              { "type": "ul", "items": [
+                "**Slope**: 'For each additional hour of study, the model predicts the exam score increases by b points.'",
+                "**Intercept**: 'A student who studies 0 hours is predicted to score a points.' Then say whether x = 0 is inside the data range — if not, flag it as extrapolation.",
+                "**r²**: 'About r² of the variation in exam scores is explained by the linear relationship with study time.'"
+              ] },
+              { "type": "callout", "kind": "warning", "label": "Extrapolation", "text": "The model was fitted on the observed range of x. Predicting at x = 40 hours when your data run from 0 to 10 is extrapolation, and the prediction can be wildly wrong — possibly negative. Always say when a prediction leaves the data range." }
+            ],
+            "vocabulary": [
+              { "term": "Least-squares regression line", "definition": "The line minimising the sum of squared residuals." },
+              { "term": "Coefficient of determination", "definition": "r², the proportion of variation in the response explained by the linear relationship." },
+              { "term": "Extrapolation", "definition": "Predicting at an x-value outside the observed range of the data." }
+            ],
+            "mistakes": ["Forgetting to say 'predicted' when using ŷ.", "Interpreting an intercept at x = 0 with no hesitation when 0 is far outside the data.", "Confusing r with r²."]
+          },
+          "questions": [
+            { "kind": "mcq", "prompt": "A regression of exam score on study hours gives r² = 0.64. The best interpretation is:", "choices": ["64% of students score above average.", "64% of the variation in exam scores is explained by the linear relationship with study hours.", "Study hours cause 64% of the score.", "The correlation is 0.64."], "answer": 1, "explanation": "r² is the proportion of variation in the response explained by the linear model. The correlation would be ±0.8, not 0.64, and r² makes no causal claim.", "difficulty": 2 },
+            { "kind": "mcq", "prompt": "The least-squares regression line always:", "choices": ["Passes through the origin", "Passes through (x̄, ȳ)", "Has a positive slope", "Has residuals that are all positive"], "answer": 1, "explanation": "A mathematical property of the least-squares fit is that it passes through the point of means, (x̄, ȳ).", "difficulty": 2 },
+            { "kind": "short-answer", "prompt": "Study times in a data set range from 1 to 9 hours. Why is a prediction for 25 hours unreliable?", "answer": { "accepted": ["extrapolation", "outside", "range", "beyond"] }, "explanation": "Predicting at 25 hours is extrapolation: the line was fitted only over 1 to 9 hours, so nothing in the data supports the linear pattern continuing that far.", "difficulty": 2 }
+          ]
+        }
+      ]
+    }
+  ],
+  "externalResources": [
+    { "label": "AP Statistics — official course page", "url": "https://apcentral.collegeboard.org/courses/ap-statistics", "kind": "official" },
+    { "label": "AP Statistics past exam questions (free response)", "url": "https://apcentral.collegeboard.org/courses/ap-statistics/exam", "kind": "official" },
+    { "label": "Khan Academy — AP Statistics", "url": "https://www.khanacademy.org/math/ap-statistics", "kind": "open-courseware" }
+  ]
+}

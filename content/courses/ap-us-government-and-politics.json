@@ -1,0 +1,735 @@
+{
+  "slug": "ap-us-government-and-politics",
+  "code": "AP United States Government and Politics",
+  "shortName": "Government",
+  "tagline": "Institutions, ideas, and the arguments that hold them together.",
+  "description": "AP Government is built on five units plus two running requirements: nine foundational documents and fifteen required Supreme Court cases. The exam rewards precise vocabulary and the ability to connect a scenario to an institution, so this course drills the connections rather than just the facts.",
+  "subject": "social-studies",
+  "accent": "gov",
+  "exam": {
+    "date": "2027-05-04",
+    "provisional": false,
+    "durationMinutes": 180,
+    "summary": "Three hours: 55 multiple-choice questions in 80 minutes, then four free-response questions in 100 minutes. The four FRQs are fixed types — concept application, quantitative analysis, SCOTUS comparison, and argument essay. Scheduled for Tuesday 4 May 2027, Session 1, on the published 2027 AP exam schedule.",
+    "sections": [
+      { "name": "Section I — Multiple choice", "count": "55 questions", "time": "80 min", "weight": "50%" },
+      { "name": "Section II — Free response", "count": "4 questions", "time": "100 min", "weight": "50%" }
+    ],
+    "frqs": [
+      { "label": "Q1", "title": "Concept application — 20 min" },
+      { "label": "Q2", "title": "Quantitative analysis — 20 min" },
+      { "label": "Q3", "title": "SCOTUS comparison — 20 min" },
+      { "label": "Q4", "title": "Argument essay — 40 min" }
+    ]
+  },
+  "tools": ["reference", "frq"],
+  "reference": [
+    {
+      "group": "Required Supreme Court cases",
+      "entries": [
+        { "term": "McCulloch v. Maryland (1819)", "expression": "Unit 1 · Necessary and proper clause; Congress has implied powers and states cannot tax federal institutions." },
+        { "term": "United States v. Lopez (1995)", "expression": "Unit 1 · The Gun-Free School Zones Act exceeded the commerce power; a check on federal expansion." },
+        { "term": "Marbury v. Madison (1803)", "expression": "Unit 2 · Established judicial review of federal statutes." },
+        { "term": "Baker v. Carr (1961)", "expression": "Unit 2 · 'One person, one vote'; redistricting is justiciable." },
+        { "term": "Shaw v. Reno (1993)", "expression": "Unit 2 · Racial gerrymandering can violate the Equal Protection Clause." },
+        { "term": "United States v. Nixon (1974)", "expression": "Unit 2 · Executive privilege is limited and yields to a demonstrated judicial need." },
+        { "term": "Engel v. Vitale (1962)", "expression": "Unit 3 · State-sponsored prayer in public schools violates the establishment clause." },
+        { "term": "Wisconsin v. Yoder (1972)", "expression": "Unit 3 · Compulsory schooling beyond eighth grade burdened Amish free exercise rights." },
+        { "term": "Tinker v. Des Moines (1969)", "expression": "Unit 3 · Student speech is protected absent substantial disruption." },
+        { "term": "Schenck v. United States (1919)", "expression": "Unit 3 · Speech presenting a clear and present danger may be restricted." },
+        { "term": "New York Times Co. v. United States (1971)", "expression": "Unit 3 · Prior restraint on the press faces an extremely heavy presumption against it." },
+        { "term": "Gideon v. Wainwright (1963)", "expression": "Unit 3 · The Sixth Amendment right to counsel applies to the states." },
+        { "term": "Roe v. Wade (1973)", "expression": "Unit 3 · Located a right to privacy in the Fourteenth Amendment; overruled by Dobbs (2022)." },
+        { "term": "McDonald v. Chicago (2010)", "expression": "Unit 3 · The Second Amendment applies to the states through the Fourteenth." },
+        { "term": "Brown v. Board of Education (1954)", "expression": "Unit 3 · Separate educational facilities are inherently unequal." },
+        { "term": "Citizens United v. FEC (2010)", "expression": "Unit 5 · Independent political spending is protected speech." }
+      ]
+    },
+    {
+      "group": "Foundational documents",
+      "entries": [
+        { "term": "Declaration of Independence (1776)", "expression": "Natural rights, popular sovereignty, the social contract." },
+        { "term": "Articles of Confederation (1781)", "expression": "Weak central government; the failure that prompted the Constitutional Convention." },
+        { "term": "U.S. Constitution (1787)", "expression": "Separation of powers, checks and balances, federalism." },
+        { "term": "Federalist No. 10", "expression": "Madison — a large republic controls the danger of faction." },
+        { "term": "Brutus No. 1", "expression": "Anti-Federalist — a large republic and the necessary and proper clause threaten liberty." },
+        { "term": "Federalist No. 51", "expression": "Madison — ambition must counteract ambition; separation of powers." },
+        { "term": "Federalist No. 70", "expression": "Hamilton — an energetic, unitary executive." },
+        { "term": "Federalist No. 78", "expression": "Hamilton — the judiciary is the least dangerous branch; judicial review." },
+        { "term": "Letter from Birmingham Jail (1963)", "expression": "King — the moral case for civil disobedience against unjust law." }
+      ]
+    },
+    {
+      "group": "Argument essay move list",
+      "entries": [
+        { "term": "1. Claim", "expression": "One defensible thesis that directly answers the prompt." },
+        { "term": "2. Evidence", "expression": "Name a foundational document and quote or paraphrase a specific idea from it." },
+        { "term": "3. Reasoning", "expression": "Explain how that evidence supports the claim — this is where most points are lost." },
+        { "term": "4. Alternative view", "expression": "State the other side, then refute or concede it." }
+      ]
+    }
+  ],
+  "frqs": [
+    {
+      "id": "gov-frq-1",
+      "title": "Argument essay — federalism",
+      "kind": "Argument essay",
+      "minutes": 40,
+      "prompt": "In his Farewell Address, President George Washington warned against 'the baneful effects of the spirit of party.' Develop an argument about whether political parties ultimately strengthen or weaken American democracy. In your essay you must: articulate a defensible claim; support it with evidence from a required foundational document; use reasoning to explain why the evidence supports your claim; and respond to an opposing or alternative perspective.",
+      "rubric": [
+        "Row A: a defensible thesis that takes a position on the prompt.",
+        "Row B: evidence from a required foundational document, correctly identified.",
+        "Row C: reasoning that explains how the evidence supports the thesis — not merely restating it.",
+        "Row D: a response to an opposing or alternative perspective, either refutation or concession."
+      ]
+    },
+    {
+      "id": "gov-frq-2",
+      "title": "SCOTUS comparison — commerce clause",
+      "kind": "SCOTUS comparison",
+      "minutes": 20,
+      "prompt": "Congress passes a law setting a national minimum age for purchasing energy drinks, arguing that energy drink sales affect interstate commerce. Identify the holding in United States v. Lopez (1995) and explain how it relates to the constitutionality of this new law. Then explain why one of the facts in this scenario would lead the Court to reach a different result than in Lopez.",
+      "rubric": [
+        "Identifies that Lopez struck down the Gun-Free School Zones Act as beyond the commerce power.",
+        "Explains the link: regulating a non-economic activity with a weak connection to interstate commerce.",
+        "Distinguishes the new law by pointing to a commercial transaction (purchase and sale across state lines).",
+        "Uses the facts of the scenario rather than general statements about federalism."
+      ]
+    },
+    {
+      "id": "gov-frq-3",
+      "title": "Concept application — bureaucratic accountability",
+      "kind": "Concept application",
+      "minutes": 20,
+      "prompt": "A federal agency proposes a rule that would cap the amount of a common food additive. Food manufacturers object and lobby Congress. Describe one way Congress could influence the agency's final rule, and explain how that influence illustrates a check on bureaucratic power.",
+      "rubric": [
+        "Names a specific congressional tool: the appropriations power, oversight hearings, statutory amendment, or confirmation of nominees.",
+        "Explains the mechanism rather than merely naming it.",
+        "Ties the mechanism back to the constitutional principle of checks and balances.",
+        "Applies the reasoning to the food-additive scenario, not to bureaucracy in general."
+      ]
+    }
+  ],
+  "units": [
+    {
+      "code": "1",
+      "title": "Foundations of American Democracy",
+      "summary": "Where the system came from: democratic ideals, the failure of the Articles, the ratification fight, and the federal bargain.",
+      "examWeight": "15–22%",
+      "topics": [
+        {
+          "code": "1.1",
+          "title": "Ideals of Democracy",
+          "summary": "Natural rights, popular sovereignty, the social contract, and republicanism — the four ideas the Declaration and the Constitution both assume.",
+          "keyIdeas": [
+            "Natural rights: people possess rights that predate government.",
+            "Popular sovereignty: government's authority comes from the consent of the governed.",
+            "Social contract: people accept government in exchange for the protection of their rights.",
+            "Republicanism: citizens elect representatives rather than ruling directly."
+          ],
+          "lesson": {
+            "minutes": 14,
+            "objectives": [
+              "Define the four foundational ideals and trace each to a specific document.",
+              "Explain why the Declaration and the Constitution can seem to be in tension.",
+              "Use these ideals as evidence in an argument essay."
+            ],
+            "body": [
+              { "type": "p", "text": "Every FRQ in AP Government is asking, at bottom, which idea the American system is trying to protect. Four ideas do most of the work, and they come from two different centuries of argument." },
+              { "type": "h", "text": "Natural rights" },
+              { "type": "p", "text": "The claim, drawn from John Locke and stated in the **Declaration of Independence**, that individuals hold rights — 'Life, Liberty and the pursuit of Happiness' — that no government created and no government can legitimately take away. Government exists to *secure* those rights, which is why its powers are enumerated rather than open-ended." },
+              { "type": "h", "text": "Popular sovereignty" },
+              { "type": "p", "text": "Authority flows upward from the governed. The Constitution's opening words, *'We the People'*, are the whole doctrine in three words, and the preamble's list of purposes is a job description the people are issuing to their government." },
+              { "type": "h", "text": "The social contract" },
+              { "type": "p", "text": "People surrender some freedom in exchange for order and protection. The Declaration goes further: when a government 'becomes destructive of these ends', the people may alter or abolish it. This is the revolutionary clause, and it explains why the Founders thought legitimacy was conditional rather than permanent." },
+              { "type": "h", "text": "Republicanism" },
+              { "type": "p", "text": "Citizens choose representatives to govern. **Federalist No. 10** defends this choice: Madison argues that a large republic, with many competing factions, is *more* stable than a small one, because no single faction can dominate. **Brutus No. 1** answers that a republic spanning a continent will be too distant from its people to govern them well — the argument that still drives debates over devolving power to states." },
+              { "type": "callout", "kind": "example", "label": "Argument essay use", "text": "A prompt asking whether the electoral college serves democracy is really asking you to weigh popular sovereignty (one person, one vote) against federalism and republicanism (states as political units). Naming that tension explicitly, with Federalist No. 10 or Brutus No. 1 as your document, is what separates a 4 from a 2." },
+              { "type": "callout", "kind": "warning", "label": "The tension worth naming", "text": "The Declaration is a document of *principles*; the Constitution is a document of *structure*. The Founders trusted popular sovereignty enough to build on it, but not enough to let it operate directly — hence a Senate chosen by state legislatures until 1913, an indirect presidency, and lifetime judicial appointments." }
+            ],
+            "vocabulary": [
+              { "term": "Natural rights", "definition": "Rights held by individuals independent of government." },
+              { "term": "Popular sovereignty", "definition": "The principle that political authority derives from the consent of the governed." },
+              { "term": "Social contract", "definition": "The implicit agreement in which people trade some liberty for governmental protection." },
+              { "term": "Republicanism", "definition": "Government through elected representatives rather than direct citizen rule." },
+              { "term": "Faction", "definition": "Madison's term for a group united by an interest adverse to the rights of others or the community." }
+            ],
+            "mistakes": [
+              "Using 'democracy' and 'republic' interchangeably without noting the distinction.",
+              "Citing a foundational document by name without explaining the specific idea it supports.",
+              "Ignoring Brutus No. 1 — it is the Anti-Federalist counterweight the rubric is often looking for."
+            ],
+            "review": [
+              "Which foundational ideal is captured by the phrase 'consent of the governed'?",
+              "How does Federalist No. 10's view of faction differ from Brutus No. 1's?",
+              "Name two structural features of the Constitution that limit direct popular rule."
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "Which foundational ideal is most directly expressed by the opening words of the Constitution, 'We the People'?",
+              "choices": ["Federalism", "Popular sovereignty", "Separation of powers", "Judicial review"],
+              "answer": 1,
+              "explanation": "'We the People' asserts that the Constitution's authority comes from the citizens themselves, which is the definition of popular sovereignty.",
+              "difficulty": 1
+            },
+            {
+              "kind": "mcq",
+              "prompt": "In Federalist No. 10, Madison argues that a large republic is preferable to a small one because:",
+              "choices": [
+                "a large republic can maintain a bigger standing army",
+                "the greater number of factions makes it harder for any one to dominate",
+                "large republics need fewer representatives per citizen",
+                "small republics cannot protect property rights"
+              ],
+              "answer": 1,
+              "explanation": "Madison's core argument is that extending the sphere introduces more factions and interests, so a majority faction is less likely to form and oppress the minority. This is the direct counterpoint to Brutus No. 1, which warns that a large republic becomes distant and unresponsive.",
+              "difficulty": 3
+            },
+            {
+              "kind": "frq",
+              "prompt": "Develop an argument about whether the U.S. Constitution does more to protect individual liberty or to limit popular control. Use one required foundational document as evidence and respond to an opposing perspective.",
+              "answer": { "rubric": "Defensible thesis; correct document with a specific idea; reasoning linking evidence to thesis; response to the other side." },
+              "explanation": "A strong essay picks a side, cites something like the Bill of Rights or Federalist No. 51 for liberty (or the indirect Senate and electoral college for limiting popular control), explains *how* the feature produces that effect, then concedes and answers the opposing reading.",
+              "difficulty": 4
+            }
+          ]
+        },
+        { "code": "1.2", "title": "Types of Democracy", "summary": "Participatory, pluralist and elite models — three lenses on where power actually sits.", "keyIdeas": ["Participatory: broad citizen involvement, direct mechanisms like referenda.", "Pluralist: organised interest groups compete and no one wins permanently.", "Elite: wealth and organisation concentrate real influence in a small number of hands."] },
+        {
+          "code": "1.5",
+          "title": "Ratification of the U.S. Constitution",
+          "summary": "Federalists and Anti-Federalists, the promise of a bill of rights, and why the argument still frames American politics.",
+          "keyIdeas": [
+            "Federalists favoured a stronger national government with separated powers.",
+            "Anti-Federalists feared consolidated power and demanded explicit protections for liberty.",
+            "The Bill of Rights was the political price of ratification."
+          ],
+          "lesson": {
+            "minutes": 13,
+            "objectives": [
+              "Contrast the Federalist and Anti-Federalist positions on the proposed Constitution.",
+              "Explain how the Bill of Rights resolved the ratification impasse.",
+              "Deploy Federalist No. 51 and Brutus No. 1 as evidence in an FRQ."
+            ],
+            "body": [
+              { "type": "p", "text": "The Constitution nearly failed. Nine of thirteen states had to ratify, and in the two largest states the vote was close. The written record of that fight — the Federalist Papers and the Anti-Federalist responses — is required reading for this course because the arguments never really stopped." },
+              { "type": "h", "text": "The Federalist case" },
+              { "type": "p", "text": "Writing as Publius in **Federalist No. 51**, Madison confronts the central problem: how do you give a government enough power to govern while preventing it from abusing that power? His answer is structural. Ambition must be made to counteract ambition — separate the powers, give each branch the means to resist the others, and split the legislature itself. The **necessary and proper clause** and the **supremacy clause** were the instruments that made a workable national government possible." },
+              { "type": "h", "text": "The Anti-Federalist case" },
+              { "type": "p", "text": "**Brutus No. 1** argues that a government powerful enough to tax, raise armies, and make all laws 'necessary and proper' will inevitably swallow the states. The necessary and proper clause is, in Brutus's reading, an unlimited grant; the supremacy clause makes federal law unbeatable; and a republic the size of a continent cannot represent its people closely enough for them to keep watch. The remedy the Anti-Federalists demanded was a bill of rights." },
+              { "type": "callout", "kind": "example", "label": "The compromise", "text": "Several states ratified only on the understanding that amendments protecting individual liberty would follow immediately. The first Congress delivered twelve; ten were ratified as the Bill of Rights in 1791. This is why the first ten amendments are best understood as a *political settlement*, not an afterthought." },
+              { "type": "callout", "kind": "warning", "label": "Exam tip", "text": "When a prompt asks you to weigh liberty against order, Brutus No. 1 and Federalist No. 51 are almost always the two documents that fit. Name the document, state its argument, then apply it — naming it alone earns nothing." }
+            ],
+            "vocabulary": [
+              { "term": "Federalist", "definition": "A supporter of ratifying the Constitution as written." },
+              { "term": "Anti-Federalist", "definition": "An opponent of ratification who feared concentrated national power and demanded a bill of rights." },
+              { "term": "Necessary and proper clause", "definition": "Article I, Section 8 — Congress may make laws needed to carry out its enumerated powers." },
+              { "term": "Supremacy clause", "definition": "Article VI — federal law takes precedence over conflicting state law." }
+            ],
+            "mistakes": [
+              "Treating the Bill of Rights as a Federalist idea — it was the Anti-Federalist prize.",
+              "Citing Federalist No. 51 for separation of powers without explaining the mechanism.",
+              "Confusing the ratification debate with the later constitutional amendments."
+            ],
+            "review": [
+              "Which document argued that the necessary and proper clause was effectively unlimited?",
+              "What was the political price of ratification in several states?",
+              "Summarise Madison's answer in Federalist No. 51 to the problem of abusive power."
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "Brutus No. 1's central objection to the proposed Constitution was that:",
+              "choices": [
+                "it created a presidency that was too weak",
+                "the necessary and proper and supremacy clauses would let the national government overwhelm the states",
+                "it failed to establish a national bank",
+                "it gave too much power to the judicial branch and too little to Congress"
+              ],
+              "answer": 1,
+              "explanation": "Brutus argued that a government holding taxing power, an army, and an elastic necessary and proper clause, backed by federal supremacy, would consolidate authority and destroy the states' ability to protect liberty.",
+              "difficulty": 3
+            },
+            {
+              "kind": "mcq",
+              "prompt": "The Bill of Rights was added to the Constitution primarily to:",
+              "choices": [
+                "strengthen the executive branch",
+                "satisfy Anti-Federalist demands and secure ratification in key states",
+                "establish judicial review",
+                "resolve the dispute over counting enslaved people for representation"
+              ],
+              "answer": 1,
+              "explanation": "Several states ratified only with the understanding that a bill of rights would follow. The first ten amendments were the political compromise that carried ratification, not a Federalist initiative.",
+              "difficulty": 2
+            }
+          ]
+        },
+        {
+          "code": "1.6",
+          "title": "Principles of American Government",
+          "summary": "Separation of powers, checks and balances, federalism, and the mechanisms that keep ambition in check.",
+          "keyIdeas": [
+            "Separation of powers divides government into three branches with distinct functions.",
+            "Checks and balances give each branch a weapon against the others.",
+            "Federalism splits authority between national and state governments.",
+            "Judicial review lets courts nullify acts inconsistent with the Constitution."
+          ],
+          "lesson": {
+            "minutes": 12,
+            "objectives": [
+              "Distinguish separation of powers from checks and balances.",
+              "Give a concrete check held by each branch over the other two.",
+              "Explain the logic of Federalist No. 51."
+            ],
+            "body": [
+              { "type": "p", "text": "These two phrases are used interchangeably in everyday speech, but on this exam they mean different things, and mixing them up costs points." },
+              { "type": "ul", "items": [
+                "**Separation of powers** is about *division*: the legislature makes law, the executive enforces it, the judiciary interprets it.",
+                "**Checks and balances** is about *interference*: each branch holds a specific tool to block or reverse the others."
+              ] },
+              { "type": "table", "head": ["Branch", "Checks it holds", "Checks against it"], "rows": [
+                ["Congress", "Override a veto · impeach and remove · confirm appointments · control appropriations · propose amendments", "Presidential veto · judicial review"],
+                ["President", "Veto legislation · appoint judges · negotiate treaties · command the military", "Veto override · impeachment · Senate confirmation · judicial review"],
+                ["Judiciary", "Declare laws and executive acts unconstitutional", "Appointment and confirmation · impeachment · Congress controls jurisdiction and size"]
+              ] },
+              { "type": "callout", "kind": "example", "label": "Federalist No. 51 in one line", "text": "'Ambition must be made to counteract ambition.' Madison did not trust written limits; he trusted each branch's self-interest in defending its own turf. That is why the veto, the confirmation power and the appropriations power are distributed the way they are." },
+              { "type": "h", "text": "Judicial review" },
+              { "type": "p", "text": "Nowhere does the Constitution say courts may strike down legislation. **Marbury v. Madison (1803)** established that power, reasoning from Article III and the supremacy of the Constitution. **Federalist No. 78** had already made the argument, calling the judiciary the 'least dangerous branch' because it holds neither the purse nor the sword — which is exactly why it needed a doctrine of its own." }
+            ],
+            "vocabulary": [
+              { "term": "Separation of powers", "definition": "The division of governmental authority among three branches." },
+              { "term": "Checks and balances", "definition": "The powers each branch holds to limit the others." },
+              { "term": "Judicial review", "definition": "The power of courts to invalidate government acts inconsistent with the Constitution." },
+              { "term": "Veto override", "definition": "Congress's two-thirds vote in both chambers to enact a law over a presidential veto." }
+            ],
+            "mistakes": [
+              "Using 'checks and balances' to describe the division of functions.",
+              "Attributing judicial review to the text of the Constitution rather than to Marbury v. Madison.",
+              "Forgetting that Congress controls the judiciary's size, jurisdiction and budget."
+            ],
+            "review": [
+              "Name one check the judiciary holds over Congress and one Congress holds over the judiciary.",
+              "Why did Madison prefer structural checks over written prohibitions?",
+              "Which case established judicial review, and which Federalist Paper predicted it?"
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "Which of the following is a check held by Congress over the judiciary?",
+              "choices": ["Declaring a judicial decision unconstitutional", "Impeaching and removing a federal judge", "Vetoing a Supreme Court ruling", "Appointing lower court judges"],
+              "answer": 1,
+              "explanation": "Congress may impeach and, with Senate conviction, remove federal judges. Appointment is a presidential power subject to Senate confirmation, and Congress cannot veto or overrule a judicial decision directly.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "Judicial review was established by:",
+              "choices": ["Article III of the Constitution", "Federalist No. 78", "Marbury v. Madison (1803)", "The Judiciary Act of 1789"],
+              "answer": 2,
+              "explanation": "The Constitution does not grant judicial review explicitly. Chief Justice Marshall derived it in Marbury v. Madison; Federalist No. 78 had argued for it earlier, but the doctrine comes from the case.",
+              "difficulty": 2
+            }
+          ]
+        },
+        { "code": "1.3", "title": "Government Power and Individual Rights", "summary": "How a government strong enough to govern can still be constrained to protect liberty.", "keyIdeas": ["Enumerated powers limit what the national government may do.", "The Bill of Rights constrains government action, not private conduct.", "Order and liberty are balanced, not traded off once and for all."] },
+        { "code": "1.4", "title": "Challenges of the Articles of Confederation", "summary": "Why the first constitution failed, and which specific failures the 1787 Convention was designed to fix.", "keyIdeas": ["No power to tax or regulate commerce left the national government dependent on the states.", "No executive to enforce laws and no national judiciary to resolve disputes.", "Amendment required unanimity, so the Articles could not be repaired."] },
+        { "code": "1.7", "title": "Relationship Between States and the National Government", "summary": "Enumerated, implied and reserved powers; the clauses that decide who wins.", "keyIdeas": ["Enumerated powers are listed in Article I, Section 8.", "Implied powers follow from the necessary and proper clause.", "The Tenth Amendment reserves the remainder to the states.", "The supremacy clause resolves direct conflict in favour of federal law."] },
+        { "code": "1.8", "title": "Constitutional Interpretations of Federalism", "summary": "McCulloch v. Maryland and United States v. Lopez mark the two ends of the federalism debate.", "keyIdeas": ["McCulloch (1819) read the necessary and proper clause broadly.", "Lopez (1995) held that the commerce power has limits.", "The same clause can expand or contract federal authority depending on the Court."] },
+        { "code": "1.9", "title": "Federalism in Action", "summary": "Categorical and block grants, mandates, and the practical tug-of-war over policy.", "keyIdeas": ["Categorical grants come with strings; block grants give states discretion.", "Unfunded mandates require state action without federal money.", "States serve as laboratories of democracy, and as sites of conflict with federal policy."] }
+      ]
+    },
+    {
+      "code": "2",
+      "title": "Interactions Among Branches of Government",
+      "summary": "The largest unit on the exam. Congress, the presidency, the courts and the bureaucracy — and the constant friction between them.",
+      "examWeight": "25–36%",
+      "topics": [
+        { "code": "2.1", "title": "Congress: Senate and House of Representatives", "summary": "Two chambers, deliberately designed differently in size, term, constituency and temperament.", "keyIdeas": ["The House is closer to the people: 2-year terms, smaller districts, revenue bills originate there.", "The Senate is the deliberative body: 6-year terms, statewide constituencies, confirmation and treaty roles.", "The Great Compromise created this bicameral structure to balance large and small states."] },
+        { "code": "2.2", "title": "Structures, Powers, and Functions of Congress", "summary": "Committees, rules, leadership and the powers enumerated in Article I.", "keyIdeas": ["Committee structure is where most of the work of legislating happens.", "Necessary and proper, commerce and spending powers drive most federal policy.", "Oversight and the power of the purse are the principal checks on the executive."] },
+        { "code": "2.3", "title": "Congressional Behavior", "summary": "Logrolling, pork barrel, the delegate and trustee models, and the reelection incentive.", "keyIdeas": ["The reelection incentive shapes nearly every procedural choice.", "The delegate model follows constituents; the trustee model follows judgement.", "Logrolling and committee specialisation make compromise possible."] },
+        { "code": "2.4", "title": "Roles and Powers of the President", "summary": "Formal Article II powers and the informal ones that grew around them.", "keyIdeas": ["Formal: commander in chief, veto, appointments, treaties with Senate consent.", "Informal: executive orders, signing statements, executive agreements.", "Federalist No. 70 argues for energy and unity in the executive."] },
+        { "code": "2.5", "title": "Checks on the Presidency", "summary": "Veto overrides, impeachment, confirmation, appropriations, and judicial review.", "keyIdeas": ["Impeachment is a political process, not a criminal trial.", "The appropriations power is Congress's most reliable lever.", "United States v. Nixon limited executive privilege."] },
+        { "code": "2.6", "title": "Expansion of Presidential Power", "summary": "How war, emergency and delegation have grown the office beyond Article II's text.", "keyIdeas": ["War powers and emergencies have expanded executive discretion.", "Congress has delegated broad rulemaking authority to agencies the president directs.", "Executive orders let presidents act without legislation, within limits."] },
+        { "code": "2.7", "title": "Presidential Communication", "summary": "Going public, the bully pulpit, and the modern press strategy.", "keyIdeas": ["Going public pressures Congress through constituent opinion.", "The bully pulpit is the president's principal informal tool.", "Media strategy now shapes the legislative agenda before a bill is drafted."] },
+        {
+          "code": "2.8",
+          "title": "The Judicial Branch",
+          "summary": "Structure, appointment, and the design choices that make courts independent — and insulated.",
+          "keyIdeas": [
+            "Article III creates only the Supreme Court; Congress built the rest.",
+            "Lifetime appointments during good behaviour insulate judges from political pressure.",
+            "Federalist No. 78 calls the judiciary the least dangerous branch."
+          ],
+          "lesson": {
+            "minutes": 12,
+            "objectives": [
+              "Describe the structure of the federal judiciary and how cases move through it.",
+              "Explain the constitutional reasoning behind lifetime tenure.",
+              "Identify the political checks on judicial power."
+            ],
+            "body": [
+              { "type": "p", "text": "Article III is remarkably short. It vests the judicial power in 'one supreme Court, and in such inferior Courts as the Congress may from time to time ordain and establish' — meaning Congress, not the Constitution, designed the federal court system you study." },
+              { "type": "h", "text": "The structure" },
+              { "type": "ul", "items": [
+                "**94 district courts** hold trials, hear evidence, and make findings of fact.",
+                "**13 circuit courts of appeals** review district decisions for legal error; they do not retry facts.",
+                "The **Supreme Court** sits at the top, hearing fewer than 100 of the thousands of cases petitioned each year, almost entirely by writ of certiorari."
+              ] },
+              { "type": "h", "text": "Why lifetime tenure" },
+              { "type": "p", "text": "Judges hold their offices 'during good Behaviour' — in practice, for life. The reasoning in **Federalist No. 78** is that a judiciary dependent on the other branches for its job could not protect an unpopular minority against a popular majority. Insulation is the point, not a bug." },
+              { "type": "callout", "kind": "example", "label": "The least dangerous branch", "text": "Hamilton wrote that the judiciary has 'no influence over either the sword or the purse' — it cannot command armies or spend money, and must rely on the executive to enforce its rulings. That weakness is why it needs independence to have any authority at all." },
+              { "type": "h", "text": "The political checks" },
+              { "type": "p", "text": "Presidents nominate and the Senate confirms, which makes every vacancy a political event. Congress controls the Court's size, its appellate jurisdiction, and its budget, and may impeach judges. Presidents may decline to enforce a ruling, and constitutional amendment can override a decision." }
+            ],
+            "vocabulary": [
+              { "term": "Writ of certiorari", "definition": "The order by which the Supreme Court agrees to hear a lower court's case." },
+              { "term": "Judicial independence", "definition": "Insulation of judges from political pressure, chiefly through lifetime tenure." },
+              { "term": "Appellate jurisdiction", "definition": "The authority to review decisions of lower courts." },
+              { "term": "Stare decisis", "definition": "The practice of deciding new cases in line with prior rulings." }
+            ],
+            "mistakes": [
+              "Believing the Constitution creates the full federal court system — Congress does.",
+              "Treating impeachment of judges as a partisan process rather than a constitutional check.",
+              "Assuming the Supreme Court hears most appeals; it selects a small fraction by certiorari."
+            ],
+            "review": [
+              "Which Federalist Paper defends judicial independence, and on what grounds?",
+              "Name three ways Congress can check the Supreme Court.",
+              "What is the difference between original and appellate jurisdiction?"
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "Federal judges hold office 'during good Behaviour.' The primary constitutional purpose of this arrangement is to:",
+              "choices": [
+                "ensure judges are accountable to voters",
+                "insulate judges from political pressure so they can decide unpopular cases",
+                "allow the president to replace judges at will",
+                "limit the number of cases the courts may hear"
+              ],
+              "answer": 1,
+              "explanation": "Lifetime tenure removes the fear of losing one's job over an unpopular decision, which Federalist No. 78 treats as essential to a judiciary that protects minorities against majority pressure.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "Which of the following is a power Congress holds over the federal judiciary?",
+              "choices": ["Reversing a Supreme Court decision by majority vote", "Setting the number of Supreme Court justices", "Overruling a judicial interpretation of a statute without new legislation", "Removing a judge whose ruling Congress dislikes"],
+              "answer": 1,
+              "explanation": "The Constitution fixes no size for the Court; Congress sets it by statute, and also controls jurisdiction and budget. Congress cannot reverse a decision directly and may remove a judge only through impeachment for high crimes, not for disagreeing with a ruling.",
+              "difficulty": 3
+            }
+          ]
+        },
+        { "code": "2.9", "title": "The Role of the Judicial Branch", "summary": "Judicial review, legitimacy, and the Court's dependence on the other branches.", "keyIdeas": ["Marbury v. Madison grounded judicial review in constitutional supremacy.", "The Court's authority rests on perceived legitimacy, not enforcement power.", "Rulings still require the executive to implement them."] },
+        { "code": "2.10", "title": "The Court in Action", "summary": "Certiorari, oral argument, conference, opinions, and the difference between majority and dissent.", "keyIdeas": ["The rule of four governs which cases the Court accepts.", "A majority opinion binds lower courts; concurrences and dissents do not.", "Amicus briefs let outside parties influence the Court's reasoning."] },
+        { "code": "2.11", "title": "Checks on the Judicial Branch", "summary": "Appointment, impeachment, jurisdiction, amendment and non-enforcement.", "keyIdeas": ["Confirmation politics shape the Court for decades.", "Congress may strip appellate jurisdiction in narrow areas.", "A constitutional amendment is the only certain way to override a constitutional ruling."] },
+        { "code": "2.12", "title": "The Bureaucracy", "summary": "Departments, agencies and commissions — the fourth branch nobody named in the Constitution.", "keyIdeas": ["Cabinet departments implement policy; independent agencies sit outside them.", "Bureaucracies have expertise, permanence and discretion that elected officials lack.", "Iron triangles and issue networks describe how agencies, committees and interest groups cooperate."] },
+        { "code": "2.13", "title": "Discretionary and Rulemaking Authority", "summary": "How unelected officials write rules with the force of law, and how they are held to account.", "keyIdeas": ["Congress delegates broad authority and agencies fill in the details.", "Rulemaking follows notice-and-comment procedures under the Administrative Procedure Act.", "Congressional oversight, appropriations, and judicial review constrain agency discretion."] }
+      ]
+    },
+    {
+      "code": "3",
+      "title": "Civil Liberties and Civil Rights",
+      "summary": "What government may not do to you, and what it must do for you — developed almost entirely through the Fourteenth Amendment.",
+      "examWeight": "13–18%",
+      "topics": [
+        { "code": "3.1", "title": "The Bill of Rights", "summary": "The first ten amendments as limits on government, and the debate over whether they were needed.", "keyIdeas": ["The Bill of Rights constrains government action, not private conduct.", "Originally it bound only the national government (Barron v. Baltimore).", "The Fourteenth Amendment changed that through selective incorporation."] },
+        { "code": "3.2", "title": "First Amendment: Freedom of Religion", "summary": "The establishment clause and the free exercise clause, and the tension between them.", "keyIdeas": ["The establishment clause bars government endorsement of religion (Engel v. Vitale).", "The free exercise clause protects belief and, with limits, practice (Wisconsin v. Yoder).", "Government neutrality is the standard the Court has mostly applied."] },
+        { "code": "3.3", "title": "First Amendment: Freedom of Speech", "summary": "Protected speech, its limits, and the shift from clear and present danger to modern doctrine.", "keyIdeas": ["Schenck permitted limits on speech creating a clear and present danger.", "Tinker extended protection to student symbolic speech absent substantial disruption.", "Symbolic speech and commercial speech receive different levels of protection."] },
+        { "code": "3.4", "title": "First Amendment: Freedom of the Press", "summary": "Prior restraint, national security, and the heavy presumption against censorship.", "keyIdeas": ["New York Times v. United States set a very high bar for prior restraint.", "The press has no special immunity from generally applicable laws.", "Libel standards differ for public figures and private individuals."] },
+        { "code": "3.5", "title": "Second Amendment: Right to Bear Arms", "summary": "Individual right, collective militia reading, and incorporation against the states.", "keyIdeas": ["District of Columbia v. Heller recognised an individual right.", "McDonald v. Chicago incorporated that right against the states.", "Reasonable regulation remains permissible."] },
+        { "code": "3.6", "title": "Amendments: Balancing Individual Freedom with Public Order and Safety", "summary": "Where rights yield to compelling government interests.", "keyIdeas": ["Strict scrutiny applies to fundamental rights and suspect classifications.", "Time, place and manner restrictions are allowed if content-neutral.", "National security arguments succeed far less often than governments hope."] },
+        {
+          "code": "3.7",
+          "title": "Selective Incorporation",
+          "summary": "How the Fourteenth Amendment applied the Bill of Rights to the states, one right at a time.",
+          "keyIdeas": [
+            "The Bill of Rights originally bound only the federal government.",
+            "The due process clause of the Fourteenth Amendment is the vehicle.",
+            "Gideon and McDonald are the standard examples of incorporation in action."
+          ],
+          "lesson": {
+            "minutes": 12,
+            "objectives": [
+              "Explain why the Bill of Rights did not originally apply to the states.",
+              "Describe the mechanism and the case-by-case nature of selective incorporation.",
+              "Use Gideon v. Wainwright or McDonald v. Chicago as an FRQ example."
+            ],
+            "body": [
+              { "type": "p", "text": "In 1833 the Supreme Court held in *Barron v. Baltimore* that the Bill of Rights restrained the national government only. A city could take your property without compensation and no federal constitutional right was violated. That reading stood for more than a century." },
+              { "type": "h", "text": "What changed" },
+              { "type": "p", "text": "The **Fourteenth Amendment (1868)** prohibits states from depriving 'any person of life, liberty, or property, without due process of law'. Beginning in the early twentieth century, the Court read most of the protections in the first eight amendments into that due process clause — a process called **selective incorporation**, because it happened right by right rather than all at once." },
+              { "type": "callout", "kind": "example", "label": "Two examples worth memorising", "text": "**Gideon v. Wainwright (1963)** incorporated the Sixth Amendment right to counsel, so a state must provide a lawyer to an indigent defendant. **McDonald v. Chicago (2010)** incorporated the Second Amendment, so a city gun ban is subject to the same scrutiny as a federal one. In both cases the right already existed against the federal government; incorporation extended it to the states." },
+              { "type": "callout", "kind": "warning", "label": "The distinction the exam tests", "text": "Civil *liberties* are protections **from** government — the First Amendment says Congress shall make no law. Civil *rights* are protections **by** government — the Equal Protection Clause requires the state to treat people equally. Selective incorporation is a liberties story; Brown v. Board is a rights story." },
+              { "type": "p", "text": "A few protections remain unincorporated, including the Fifth Amendment right to a grand jury indictment and the Seventh Amendment right to a civil jury. Knowing that incorporation is incomplete is worth a point." }
+            ],
+            "vocabulary": [
+              { "term": "Selective incorporation", "definition": "The doctrine applying most Bill of Rights protections to the states through the Fourteenth Amendment's due process clause." },
+              { "term": "Due process clause", "definition": "The constitutional guarantee that government may not deprive a person of life, liberty or property without fair procedure." },
+              { "term": "Equal protection clause", "definition": "The Fourteenth Amendment requirement that states treat similarly situated people alike." },
+              { "term": "Civil liberties", "definition": "Constitutional protections against government action." },
+              { "term": "Civil rights", "definition": "Protections against unequal treatment that government is obliged to enforce." }
+            ],
+            "mistakes": [
+              "Saying the Fourteenth Amendment 'created' new rights — it extended existing ones to the states.",
+              "Confusing civil liberties with civil rights.",
+              "Assuming the entire Bill of Rights has been incorporated."
+            ],
+            "review": [
+              "Which case held that the Bill of Rights did not apply to the states?",
+              "Which clause of the Fourteenth Amendment does incorporation rely on?",
+              "Give one right that has not been incorporated."
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "Selective incorporation is best described as:",
+              "choices": [
+                "the process by which states choose which federal laws to follow",
+                "the case-by-case application of Bill of Rights protections to the states through the Fourteenth Amendment",
+                "Congress's power to apply federal standards to state governments",
+                "the Supreme Court's power to create new constitutional rights"
+              ],
+              "answer": 1,
+              "explanation": "Incorporation is the Supreme Court's doctrine of reading most Bill of Rights guarantees into the Fourteenth Amendment's due process clause, extending them against state governments one right at a time.",
+              "difficulty": 3
+            },
+            {
+              "kind": "mcq",
+              "prompt": "Gideon v. Wainwright (1963) is significant because it:",
+              "choices": [
+                "established judicial review",
+                "applied the Sixth Amendment right to counsel to state criminal trials",
+                "struck down school segregation",
+                "limited executive privilege"
+              ],
+              "answer": 1,
+              "explanation": "Gideon held that the Sixth Amendment right to counsel applies to the states through the Fourteenth Amendment, requiring states to provide counsel to indigent felony defendants.",
+              "difficulty": 2
+            },
+            {
+              "kind": "frq",
+              "prompt": "A state law requires all residents to attend a public school prayer each morning. Identify the clause of the First Amendment at issue, explain how it applies to the state, and use a required Supreme Court case to support your analysis.",
+              "answer": { "rubric": "Establishment clause; applies to states via the Fourteenth Amendment due process clause; Engel v. Vitale (1962)." },
+              "explanation": "The establishment clause forbids government-sponsored religious exercise. Through selective incorporation it binds the states, and Engel v. Vitale held that state-composed prayer in public schools violates it.",
+              "difficulty": 3
+            }
+          ]
+        },
+        { "code": "3.8", "title": "Amendments: Due Process and the Rights of the Accused", "summary": "Fourth through Eighth Amendment protections in criminal procedure.", "keyIdeas": ["Exclusionary rule and the warrant requirement under the Fourth Amendment.", "Miranda rights arise from the Fifth Amendment privilege against self-incrimination.", "Gideon guarantees counsel; the Eighth Amendment bars cruel and unusual punishment."] },
+        { "code": "3.9", "title": "Amendments: Due Process and the Right to Privacy", "summary": "An unenumerated right built from several amendments, and its contested boundaries.", "keyIdeas": ["Griswold located privacy in the penumbras of the Bill of Rights.", "Roe v. Wade grounded abortion rights in privacy; Dobbs (2022) overruled it.", "Privacy remains a live doctrinal battleground."] },
+        { "code": "3.10", "title": "Social Movements and Equal Protection", "summary": "How movements used the courts, legislatures and public pressure to expand rights.", "keyIdeas": ["Brown v. Board used litigation to challenge segregation.", "The Civil Rights Acts of 1964 and 1965 followed sustained movement pressure.", "Equality of opportunity and equality of outcome are different targets."] },
+        { "code": "3.11", "title": "Government Responses to Social Movements", "summary": "Legislation, court rulings and executive action as responses to movement demands.", "keyIdeas": ["Congress legislated voting and public accommodations protections.", "The courts extended and sometimes narrowed those protections.", "Executive orders can act faster than Congress but are easier to reverse."] },
+        { "code": "3.12", "title": "Balancing Minority and Majority Rights", "summary": "Federalist No. 10's problem of faction, applied to modern minority protection.", "keyIdeas": ["Madison feared majority faction more than minority factions.", "Counter-majoritarian institutions exist partly to protect minorities.", "Tyranny of the majority remains a live design question."] },
+        { "code": "3.13", "title": "Affirmative Action", "summary": "Remedial policies, equal protection analysis, and the Court's shifting standard.", "keyIdeas": ["Racial classifications receive strict scrutiny.", "Regents v. Bakke rejected quotas but allowed race as one factor.", "Students for Fair Admissions v. Harvard (2023) ended race-conscious college admissions."] }
+      ]
+    },
+    {
+      "code": "4",
+      "title": "American Political Ideologies and Beliefs",
+      "summary": "What Americans believe, how they came to believe it, and how those beliefs are measured — and misread.",
+      "examWeight": "10–15%",
+      "topics": [
+        { "code": "4.1", "title": "American Attitudes About Government and Politics", "summary": "Political culture, trust in institutions, and the gap between ideals and performance.", "keyIdeas": ["Liberty, equality of opportunity and individualism are broadly shared values.", "Trust in government has declined since the mid-1960s.", "Americans often support programmes while opposing 'government' in the abstract."] },
+        { "code": "4.2", "title": "Political Socialization", "summary": "How people acquire political beliefs, and which agents matter most.", "keyIdeas": ["Family is the strongest single influence on party identification.", "Schools, peers, media and major events shape views over a lifetime.", "Core beliefs tend to stabilise in early adulthood."] },
+        { "code": "4.3", "title": "Changes in Ideology", "summary": "Ideological sorting, polarisation, and generational change.", "keyIdeas": ["Party identification and ideology have become more aligned over time.", "Generational replacement shifts the ideological centre slowly.", "Issue positions and identity have become bundled more tightly."] },
+        { "code": "4.4", "title": "Influence of Political Events on Ideology", "summary": "Critical elections, wars, crises and realignment.", "keyIdeas": ["Crises can rapidly reshape public priorities.", "Realignment occurs when durable coalitions are rebuilt.", "Foreign policy shocks change attitudes toward executive power."] },
+        {
+          "code": "4.5",
+          "title": "Measuring Public Opinion",
+          "summary": "How polls are built — and the design choices that determine whether they mean anything.",
+          "keyIdeas": [
+            "Random sampling is what makes a small sample informative about a population.",
+            "Question wording, order and response options all move results.",
+            "Margin of error shrinks with sample size, and it applies only to random samples."
+          ],
+          "lesson": {
+            "minutes": 12,
+            "objectives": [
+              "Explain why random sampling matters more than sample size.",
+              "Identify bias introduced by wording, order or the sampling frame.",
+              "Read a margin of error and a confidence level correctly."
+            ],
+            "body": [
+              { "type": "p", "text": "A poll of 1,000 randomly selected Americans can estimate national opinion within about ±3 points. A poll of 100,000 volunteers online tells you almost nothing about the country. The difference is entirely in how respondents were chosen." },
+              { "type": "h", "text": "The sampling frame" },
+              { "type": "p", "text": "The **frame** is the list or method from which respondents are drawn. Landline-only frames systematically under-sample young adults; online panels under-sample people without reliable internet. Undercoverage in the frame produces bias that no amount of statistical weighting fully repairs." },
+              { "type": "h", "text": "Wording effects" },
+              { "type": "callout", "kind": "example", "label": "Same question, different answer", "text": "'Do you favour government assistance for the unemployed?' and 'Do you favour welfare spending?' are not the same question even though the policy is the same. Push polling goes further, embedding a claim in the question itself to shape the response." },
+              { "type": "h", "text": "Margin of error" },
+              { "type": "p", "text": "A ±3 point margin of error at 95% confidence means that if the same survey were repeated many times, about 95% of the resulting intervals would contain the true value. Two candidates at 48% and 46% in a ±3 poll are **statistically tied** — the difference is well inside the margin of error." },
+              { "type": "callout", "kind": "warning", "label": "The most-tested trap", "text": "Margin of error describes sampling variability in a *random* sample. It says nothing about a voluntary-response or convenience sample, no matter how large. A million self-selected respondents can still be badly wrong." }
+            ],
+            "vocabulary": [
+              { "term": "Sampling frame", "definition": "The list or mechanism from which survey respondents are selected." },
+              { "term": "Undercoverage", "definition": "Bias arising when part of the population has no chance of being sampled." },
+              { "term": "Margin of error", "definition": "The range within which the true value is expected to fall, given random sampling variability." },
+              { "term": "Push polling", "definition": "A campaign tactic disguised as a poll, designed to plant a message rather than measure opinion." }
+            ],
+            "mistakes": [
+              "Treating a larger sample as automatically better than a random one.",
+              "Reading a difference inside the margin of error as a real lead.",
+              "Ignoring question wording when comparing two polls."
+            ],
+            "review": [
+              "Why is a random sample of 1,000 better than a voluntary sample of 100,000?",
+              "What does a ±3 margin of error at 95% confidence actually mean?",
+              "Give an example of a sampling frame that would under-represent young voters."
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A news website asks its readers to vote in an online poll and 240,000 respond. The main problem with this poll is that:",
+              "choices": [
+                "the sample is too small",
+                "respondents were self-selected, so the results cannot be generalised",
+                "online polling is always inaccurate",
+                "the margin of error is too large"
+              ],
+              "answer": 1,
+              "explanation": "The size is not the issue — self-selection is. Only people motivated enough to visit the site and vote are represented, so the sample is not a random sample of the population and no margin of error meaningfully applies.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "A poll of 1,000 randomly selected likely voters reports Candidate A at 49% and Candidate B at 47%, with a margin of error of ±3 points. The correct conclusion is:",
+              "choices": [
+                "Candidate A is clearly ahead",
+                "the race is statistically tied",
+                "Candidate A will win by 2 points",
+                "the poll is invalid because the margin of error exceeds the difference"
+              ],
+              "answer": 1,
+              "explanation": "The 2-point gap is well inside the ±3 margin of error, so the poll cannot distinguish between the candidates. That is what 'statistically tied' means.",
+              "difficulty": 3
+            }
+          ]
+        },
+        { "code": "4.6", "title": "Evaluating Public Opinion Data", "summary": "Reading tables and graphs critically on the quantitative analysis FRQ.", "keyIdeas": ["Identify the trend before drawing a conclusion.", "Distinguish correlation from causation in polling data.", "Connect the data back to a political principle or institution."] },
+        { "code": "4.7", "title": "Ideologies of Political Parties", "summary": "Where the two parties sit and why the coalitions look the way they do.", "keyIdeas": ["Democrats generally favour a more active government role in economic and social policy.", "Republicans generally favour limited government and traditional values.", "Coalition composition, not doctrine, explains most platform shifts."] },
+        { "code": "4.8", "title": "Ideology and Policymaking", "summary": "How beliefs translate into legislation — and where they get diluted.", "keyIdeas": ["Divided government produces compromise and gridlock.", "Public opinion constrains but rarely dictates policy detail.", "Interest groups and institutions shape outcomes as much as ideology."] },
+        { "code": "4.9", "title": "Ideology and Economic Policy", "summary": "Fiscal and monetary debates viewed through ideological lenses.", "keyIdeas": ["Liberals generally favour progressive taxation and social spending.", "Conservatives generally favour lower taxes and reduced regulation.", "Deficit attitudes often shift with which party holds office."] },
+        { "code": "4.10", "title": "Ideology and Social Policy", "summary": "Where ideology is most visible — and most durable.", "keyIdeas": ["Social issues are the most ideologically sorted domain.", "Courts, not legislatures, have resolved many social policy questions.", "Public opinion on several social issues has shifted faster than policy."] }
+      ]
+    },
+    {
+      "code": "5",
+      "title": "Political Participation",
+      "summary": "Elections, parties, interest groups, money and media — the machinery through which people actually influence government.",
+      "examWeight": "20–27%",
+      "topics": [
+        { "code": "5.1", "title": "Voting Rights and Models of Voting Behavior", "summary": "Who can vote, how the franchise expanded, and why people choose as they do.", "keyIdeas": ["The 15th, 19th, 24th and 26th Amendments each expanded the franchise.", "Prospective voting looks forward to policy; retrospective voting judges the incumbent's record.", "Party identification remains the strongest single predictor of the vote."] },
+        { "code": "5.2", "title": "Voter Turnout", "summary": "Why American turnout is comparatively low and what raises it.", "keyIdeas": ["Registration burden, weekday elections and frequency of voting all depress turnout.", "Age, income and education are strong predictors of participation.", "Turnout rises sharply in presidential election years."] },
+        { "code": "5.3", "title": "Political Parties", "summary": "The five functions of parties and how they organise nationally and locally.", "keyIdeas": ["Parties nominate, mobilise, brand, govern and coordinate.", "Party organisation is decentralised: national committees cannot command state parties.", "Weak parties shift power toward candidates and interest groups."] },
+        { "code": "5.4", "title": "How and Why Political Parties Change and Adapt", "summary": "Realignment, dealignment and issue entrepreneurship.", "keyIdeas": ["Critical elections can rebuild coalitions for a generation.", "Dealignment describes the long decline in party identification.", "Parties adapt by absorbing popular third-party issues."] },
+        { "code": "5.5", "title": "Third-Party Politics", "summary": "Why third parties rarely win, and what they accomplish anyway.", "keyIdeas": ["Winner-take-all single-member districts structurally disadvantage third parties.", "Ballot access rules and debate thresholds raise the barrier further.", "Third parties succeed mainly by shifting the agenda of a major party."] },
+        { "code": "5.6", "title": "Interest Groups Influencing Policymaking", "summary": "Lobbying, litigation, electioneering and going public.", "keyIdeas": ["Interest groups pursue policy directly rather than seeking office.", "Free-rider problems favour small, concentrated interests over diffuse ones.", "Litigation is the tool of choice when legislatures are hostile."] },
+        { "code": "5.7", "title": "Electing a President", "summary": "Primaries, caucuses, the Electoral College and the general election.", "keyIdeas": ["The Electoral College awards all of most states' votes to the statewide winner.", "A candidate can win the popular vote and lose the election.", "Front-loaded primaries and swing states shape where campaigns spend."] },
+        { "code": "5.8", "title": "Congressional Elections", "summary": "Incumbency advantage, redistricting and the structure of House and Senate races.", "keyIdeas": ["Incumbents win at very high rates, aided by name recognition and the franking privilege.", "Gerrymandering shapes House outcomes; statewide Senate races are less affected.", "Baker v. Carr and Shaw v. Reno set the constitutional limits on districting."] },
+        { "code": "5.9", "title": "Modern Campaigns", "summary": "Media strategy, targeting, and the candidate-centred campaign.", "keyIdeas": ["Campaigns are candidate-centred rather than party-centred.", "Microtargeting lets campaigns tailor messages to small audiences.", "Negative advertising persists because it works on mobilisation."] },
+        {
+          "code": "5.10",
+          "title": "Campaign Finance",
+          "summary": "Hard money, soft money, independent expenditure, and the constitutional logic of Citizens United.",
+          "keyIdeas": [
+            "Buckley v. Valeo distinguished contribution limits from spending limits.",
+            "Citizens United held that independent political spending is protected speech.",
+            "Super PACs may raise and spend unlimited sums but cannot coordinate with candidates."
+          ],
+          "lesson": {
+            "minutes": 13,
+            "objectives": [
+              "Distinguish contributions, independent expenditures and coordinated spending.",
+              "Explain the reasoning and the consequences of Citizens United v. FEC.",
+              "Evaluate transparency and disclosure requirements."
+            ],
+            "body": [
+              { "type": "p", "text": "Campaign finance law is mostly an argument about one question: is spending money to influence an election *speech*, or is it *conduct* that government may regulate to prevent corruption? Where you land determines everything else." },
+              { "type": "h", "text": "The foundational distinction" },
+              { "type": "p", "text": "In **Buckley v. Valeo (1976)** the Court drew a line that still governs. Limits on **contributions** to candidates are permissible because they reduce the risk of quid pro quo corruption. Limits on a candidate's or group's **own spending** are not, because spending money is how political speech reaches an audience." },
+              { "type": "h", "text": "The vocabulary" },
+              { "type": "ul", "items": [
+                "**Hard money** — contributions subject to federal limits and disclosure, given directly to campaigns and parties.",
+                "**Independent expenditures** — spending to advocate for or against a candidate made *without coordination* with that candidate's campaign. Unlimited.",
+                "**Super PACs** — independent-expenditure-only committees. They may raise and spend without limit, but coordination with a campaign is illegal.",
+                "**Dark money** — spending by nonprofits that are not required to disclose their donors."
+              ] },
+              { "type": "h", "text": "Citizens United v. FEC (2010)" },
+              { "type": "callout", "kind": "example", "label": "The holding", "text": "The Court held that the government may not ban independent political spending by corporations and unions, because the First Amendment protects political speech regardless of the speaker's corporate identity. The practical result was the rise of super PACs and a large increase in outside spending in federal elections." },
+              { "type": "callout", "kind": "warning", "label": "What Citizens United did not decide", "text": "It did not permit unlimited *contributions* to candidates, and it did not strike down disclosure requirements. Contribution limits remain, and most outside spending is still disclosed. On an FRQ, precision here is worth marks." },
+              { "type": "h", "text": "The counter-argument" },
+              { "type": "p", "text": "Dissenters argued that unlimited independent spending creates the appearance and reality of unequal influence, drowning out ordinary voters. That argument connects directly to the pluralist versus elite models of democracy from Unit 1 — a good essay will make that link explicitly." }
+            ],
+            "vocabulary": [
+              { "term": "Hard money", "definition": "Regulated, disclosed contributions made directly to candidates and parties." },
+              { "term": "Independent expenditure", "definition": "Spending to influence an election made without coordination with a candidate's campaign." },
+              { "term": "Super PAC", "definition": "A committee that may raise and spend unlimited funds on independent expenditures only." },
+              { "term": "Coordination", "definition": "Collaboration between an outside group and a campaign; its presence converts independent spending into a regulated contribution." }
+            ],
+            "mistakes": [
+              "Saying Citizens United removed all campaign finance limits.",
+              "Confusing independent expenditures with direct contributions to a candidate.",
+              "Forgetting that super PACs are prohibited from coordinating with campaigns."
+            ],
+            "review": [
+              "What distinction did Buckley v. Valeo draw?",
+              "What may a super PAC not do?",
+              "How does the Citizens United debate map onto the pluralist and elite models of democracy?"
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "Citizens United v. FEC (2010) held that:",
+              "choices": [
+                "all campaign finance limits violate the First Amendment",
+                "independent political spending by corporations and unions is protected speech",
+                "contribution limits to candidates are unconstitutional",
+                "disclosure requirements for political spending are unconstitutional"
+              ],
+              "answer": 1,
+              "explanation": "The holding is narrower than its reputation: the government may not prohibit independent expenditures by corporations and unions. Contribution limits and disclosure requirements survived.",
+              "difficulty": 3
+            },
+            {
+              "kind": "mcq",
+              "prompt": "A super PAC is prohibited from:",
+              "choices": [
+                "raising unlimited amounts of money",
+                "coordinating its spending with a candidate's campaign",
+                "spending money on broadcast advertising",
+                "accepting corporate contributions"
+              ],
+              "answer": 1,
+              "explanation": "Super PACs exist precisely because their spending is independent. If they coordinate with a campaign, the spending is treated as a contribution subject to federal limits.",
+              "difficulty": 3
+            },
+            {
+              "kind": "frq",
+              "prompt": "A wealthy individual funds an organisation that runs advertisements criticising a Senate candidate during the final month of the campaign. Describe one requirement the organization must meet for its spending to count as an independent expenditure, and explain how Citizens United v. FEC affects the amount it may spend.",
+              "answer": { "rubric": "No coordination with the candidate's campaign; Citizens United protects independent spending as speech, so the amount is unlimited." },
+              "explanation": "Independence — the absence of coordination — is the requirement that keeps the spending outside contribution limits. Citizens United's reasoning that political speech is protected regardless of the speaker means the organisation's independent spending is not capped.",
+              "difficulty": 4
+            }
+          ]
+        },
+        { "code": "5.11", "title": "The Media", "summary": "Gatekeeping, agenda setting, framing and horse-race coverage.", "keyIdeas": ["Gatekeepers decide which stories reach the public.", "Agenda setting shapes what people think *about*, not what they think.", "Horse-race coverage emphasises standings over substance."] },
+        { "code": "5.12", "title": "Changing Media", "summary": "Fragmentation, social platforms, and the end of a shared information environment.", "keyIdeas": ["Narrowcasting lets audiences self-select into confirming sources.", "Platforms now perform gatekeeping functions once held by editors.", "Filter bubbles and misinformation change how campaigns reach voters."] }
+      ]
+    }
+  ],
+  "externalResources": [
+    { "label": "AP U.S. Government and Politics — official course page", "url": "https://apcentral.collegeboard.org/courses/ap-us-government-and-politics", "kind": "official" },
+    { "label": "Foundational documents (full text) — National Archives", "url": "https://www.archives.gov/founding-docs", "kind": "official" },
+    { "label": "Supreme Court opinions — official site", "url": "https://www.supremecourt.gov/opinions/slipopinion/24", "kind": "official" }
+  ]
+}

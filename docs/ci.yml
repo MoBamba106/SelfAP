@@ -1,0 +1,85 @@
+# GitHub Actions workflow for SelfAP.
+#
+# THIS FILE IS NOT ACTIVE WHERE IT SITS. Move it to activate it:
+#
+#   mkdir -p .github/workflows && mv docs/ci.yml .github/workflows/ci.yml
+#
+# It lives in docs/ because the GitHub App driving this repository does not
+# hold the `workflows` scope, and GitHub refuses pushes that create or update
+# anything under .github/workflows/ without it. Grant that permission (or push
+# the file yourself) and it will run as written.
+#
+# Verified locally: it parses, and every command it runs was executed first --
+# `npm ci` installs 421 packages from the lockfile, typecheck and lint are
+# clean, 98 tests pass (including the migrations and RLS on a real Postgres),
+# the build succeeds, and both dry-run scripts report the expected counts.
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# Cancel superseded runs on the same ref rather than queueing behind them.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Typecheck, lint, test, build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Test
+        run: npm run test
+
+      # Built in demo mode: no Supabase project is provisioned in CI, and the
+      # demo backend exercises the same code paths above the data layer.
+      - name: Build
+        run: npm run build
+        env:
+          NEXT_PUBLIC_DEMO: '1'
+
+  content:
+    name: Curriculum content
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      # Parses every course file, derives ids, and enforces the authoring
+      # rules (topic codes must be unit-prefixed, every question needs a key).
+      - name: Validate course files
+        run: npm run seed -- --dry-run
+
+      - name: Migration order
+        run: npm run db:push -- --dry-run

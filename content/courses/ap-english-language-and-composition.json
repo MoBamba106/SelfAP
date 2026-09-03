@@ -1,0 +1,512 @@
+{
+  "slug": "ap-english-language-and-composition",
+  "code": "AP English Language and Composition",
+  "shortName": "Language",
+  "tagline": "Read how writers persuade. Then write persuasively yourself.",
+  "description": "AP Language is a course about argument: how writers construct one, how to take one apart, and how to build your own under time pressure. The exam is three essays plus a reading section, and every essay is scored on thesis, evidence, commentary and sophistication — so this course practises the moves, not the topics.",
+  "subject": "english",
+  "accent": "lang",
+  "exam": {
+    "date": "2027-05-12",
+    "provisional": false,
+    "durationMinutes": 195,
+    "summary": "Three hours and fifteen minutes. Section I is 45 multiple-choice questions on two to five passages in 60 minutes. Section II gives 15 minutes of reading and 120 minutes to write three essays: synthesis, rhetorical analysis, and argument. Scheduled for Wednesday 12 May 2027, Session 1, on the published 2027 AP exam schedule.",
+    "sections": [
+      { "name": "Section I — Multiple choice", "count": "45 questions", "time": "60 min", "weight": "45%" },
+      { "name": "Section II — Free response", "count": "3 essays", "time": "135 min", "weight": "55%" }
+    ],
+    "frqs": [
+      { "label": "Q1", "title": "Synthesis — read six to eight sources, take a position" },
+      { "label": "Q2", "title": "Rhetorical analysis — how one writer's choices work" },
+      { "label": "Q3", "title": "Argument — defend a position using your own evidence" }
+    ]
+  },
+  "tools": ["reference", "frq", "writing"],
+  "reference": [
+    {
+      "group": "The rhetorical situation",
+      "entries": [
+        { "term": "Exigence", "expression": "The problem or occasion that prompted the writing — the 'why now'." },
+        { "term": "Audience", "expression": "Who the writer is addressing, and what they already believe." },
+        { "term": "Purpose", "expression": "What the writer wants the audience to think, feel or do." },
+        { "term": "Context", "expression": "The historical and cultural moment that shapes both writer and reader." },
+        { "term": "Message", "expression": "The central claim the writer advances." }
+      ]
+    },
+    {
+      "group": "Appeals",
+      "entries": [
+        { "term": "Ethos", "expression": "Credibility: the writer's character, expertise and fairness." },
+        { "term": "Pathos", "expression": "Emotion: values, fear, sympathy, indignation." },
+        { "term": "Logos", "expression": "Reason: evidence, logic, structure of the argument." },
+        { "term": "Kairos", "expression": "Timeliness: why this argument works at this particular moment." }
+      ]
+    },
+    {
+      "group": "Rhetorical choices worth naming",
+      "entries": [
+        { "term": "Anaphora", "expression": "Repeating a phrase at the start of successive clauses — builds momentum." },
+        { "term": "Antithesis", "expression": "Juxtaposing opposed ideas in parallel structure — sharpens a contrast." },
+        { "term": "Juxtaposition", "expression": "Placing two images or ideas side by side so each comments on the other." },
+        { "term": "Concession", "expression": "Granting a point to the other side — builds ethos before refuting it." },
+        { "term": "Qualification", "expression": "Limiting a claim's scope — makes it defensible rather than absolute." },
+        { "term": "Diction", "expression": "Word choice, especially connotation — the smallest unit of persuasion." },
+        { "term": "Syntax", "expression": "Sentence length and shape — short sentences land, long ones accumulate." },
+        { "term": "Imagery", "expression": "Sensory language that makes an abstraction concrete." }
+      ]
+    },
+    {
+      "group": "The four scoring rows",
+      "entries": [
+        { "term": "A — Thesis", "expression": "A defensible position that responds to the prompt. One point." },
+        { "term": "B — Evidence and commentary", "expression": "Specific evidence with commentary that explains how it supports the line of reasoning. Up to four points." },
+        { "term": "C — Sophistication", "expression": "Nuance, complexity, a vivid style, or situating the argument in a broader context. One point." },
+        { "term": "The gap", "expression": "Most students earn the thesis and lose Row B. Commentary is where essays are won." }
+      ]
+    }
+  ],
+  "frqs": [
+    {
+      "id": "lang-frq-1",
+      "title": "Synthesis — the value of public spaces",
+      "kind": "Synthesis",
+      "minutes": 55,
+      "prompt": "Read the six sources on the role of public spaces in a democratic society, then write an essay that synthesises at least three of them and develops a position on the extent to which public spaces are essential to a healthy democracy. Use the sources to develop your position and cite them accurately.",
+      "rubric": [
+        "Thesis (1): a defensible position on the extent of the claim, not a restatement of the prompt.",
+        "Evidence and commentary (4): at least three sources used to support the line of reasoning, with commentary explaining how each piece of evidence advances the argument.",
+        "Sophistication (1): nuance about which public spaces, or an acknowledgement of competing democratic values.",
+        "Citations must be accurate; summarising sources without advancing an argument caps Row B."
+      ]
+    },
+    {
+      "id": "lang-frq-2",
+      "title": "Argument — is competition necessary?",
+      "kind": "Argument",
+      "minutes": 40,
+      "prompt": "Some argue that competition is the engine of human progress; others argue that cooperation produces better outcomes for individuals and communities. Write an essay that develops a defensible position on the extent to which competition is necessary for progress. Use specific evidence from your reading, experience or observation.",
+      "rubric": [
+        "Thesis (1): takes a position on the extent, rather than agreeing with both sides.",
+        "Evidence and commentary (4): at least two specific pieces of evidence, each followed by commentary tying it back to the thesis.",
+        "Sophistication (1): qualification — competition in some domains but not others — earns this reliably.",
+        "Vague generalisation without a concrete example caps Row B at 2."
+      ]
+    },
+    {
+      "id": "lang-frq-3",
+      "title": "Rhetorical analysis — a commencement address",
+      "kind": "Rhetorical analysis",
+      "minutes": 40,
+      "prompt": "Read the excerpt from a commencement address delivered to graduates entering an uncertain job market. Write an essay analysing the rhetorical choices the speaker makes to persuade the audience that uncertainty is an opportunity rather than a threat.",
+      "rubric": [
+        "Thesis (1): identifies the speaker's purpose and previews the choices you will analyse.",
+        "Evidence and commentary (4): quotes the text and explains the *effect* of each choice on this audience, not merely what the device is called.",
+        "Sophistication (1): situates the speech in its context, or shows how choices interact.",
+        "Naming devices without analysing effect is the single most common way to score a 1/4/0."
+      ]
+    }
+  ],
+  "units": [
+    {
+      "code": "1",
+      "title": "The Rhetorical Situation",
+      "summary": "Every text is a response to a situation. Learn to name its parts and you can analyse anything.",
+      "examWeight": "",
+      "topics": [
+        {
+          "code": "1.1",
+          "title": "What Is a Rhetorical Situation?",
+          "summary": "The five components of any piece of persuasive writing, and why they explain a writer's choices.",
+          "keyIdeas": [
+            "Exigence, audience, purpose, context and message together constrain what a writer can do.",
+            "Rhetorical choices are not decorative; they are responses to the situation.",
+            "Changing one component changes the whole text."
+          ],
+          "lesson": {
+            "minutes": 13,
+            "objectives": [
+              "Identify the five components of a rhetorical situation in any given text.",
+              "Explain how audience shapes a writer's choices.",
+              "Write a rhetorical situation paragraph for an unfamiliar passage."
+            ],
+            "body": [
+              { "type": "p", "text": "A rhetorical situation is the set of circumstances that made a piece of writing necessary. Every persuasive text is an answer to a question someone asked, addressed to particular people, at a particular moment, for a particular reason. Once you can name those circumstances, a writer's choices stop looking arbitrary." },
+              { "type": "h", "text": "The five components" },
+              { "type": "ul", "items": [
+                "**Exigence** — the problem, event or tension that prompted the writing. Ask: why did this need to be said *now*?",
+                "**Audience** — who is being addressed, and what do they already believe? A hostile audience requires a different opening than a friendly one.",
+                "**Purpose** — what the writer wants to change in the audience: a belief, a feeling, an action.",
+                "**Context** — the historical and cultural moment. A speech written in 1941 reads differently from the same words in 2001.",
+                "**Message** — the central claim, which the other four components exist to deliver."
+              ] },
+              { "type": "callout", "kind": "example", "label": "Worked example", "text": "A mayor writing an op-ed after a flood. The **exigence** is the flood and the coming budget vote. The **audience** is taxpayers who are angry about spending. The **purpose** is to win support for an infrastructure bond. The **context** is an election year. The **message** is that resilience spending is cheaper than disaster relief. Every choice that follows — the photos of damaged homes, the cost comparison table, the appeal to neighbours rather than statistics — makes sense once you have those five things." },
+              { "type": "h", "text": "Why this matters on the exam" },
+              { "type": "p", "text": "The rhetorical analysis essay fails most often because students list devices — 'the author uses metaphor, anaphora, and rhetorical questions' — without connecting any of them to the situation. The rubric rewards explaining *why this choice, for this audience, at this moment*." },
+              { "type": "callout", "kind": "warning", "label": "The upgrade that earns the point", "text": "Weak: 'The speaker uses anaphora to emphasise her point.' Strong: 'By opening three consecutive sentences with *we have seen*, the speaker converts private grief into shared experience, which is exactly what an audience of newly bereaved families needs before it will accept a policy argument.'" }
+            ],
+            "vocabulary": [
+              { "term": "Exigence", "definition": "The circumstance or problem that prompts a piece of writing." },
+              { "term": "Audience", "definition": "The intended readers or listeners, with their existing beliefs and expectations." },
+              { "term": "Rhetorical choice", "definition": "A deliberate decision a writer makes about content, structure or style." },
+              { "term": "Kairos", "definition": "The quality of being timely — the argument suited to this moment." }
+            ],
+            "mistakes": [
+              "Listing rhetorical devices without analysing their effect on the audience.",
+              "Confusing the topic with the exigence — the topic is what, the exigence is why now.",
+              "Treating the audience as a generic 'readers' rather than a specific group with specific beliefs."
+            ],
+            "review": [
+              "Name the five components of a rhetorical situation.",
+              "How would a speech change if its audience shifted from sympathetic to hostile?",
+              "Rewrite 'the author uses imagery' so that it analyses effect rather than naming a device."
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "Which of the following best describes the exigence of a piece of writing?",
+              "choices": ["The central claim the writer advances", "The problem or event that prompted the writer to write now", "The emotional appeal the writer uses", "The historical period in which the writer lived"],
+              "answer": 1,
+              "explanation": "Exigence is the immediate problem, event or tension that made the writing necessary — the 'why now'. The central claim is the message; the historical period is part of the broader context.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "A student writes: 'The speaker uses repetition to emphasise his point.' Which revision best improves the analysis?",
+              "choices": [
+                "'The speaker uses repetition in paragraphs 2 and 4 to emphasise his point.'",
+                "'The speaker repeats the phrase *not yet* at the start of three sentences, transforming an abstract delay into a drumbeat that a frustrated audience can feel rather than merely hear.'",
+                "'The speaker uses repetition, anaphora, and parallelism to emphasise his point.'",
+                "'The speaker's repetition is effective because repetition is a powerful rhetorical device.'"
+              ],
+              "answer": 1,
+              "explanation": "Only the second option identifies the specific choice and explains its effect on a specific audience. The others name or catalogue devices, which is what caps rhetorical analysis essays at a 1/4/0.",
+              "difficulty": 3
+            },
+            {
+              "kind": "frq",
+              "prompt": "Read a short op-ed urging a city to adopt congestion pricing. In one paragraph, identify the exigence, audience, purpose and context, then explain one rhetorical choice the writer makes in response to that situation.",
+              "answer": { "rubric": "Correctly identifies all four components from the text; links a specific choice to a specific component; explains the effect on the audience." },
+              "explanation": "The paragraph must ground each component in evidence from the text and then make the causal link: because the audience is angry about fees, the writer opens with a cost-of-delay comparison rather than an environmental appeal.",
+              "difficulty": 4
+            }
+          ]
+        },
+        { "code": "1.2", "title": "Exigence and Audience", "summary": "Reading for the 'why now' and for who is being persuaded.", "keyIdeas": ["Exigence is specific and temporal, not a general topic.", "Audience assumptions determine what a writer can take for granted.", "A concession early in a text usually signals a resistant audience."] },
+        { "code": "1.3", "title": "Purpose, Context, and Message", "summary": "What the writer wants, when they are writing, and what they are claiming.", "keyIdeas": ["Purpose is a verb: to persuade, to warn, to reconcile, to mobilise.", "Context constrains which arguments are even available.", "The message is the claim; everything else serves it."] },
+        { "code": "1.4", "title": "The Rhetorical Triangle in Practice", "summary": "Applying ethos, pathos and logos to real texts rather than to definitions.", "keyIdeas": ["Ethos is built through fairness and specificity, not credentials alone.", "Pathos is most effective when it is earned by prior logos.", "Appeals usually work together; isolating one flattens the analysis."] }
+      ]
+    },
+    {
+      "code": "2",
+      "title": "Claims and Evidence",
+      "summary": "The mechanics of argument: what counts as a claim, what counts as support, and the commentary that joins them.",
+      "examWeight": "",
+      "topics": [
+        { "code": "2.1", "title": "Claims and Their Types", "summary": "Factual, evaluative and policy claims, and how each is supported differently.", "keyIdeas": ["A factual claim asserts what is true; an evaluative claim judges worth; a policy claim recommends action.", "A defensible claim has a genuine opposing position.", "Restating the prompt is not a thesis."] },
+        { "code": "2.2", "title": "Evidence: Types and Strength", "summary": "Facts, statistics, examples, testimony, and anecdote — and what each can and cannot carry.", "keyIdeas": ["Statistics establish scale; anecdotes establish vividness.", "Testimony borrows authority and must be evaluated for bias.", "A single example cannot support a universal claim."] },
+        { "code": "2.3", "title": "Commentary: Connecting Evidence to Claim", "summary": "The single highest-value skill on the exam — explaining why your evidence matters.", "keyIdeas": ["Commentary answers 'so what?' after every piece of evidence.", "Without commentary, evidence is a list, not an argument.", "Two or three sentences of commentary per piece of evidence is the working ratio."] },
+        { "code": "2.4", "title": "Evaluating Source Credibility", "summary": "Author, publication, evidence, date, and interest — the five checks before you cite.", "keyIdeas": ["Check who funded the research.", "Prefer primary sources and peer-reviewed work.", "A source can be credible and still biased."] }
+      ]
+    },
+    {
+      "code": "3",
+      "title": "Reasoning and Organization",
+      "summary": "How an argument is built, ordered and joined — the difference between a list of points and a line of reasoning.",
+      "examWeight": "",
+      "topics": [
+        { "code": "3.1", "title": "Line of Reasoning", "summary": "A progression of ideas where each step depends on the last.", "keyIdeas": ["A line of reasoning has direction, not just order.", "Each paragraph should advance the argument, not restate it.", "Readers should be able to predict the next paragraph from the last."] },
+        { "code": "3.2", "title": "Arrangement and Paragraph Structure", "summary": "Claim, evidence, commentary, and the strategic placement of your strongest point.", "keyIdeas": ["Topic sentences make the argument visible.", "Save your strongest evidence for the paragraph before the conclusion.", "Vary paragraph length to control pace."] },
+        { "code": "3.3", "title": "Transitions and Cohesion", "summary": "Logical connectives that show how ideas relate, not just where paragraphs begin.", "keyIdeas": ["'However' signals concession or contrast; 'consequently' signals inference.", "Transitions between paragraphs matter more than within them.", "Repetition of a key term is a form of cohesion."] },
+        {
+          "code": "3.4",
+          "title": "Counterargument, Concession, and Rebuttal",
+          "summary": "Engaging the strongest opposing view — and why it raises rather than weakens your score.",
+          "keyIdeas": [
+            "Address the strongest counterargument, not a straw man.",
+            "Concede what is genuinely true, then rebut what follows from it.",
+            "Sophistication points are most reliably earned here."
+          ],
+          "lesson": {
+            "minutes": 12,
+            "objectives": [
+              "Distinguish concession from rebuttal and use both deliberately.",
+              "Construct a counterargument paragraph that strengthens the thesis.",
+              "Recognise a straw man and avoid building one."
+            ],
+            "body": [
+              { "type": "p", "text": "An argument that ignores the best case against it reads as propaganda. An argument that engages the best case against it and still stands reads as judgement. This is the difference between a 3 and a 5 on almost every AP Language rubric." },
+              { "type": "h", "text": "Concession versus rebuttal" },
+              { "type": "ul", "items": [
+                "A **concession** grants something true to the other side: 'It is correct that congestion pricing raises costs for drivers who have no alternative.'",
+                "A **rebuttal** shows why the concession does not defeat your claim: 'but the alternative — universal congestion — raises costs for everyone, including those drivers, every single day.'",
+                "Concession without rebuttal is surrender. Rebuttal without concession is bluster."
+              ] },
+              { "type": "h", "text": "Where to put it" },
+              { "type": "p", "text": "The most common and most effective placement is late — after you have established your case but before the conclusion. That way the reader meets your strongest point first, and the counterargument arrives as a test your argument survives rather than a doubt that undoes it." },
+              { "type": "callout", "kind": "mistake", "label": "The straw man", "text": "Do not invent a weak opponent. 'Some people say public spaces do not matter at all' is a position nobody holds, so defeating it proves nothing. Find the real objection — that public space funding crowds out housing, say — and answer that one." },
+              { "type": "callout", "kind": "example", "label": "A model move", "text": "'Critics of remote work are right that informal conversation drives innovation, and no video call reproduces a corridor. But the question is not whether offices produce serendipity; it is whether five days a week of commuting is the most efficient way to purchase it.'" }
+            ],
+            "vocabulary": [
+              { "term": "Concession", "definition": "Granting a point to the opposing side, usually to build credibility before refuting it." },
+              { "term": "Rebuttal", "definition": "The response showing why a conceded point does not defeat the argument." },
+              { "term": "Straw man", "definition": "A misrepresented, weaker version of an opposing argument, attacked in place of the real one." },
+              { "term": "Qualification", "definition": "Limiting a claim's scope so that it remains defensible." }
+            ],
+            "mistakes": [
+              "Conceding without rebutting, which quietly abandons the thesis.",
+              "Attacking a straw man instead of the strongest objection.",
+              "Placing the counterargument first, before any case has been built."
+            ],
+            "review": [
+              "What is the difference between a concession and a rebuttal?",
+              "Why does engaging a counterargument usually raise the sophistication score?",
+              "Rewrite 'some people think this is bad' as a genuine counterargument."
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "Which sentence is a concession rather than a rebuttal?",
+              "choices": [
+                "It is true that congestion pricing raises costs for some drivers.",
+                "Congestion pricing reduces traffic for everyone, including those drivers.",
+                "Opponents of congestion pricing misunderstand how cities work.",
+                "No reasonable person would oppose congestion pricing."
+              ],
+              "answer": 0,
+              "explanation": "The first sentence grants something true to the opposing side without yet answering it — that is a concession. The second answers the objection and is a rebuttal; the third and fourth are straw men.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "Where in an argument essay is a counterargument most often most effective?",
+              "choices": ["In the opening sentence", "After the main case is established but before the conclusion", "In place of the thesis", "Immediately after the thesis, before any evidence"],
+              "answer": 1,
+              "explanation": "Placing the counterargument late lets the reader meet the strongest case first, so the objection functions as a test the argument survives rather than a doubt that undermines it.",
+              "difficulty": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "title": "Style",
+      "summary": "Word choice, sentence shape and tone — the layer of writing that readers feel before they analyse.",
+      "examWeight": "",
+      "topics": [
+        { "code": "4.1", "title": "Diction and Connotation", "summary": "How individual word choices carry argument.", "keyIdeas": ["Denotation is the definition; connotation is the feeling attached.", "A synonym swap can reverse the tone of a sentence.", "Analysing three words closely beats listing thirty."] },
+        { "code": "4.2", "title": "Syntax and Sentence Variety", "summary": "Length, structure and rhythm as instruments of emphasis.", "keyIdeas": ["Short sentences land; long sentences accumulate.", "Parallel structure signals equivalence; broken parallelism signals contrast.", "Sentence openings control what the reader attends to."] },
+        { "code": "4.3", "title": "Tone and Voice", "summary": "The writer's attitude, and how it is signalled.", "keyIdeas": ["Tone is inferred from diction, syntax and detail, never stated outright.", "Tone can shift within a passage — track the turn.", "Precise tone words (wry, rueful, indignant) beat vague ones (good, interesting)."] },
+        { "code": "4.4", "title": "Figurative Language and Imagery", "summary": "Metaphor, simile, personification and sensory detail as argument.", "keyIdeas": ["A metaphor is an argument about resemblance.", "Extended metaphor can structure a whole passage.", "Imagery makes an abstraction concrete and therefore memorable."] }
+      ]
+    },
+    {
+      "code": "5",
+      "title": "Synthesis",
+      "summary": "The first essay: read a set of sources, take a position, and use the sources to build it.",
+      "examWeight": "",
+      "topics": [
+        {
+          "code": "5.1",
+          "title": "The Synthesis Task",
+          "summary": "What the essay actually asks for, and the three-part structure that satisfies it.",
+          "keyIdeas": [
+            "You must cite at least three sources, and they must serve *your* argument.",
+            "A source summary is not synthesis.",
+            "Spend the 15-minute reading period annotating, not reading word for word."
+          ],
+          "lesson": {
+            "minutes": 14,
+            "objectives": [
+              "Distinguish synthesis from summary.",
+              "Use the 15-minute reading period efficiently.",
+              "Draft a defensible synthesis thesis that responds to 'the extent to which'."
+            ],
+            "body": [
+              { "type": "p", "text": "The synthesis prompt almost always asks you to evaluate the **extent** to which something is true. That word is the whole assignment: a defensible position is one that takes a side and, usually, qualifies it." },
+              { "type": "h", "text": "Summary versus synthesis" },
+              { "type": "callout", "kind": "mistake", "label": "The failure mode", "text": "'Source A says this. Source B says that. Source C agrees with Source B.' That is a book report. Synthesis puts *your* claim first and brings sources in as evidence for it: 'Public spaces are essential to democracy precisely because they force contact across difference (Source B), a function no algorithmic feed replicates (Source C).'" },
+              { "type": "h", "text": "The 15-minute reading period" },
+              { "type": "ul", "items": [
+                "Read the prompt first and underline the exact claim you must take a position on.",
+                "Skim each source for its central claim and its best single piece of evidence — one line of annotation each.",
+                "Sort the sources into 'supports', 'qualifies', 'opposes'. You need at least one from two of those three buckets."
+              ] },
+              { "type": "h", "text": "A thesis that works" },
+              { "type": "p", "text": "Weak: 'Public spaces are important to democracy.' Strong: 'Public spaces are essential to democracy not because they are pleasant but because they are the last places where citizens encounter people they did not choose — a condition no curated feed can reproduce.' The second is defensible, takes a position on extent, and previews a line of reasoning." },
+              { "type": "callout", "kind": "warning", "label": "Citation", "text": "Cite as (Source A) or by the author's name. An uncited source, however well used, costs the evidence point." }
+            ],
+            "vocabulary": [
+              { "term": "Synthesis", "definition": "Combining sources to support an original claim, rather than reporting what each says." },
+              { "term": "Defensible position", "definition": "A claim for which a reasonable person could argue the opposite." },
+              { "term": "Line of reasoning", "definition": "The progression of connected ideas that carries the argument forward." }
+            ],
+            "mistakes": [
+              "Summarising sources instead of using them.",
+              "Citing fewer than three sources.",
+              "Writing a thesis that both sides would accept."
+            ],
+            "review": [
+              "What does 'the extent to which' require of your thesis?",
+              "How should you spend the 15-minute reading period?",
+              "Rewrite a summarising sentence as a synthesising one."
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "Which sentence demonstrates synthesis rather than summary?",
+              "choices": [
+                "Source A argues that parks increase property values.",
+                "Because parks are among the few places where residents meet people they did not choose (Source A), they perform a democratic function that curated social feeds cannot (Source C).",
+                "Sources A, B and C all discuss public spaces in cities.",
+                "Source B disagrees with Source A about the cost of maintaining parks."
+              ],
+              "answer": 1,
+              "explanation": "Only the second sentence subordinates the sources to an original claim and connects them to each other. The others report what sources say without advancing an argument of the writer's own.",
+              "difficulty": 3
+            },
+            {
+              "kind": "mcq",
+              "prompt": "A synthesis prompt asks you to evaluate 'the extent to which public spaces are essential to democracy.' Which thesis is most defensible?",
+              "choices": [
+                "Public spaces are essential to democracy.",
+                "Democracy and public spaces are both important topics.",
+                "Public spaces are essential to democracy less for recreation than as the last venues where citizens meet people they did not choose.",
+                "Some people think public spaces are essential and others do not."
+              ],
+              "answer": 2,
+              "explanation": "It takes a clear position, qualifies the extent ('less for recreation than as…'), and previews a line of reasoning. The first is too flat to be arguable, the second is a topic rather than a claim, and the fourth refuses to take a position.",
+              "difficulty": 3
+            }
+          ]
+        },
+        { "code": "5.2", "title": "Reading Sources Critically", "summary": "Skimming for claim and evidence under time pressure.", "keyIdeas": ["Find each source's claim in the first and last paragraphs.", "Note the single most quotable piece of evidence.", "Mark the source's bias as you go."] },
+        { "code": "5.3", "title": "Integrating and Citing Sources", "summary": "Weaving quotations into your own sentences and citing them correctly.", "keyIdeas": ["Never let a quotation stand alone as a sentence.", "Introduce, quote, then comment.", "Attribute by author name or source label consistently."] },
+        { "code": "5.4", "title": "Developing a Defensible Position", "summary": "Turning a broad prompt into a claim you can actually defend in 40 minutes.", "keyIdeas": ["Narrow the claim to something you can support with three sources.", "Build in a qualification from the start.", "State the position in one sentence at the top of the page."] }
+      ]
+    },
+    {
+      "code": "6",
+      "title": "Argumentation",
+      "summary": "The argument essay: your own evidence, your own reasoning, no sources provided.",
+      "examWeight": "",
+      "topics": [
+        { "code": "6.1", "title": "The Argument Essay", "summary": "What the task is and how it differs from synthesis.", "keyIdeas": ["All evidence comes from your own reading, experience and observation.", "Specificity beats breadth: two developed examples outperform five shallow ones.", "The line of reasoning matters more than the position you choose."] },
+        { "code": "6.2", "title": "Writing a Defensible Thesis", "summary": "One sentence that a reasonable person could disagree with.", "keyIdeas": ["Answer the prompt directly.", "Include your reasoning, not just your position.", "Avoid 'I believe' — the whole essay is what you believe."] },
+        { "code": "6.3", "title": "Selecting Evidence You Own", "summary": "Choosing examples specific enough to carry commentary.", "keyIdeas": ["Historical events, literary works, reported studies and observed phenomena all count.", "A named example with a date beats a vague generalisation.", "You need enough detail to write two sentences of commentary."] },
+        { "code": "6.4", "title": "Sophistication", "summary": "The one-point row, and the reliable routes to earning it.", "keyIdeas": ["Qualification, broader context, and vivid style are the three standard routes.", "Conceding and rebutting earns it more consistently than fancy prose.", "Never chase sophistication at the expense of the argument."] }
+      ]
+    },
+    {
+      "code": "7",
+      "title": "Using Sources",
+      "summary": "Quoting, paraphrasing, qualifying and citing without losing your own voice.",
+      "examWeight": "",
+      "topics": [
+        { "code": "7.1", "title": "Paraphrase, Summary, and Quotation", "summary": "Choosing the right way to bring in someone else's words.", "keyIdeas": ["Quote the striking phrase; paraphrase the argument.", "A paraphrase must change structure as well as vocabulary.", "Long quotations waste words you need for commentary."] },
+        { "code": "7.2", "title": "Qualifying a Claim", "summary": "Narrowing a claim so that it survives contact with counterexamples.", "keyIdeas": ["'Often', 'in most cases' and 'under these conditions' do real work.", "Qualification is not hedging — it is precision.", "An unqualified universal claim is almost always refutable."] },
+        { "code": "7.3", "title": "Refutation Strategies", "summary": "Answering an objection without granting the argument.", "keyIdeas": ["Attack the evidence, the reasoning, or the scope.", "Show the objection proves too much.", "Concede the fact and dispute the inference."] },
+        { "code": "7.4", "title": "Avoiding Plagiarism", "summary": "Attribution, quotation marks and the boundaries of your own writing.", "keyIdeas": ["Ideas as well as words require attribution.", "Patchwriting — swapping a few synonyms — is still plagiarism.", "When in doubt, cite."] }
+      ]
+    },
+    {
+      "code": "8",
+      "title": "Rhetorical Analysis",
+      "summary": "The second essay: take one writer's passage apart and explain how the choices work.",
+      "examWeight": "",
+      "topics": [
+        { "code": "8.1", "title": "The Rhetorical Analysis Essay", "summary": "The task, the structure, and the rubric.", "keyIdeas": ["Your subject is the writer's choices, not the topic of the passage.", "Analyse two or three choices deeply rather than eight shallowly.", "Every paragraph needs a claim about effect."] },
+        {
+          "code": "8.2",
+          "title": "Rhetorical Choices and Their Effects",
+          "summary": "Moving from naming a device to explaining what it does to a particular audience.",
+          "keyIdeas": [
+            "The formula is: choice → effect on this audience → support for the writer's purpose.",
+            "Effect is always audience-specific; the same device does different work on different readers.",
+            "Quoting the exact words is what makes the analysis credible."
+          ],
+          "lesson": {
+            "minutes": 13,
+            "objectives": [
+              "Write an effect-focused analytical sentence rather than a device list.",
+              "Connect a rhetorical choice to the audience's existing beliefs.",
+              "Structure a body paragraph around one choice."
+            ],
+            "body": [
+              { "type": "p", "text": "The rubric asks you to explain how rhetorical choices contribute to the writer's purpose within the rhetorical situation. Two verbs do the work: *how* and *contribute*. Naming a device answers neither." },
+              { "type": "h", "text": "The three-step sentence" },
+              { "type": "formula", "label": "Structure of an analytical claim", "expression": "[Specific choice]  →  [effect on this audience]  →  [how it serves the purpose]" },
+              { "type": "callout", "kind": "example", "label": "Weak to strong", "text": "Weak: 'King uses metaphor to describe injustice.'\nBetter: 'King's metaphor of a \"boil that must be exposed to air\" reframes civil unrest as a medical necessity.'\nStrong: 'By calling racial injustice a boil that 'can never be cured so long as it is covered up,' King answers the clergymen's charge of extremism on their own professional terms — these are ministers, and the image makes restraint, not protest, the thing that sounds irresponsible.'" },
+              { "type": "h", "text": "What counts as a choice" },
+              { "type": "ul", "items": [
+                "Structural: where the writer opens, what they delay, what they repeat.",
+                "Stylistic: diction, syntax, figurative language, tone.",
+                "Argumentative: concession, qualification, the order of appeals."
+              ] },
+              { "type": "callout", "kind": "warning", "label": "Do not summarise the passage", "text": "Rhetorical analysis essays collapse into summary when the writer cannot resist retelling the argument. If a sentence of your essay could appear in an essay about the *topic* rather than the *rhetoric*, cut it." }
+            ],
+            "vocabulary": [
+              { "term": "Rhetorical choice", "definition": "A deliberate decision about content, structure or style." },
+              { "term": "Effect", "definition": "What a choice does to a specific audience's beliefs, feelings or attention." },
+              { "term": "Purpose", "definition": "What the writer wants the audience to think, feel or do." }
+            ],
+            "mistakes": [
+              "Naming devices without analysing effect.",
+              "Summarising the passage's argument instead of its rhetoric.",
+              "Treating the audience as generic rather than specific."
+            ],
+            "review": [
+              "Complete the three-step analytical sentence structure.",
+              "Why must effect be described in terms of a specific audience?",
+              "How do you tell whether a sentence of your essay is summary or analysis?"
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "Which sentence best analyses a rhetorical choice?",
+              "choices": [
+                "The author uses vivid imagery and strong diction.",
+                "The author's use of imagery helps the reader understand the topic.",
+                "By describing the flooded street as 'a brown river running through the market,' the writer converts an abstract infrastructure failure into a scene the local readership walked past this morning, which makes the bond measure feel urgent rather than bureaucratic.",
+                "The author writes persuasively about flooding and its effects on the community."
+              ],
+              "answer": 2,
+              "explanation": "Only the third names a specific choice, quotes it, identifies a specific audience, and explains the effect in service of the writer's purpose. The others name devices or paraphrase the topic.",
+              "difficulty": 3
+            },
+            {
+              "kind": "frq",
+              "prompt": "Choose one rhetorical choice in a short persuasive passage you have read and write a paragraph explaining how it works on the intended audience. Your paragraph must quote the text.",
+              "answer": { "rubric": "Identifies the audience; names a specific choice with quotation; explains effect; connects effect to purpose." },
+              "explanation": "A full-credit paragraph moves from choice to effect to purpose and never summarises the passage's subject matter.",
+              "difficulty": 4
+            }
+          ]
+        },
+        { "code": "8.3", "title": "Analyzing Structure and Development", "summary": "How the order and shape of a passage create meaning.", "keyIdeas": ["What a writer delays is often what matters most.", "Repetition marks the argument's spine.", "A structural turn usually signals the shift from logos to pathos or vice versa."] },
+        { "code": "8.4", "title": "Writing About Effect Without Summary", "summary": "Keeping the focus on rhetoric when the topic is compelling.", "keyIdeas": ["Use the writer, not the subject, as your grammatical subject.", "Every paragraph should contain a verb of rhetorical action.", "Cut any sentence that works equally well in a history essay."] }
+      ]
+    },
+    {
+      "code": "9",
+      "title": "Argument Practice and Progress",
+      "summary": "Putting it together under exam conditions: timing, triage and honest self-scoring.",
+      "examWeight": "",
+      "topics": [
+        { "code": "9.1", "title": "Timed Writing Under Exam Conditions", "summary": "Pacing three essays in 135 minutes without losing the argument.", "keyIdeas": ["Synthesis 55, rhetorical analysis 40, argument 40 is a workable split.", "Leave two minutes at the end of each essay to finish a thought.", "A finished short essay outscores an unfinished ambitious one."] },
+        { "code": "9.2", "title": "Reading the Prompts Carefully", "summary": "Where essays go wrong before the first sentence.", "keyIdeas": ["Underline the verb and the exact claim you must address.", "Note any constraint — 'the extent to which', 'the most important'.", "Reread the prompt after drafting your thesis."] },
+        { "code": "9.3", "title": "Revision Under Time Pressure", "summary": "What to fix in the last three minutes.", "keyIdeas": ["Check the thesis against the prompt.", "Make sure every body paragraph has commentary.", "Fix the sentence your reader will remember: the last one."] },
+        { "code": "9.4", "title": "Scoring Yourself Honestly", "summary": "Applying the official rubric to your own essays.", "keyIdeas": ["Score Row B paragraph by paragraph, not globally.", "Mark every sentence that is summary rather than commentary.", "Track your score across essays to see whether the gap is thesis, evidence or sophistication."] }
+      ]
+    }
+  ],
+  "externalResources": [
+    { "label": "AP English Language and Composition — official course page", "url": "https://apcentral.collegeboard.org/courses/ap-english-language-and-composition", "kind": "official" },
+    { "label": "AP Language scoring guidelines and sample responses", "url": "https://apcentral.collegeboard.org/courses/ap-english-language-and-composition/exam", "kind": "official" },
+    { "label": "Public domain speeches and essays — Project Gutenberg", "url": "https://www.gutenberg.org/", "kind": "public-domain" }
+  ]
+}
