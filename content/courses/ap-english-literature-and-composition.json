@@ -1,0 +1,465 @@
+{
+  "slug": "ap-english-literature-and-composition",
+  "code": "AP English Literature and Composition",
+  "shortName": "Literature",
+  "tagline": "Read closely, argue precisely, and let the text do the persuading.",
+  "description": "AP Literature is built on six skills — character, setting, structure, narration, figurative language and literary argument — applied to short fiction, poetry and longer works. The exam rewards close reading: a defensible reading of what the text actually does, supported by specific evidence.",
+  "subject": "english",
+  "accent": "lit",
+  "exam": {
+    "date": "2027-05-07",
+    "provisional": true,
+    "durationMinutes": 180,
+    "summary": "Three hours. Section I is 55 multiple-choice questions across five passages in 60 minutes. Section II is three free-response essays in 120 minutes: a short fiction analysis, a poetry analysis, and a literary argument on a full-length work of your choice. Confirm the exact date once College Board publishes the 2027 schedule.",
+    "sections": [
+      { "name": "Section I — Multiple choice", "count": "55 questions", "time": "60 min", "weight": "45%" },
+      { "name": "Section II — Free response", "count": "3 essays", "time": "120 min", "weight": "55%" }
+    ],
+    "frqs": [
+      { "label": "Q1", "title": "Short fiction analysis — a passage you have not seen before" },
+      { "label": "Q2", "title": "Poetry analysis — an unseen poem" },
+      { "label": "Q3", "title": "Literary argument — a work of literary merit you know well" }
+    ]
+  },
+  "tools": ["reference", "frq", "works", "writing"],
+  "reference": [
+    {
+      "group": "The six course skills",
+      "entries": [
+        { "term": "CHR — Character", "expression": "How characters are described, how they change, and what their relationships reveal." },
+        { "term": "SET — Setting", "expression": "Time, place and atmosphere, and how they shape meaning." },
+        { "term": "STR — Structure", "expression": "Sequence, pacing, shifts, form and stanza — the order in which a reader learns." },
+        { "term": "NAR — Narration", "expression": "Who tells, from how far away, and how reliably." },
+        { "term": "FIG — Figurative language", "expression": "Metaphor, simile, symbol, imagery, and the comparisons a text insists on." },
+        { "term": "LIT — Literary argument", "expression": "A defensible reading supported by specific textual evidence." }
+      ]
+    },
+    {
+      "group": "Figurative language",
+      "entries": [
+        { "term": "Metaphor", "expression": "Direct identification of one thing with another — an argument about resemblance." },
+        { "term": "Simile", "expression": "Comparison using 'like' or 'as' — the comparison is foregrounded." },
+        { "term": "Symbol", "expression": "A concrete object carrying meaning beyond itself, usually recurring." },
+        { "term": "Personification", "expression": "Giving human qualities to non-human things." },
+        { "term": "Apostrophe", "expression": "Directly addressing an absent person, an abstraction or a thing." },
+        { "term": "Synecdoche", "expression": "A part standing for a whole." }
+      ]
+    },
+    {
+      "group": "Sound and form in poetry",
+      "entries": [
+        { "term": "Meter", "expression": "The pattern of stressed and unstressed syllables; iambic pentameter is five iambs." },
+        { "term": "Enjambment", "expression": "A line that runs on without punctuation — creates momentum or unease." },
+        { "term": "Caesura", "expression": "A pause within a line, marked by punctuation — creates weight." },
+        { "term": "Alliteration", "expression": "Repeated initial consonant sounds." },
+        { "term": "Assonance", "expression": "Repeated vowel sounds inside words." },
+        { "term": "Volta", "expression": "The turn in a poem's argument, often at line 9 of a sonnet." }
+      ]
+    },
+    {
+      "group": "Narration",
+      "entries": [
+        { "term": "First person", "expression": "An 'I' narrator; intimacy plus the risk of unreliability." },
+        { "term": "Third person limited", "expression": "Follows one consciousness; the reader knows what that character knows." },
+        { "term": "Third person omniscient", "expression": "Access to multiple minds; can comment and withhold." },
+        { "term": "Stream of consciousness", "expression": "Renders thought directly, often without conventional syntax." },
+        { "term": "Narrative distance", "expression": "How close the narrator stands to the character's thoughts." },
+        { "term": "Unreliable narrator", "expression": "A narrator whose account the reader has reason to distrust." }
+      ]
+    }
+  ],
+  "works": {
+    "note": "A working reading list. AP Literature does not require specific titles — Q3 asks about any work of literary merit you know well — so build depth in a small number rather than familiarity with a large one. Aim for at least six works you could write about under pressure.",
+    "suggested": [
+      { "title": "Beloved", "author": "Toni Morrison", "form": "Novel", "why": "Non-linear structure, haunting imagery, and a community as chorus." },
+      { "title": "The Great Gatsby", "author": "F. Scott Fitzgerald", "form": "Novel", "why": "A first-person narrator whose reliability is the central question." },
+      { "title": "Hamlet", "author": "William Shakespeare", "form": "Drama", "why": "Soliloquy as character, and structure built on delay." },
+      { "title": "A Doll's House", "author": "Henrik Ibsen", "form": "Drama", "why": "Setting as confinement; symbolism carried by ordinary objects." },
+      { "title": "Frankenstein", "author": "Mary Shelley", "form": "Novel", "why": "Nested narration and the question of who is telling the story." },
+      { "title": "Wide Sargasso Sea", "author": "Jean Rhys", "form": "Novel", "why": "Two narrators, two versions of the same marriage." },
+      { "title": "The Handmaid's Tale", "author": "Margaret Atwood", "form": "Novel", "why": "Narrative distance, withheld information, and the Historical Notes." },
+      { "title": "One Hundred Years of Solitude", "author": "Gabriel García Márquez", "form": "Novel", "why": "Circular time and a family as symbol." }
+    ]
+  },
+  "frqs": [
+    {
+      "id": "lit-frq-1",
+      "title": "Q3 — Literary argument",
+      "kind": "Literary argument",
+      "minutes": 40,
+      "prompt": "In many works of literature, a character's decision to leave a place — or to stay — reveals something essential about that character and about the society they live in. Choose a novel or play of literary merit in which a character faces such a decision. Write an essay analysing how the character's choice contributes to an interpretation of the work as a whole. Do not merely summarise the plot.",
+      "rubric": [
+        "Thesis (1): a defensible interpretation that answers the prompt, naming the work.",
+        "Evidence and commentary (4): specific evidence from the work with commentary explaining how it supports the line of reasoning.",
+        "Sophistication (1): situating the reading in context, exploring complexity, or a consistently vivid style.",
+        "Plot summary without analysis caps Row B at 2."
+      ]
+    },
+    {
+      "id": "lit-frq-2",
+      "title": "Q2 — Poetry analysis",
+      "kind": "Poetry analysis",
+      "minutes": 40,
+      "prompt": "Read the poem carefully. Then write an essay analysing how the poet uses literary elements and techniques to convey the speaker's complex relationship to the natural world.",
+      "rubric": [
+        "Thesis (1): a defensible reading of the speaker's attitude, not a statement of the topic.",
+        "Evidence and commentary (4): quotations plus analysis of how specific choices create meaning.",
+        "Sophistication (1): recognising tension or ambivalence in the speaker's attitude.",
+        "Listing devices without explaining effect limits Row B."
+      ]
+    },
+    {
+      "id": "lit-frq-3",
+      "title": "Q1 — Short fiction analysis",
+      "kind": "Short fiction analysis",
+      "minutes": 40,
+      "prompt": "Read the short story carefully. Then write an essay analysing how the author's use of narrative point of view contributes to the reader's understanding of the protagonist's isolation.",
+      "rubric": [
+        "Thesis (1): a defensible claim about how point of view shapes the reader's understanding.",
+        "Evidence and commentary (4): specific references to the text with analysis of effect.",
+        "Sophistication (1): attending to what the narration withholds as well as what it reveals.",
+        "Retelling the story without analysing technique limits Row B."
+      ]
+    }
+  ],
+  "units": [
+    {
+      "code": "1",
+      "title": "Short Fiction I",
+      "summary": "The six course skills introduced through short fiction, where every element is visible in a single sitting.",
+      "examWeight": "42–49% (with Units 4 and 7)",
+      "topics": [
+        {
+          "code": "1.1",
+          "title": "Interpreting the Role of Character",
+          "summary": "How a story builds a character, and what a character's choices reveal.",
+          "keyIdeas": [
+            "Character is built through action, speech, description and the perceptions of others.",
+            "Direct description tells; behaviour shows — and the gap between them is often the point.",
+            "A character's function may be to reveal something about another character."
+          ],
+          "lesson": {
+            "minutes": 13,
+            "objectives": [
+              "Identify the four main ways a text constructs character.",
+              "Distinguish what a character says about themselves from what they do.",
+              "Write a character claim that supports a larger interpretation."
+            ],
+            "body": [
+              { "type": "p", "text": "Readers often describe characters as though they were people. On this exam that habit costs points. A character is a **construction**, assembled from specific textual choices, and your job is to explain how those choices produce the impression of a person." },
+              { "type": "h", "text": "Four channels of characterisation" },
+              { "type": "ul", "items": [
+                "**What the character does** — actions under pressure are the most reliable evidence.",
+                "**What the character says** — diction, register and what they choose not to say.",
+                "**How they are described** — the narrator's adjectives, which carry the narrator's attitude as much as the character's nature.",
+                "**How others respond to them** — a character defined entirely through other people's eyes is often a character the text wants us to doubt."
+              ] },
+              { "type": "callout", "kind": "example", "label": "The gap is the argument", "text": "When a narrator insists that a character is 'perfectly contented' and then describes them counting the minutes until a guest leaves, the story is not confused — it is doing something. Irony between claim and evidence is one of the most reliable sources of a strong thesis in short fiction." },
+              { "type": "h", "text": "Flat, round, and functional" },
+              { "type": "p", "text": "Not every character exists to be complex. Some exist to pressure the protagonist, to embody a value, or to make a contrast visible. Saying 'the mother functions less as a person than as the weight of expectation the protagonist cannot set down' is a stronger claim than saying 'the mother is controlling'." },
+              { "type": "callout", "kind": "warning", "label": "The move to avoid", "text": "'The author makes the character seem lonely so that the reader feels sad for her.' Effect on the reader is not an interpretation. Ask instead what the loneliness *means* in this story — what it reveals about the world the story is describing." }
+            ],
+            "vocabulary": [
+              { "term": "Direct characterisation", "definition": "The narrator states a character's qualities outright." },
+              { "term": "Indirect characterisation", "definition": "Character is revealed through action, speech, appearance and others' reactions." },
+              { "term": "Foreshadowing", "definition": "Details that prepare the reader for a later development." },
+              { "term": "Foreshadow character", "definition": "A character whose function is to reflect or contrast another, rather than to develop independently." }
+            ],
+            "mistakes": [
+              "Describing characters as real people rather than as constructions.",
+              "Treating the narrator's judgement of a character as the author's.",
+              "Stopping at 'the reader feels' instead of asking what the detail means."
+            ],
+            "review": [
+              "Name the four channels through which a text builds character.",
+              "Why is a gap between what a character claims and what they do analytically useful?",
+              "What is wrong with arguing that an author created a character 'to make the reader feel sad'?"
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A narrator describes a character as 'the most generous man in the county' and then details how he calculates the cost of every favour before granting it. The most useful analytical observation is that:",
+              "choices": [
+                "the narrator is unreliable because the description is inaccurate",
+                "the story creates irony between the character's reputation and his behaviour, which invites the reader to question the reputation itself",
+                "the character is a hypocrite, which makes him the story's antagonist",
+                "the author intends the reader to dislike the character"
+              ],
+              "answer": 1,
+              "explanation": "The productive move is to notice the gap and ask what it does: the story sets reputation against behaviour so the reader questions how the community judges worth. Calling the narrator 'unreliable' overstates it, and reducing the character to 'hypocrite' or 'antagonist' ignores the construction.",
+              "difficulty": 4
+            },
+            {
+              "kind": "mcq",
+              "prompt": "Which is the strongest character claim for a literary argument essay?",
+              "choices": [
+                "The protagonist is lonely and unhappy throughout the story.",
+                "The author makes the protagonist sympathetic so the reader cares about her.",
+                "The protagonist's refusal to name her illness turns diagnosis into a private act, which is how the story locates autonomy in a family that has taken everything else.",
+                "The protagonist has many conflicts with her family and her doctor."
+              ],
+              "answer": 2,
+              "explanation": "Only the third makes an interpretive claim — it identifies a specific textual choice, explains its effect, and connects it to a larger meaning. The others summarise, or describe the author's intention toward the reader.",
+              "difficulty": 4
+            },
+            {
+              "kind": "frq",
+              "prompt": "Read a short story you know well. Write a paragraph analysing how one method of characterisation contributes to the story's meaning. Your paragraph must quote the text.",
+              "answer": { "rubric": "Names the method with evidence; explains what it reveals; connects to a larger interpretation of the work." },
+              "explanation": "Full credit requires moving from technique to meaning. 'She counts the coins twice' is evidence; the interpretation is what the counting says about her relation to security, shame or control in this story.",
+              "difficulty": 4
+            }
+          ]
+        },
+        { "code": "1.2", "title": "Identifying and Interpreting Setting", "summary": "Time, place and atmosphere as carriers of meaning.", "keyIdeas": ["Setting constrains what characters can do, not just where they are.", "Weather and season usually carry symbolic weight — but only if the text repeats it.", "A confined setting often externalises a psychological state."] },
+        { "code": "1.3", "title": "Understanding How Structure Affects Interpretation", "summary": "Sequence, pacing and what the reader is allowed to know when.", "keyIdeas": ["Chronology is a choice, not a default.", "What a story withholds shapes suspense and irony differently.", "A story's ending often re-contextualises everything before it."] },
+        { "code": "1.4", "title": "Understanding a Narrator's Perspective", "summary": "Point of view, narrative distance and reliability.", "keyIdeas": ["First person offers intimacy and possible unreliability.", "Third person limited restricts knowledge to one consciousness.", "Distance shifts — watch for where the narration suddenly moves closer or further away."] },
+        { "code": "1.5", "title": "Reading Texts Literally and Figuratively", "summary": "Holding the literal event and the figurative meaning at the same time.", "keyIdeas": ["Establish the literal sense before interpreting.", "Recurring images are the text telling you what matters.", "Not every detail is symbolic; look for repetition and emphasis."] },
+        { "code": "1.6", "title": "The Basics of Literary Argument", "summary": "Thesis, evidence, commentary and the discipline of staying with the text.", "keyIdeas": ["A thesis must be defensible and specific to the work.", "Quote precisely and analyse what the words do.", "Every paragraph should advance the interpretation, not extend the summary."] }
+      ]
+    },
+    {
+      "code": "2",
+      "title": "Poetry I",
+      "summary": "Poetry demands attention to compression: every word, line break and sound is a choice.",
+      "examWeight": "36–45% (with Units 5 and 8)",
+      "topics": [
+        {
+          "code": "2.1",
+          "title": "Character and Speaker in Poetry",
+          "summary": "The speaker is not the poet, and the difference is where analysis begins.",
+          "keyIdeas": [
+            "Always say 'the speaker', never 'the poet', unless you have biographical evidence.",
+            "A dramatic monologue implies a silent listener whose presence shapes what is said.",
+            "What the speaker omits is often as revealing as what they state."
+          ],
+          "lesson": {
+            "minutes": 12,
+            "objectives": [
+              "Distinguish speaker from poet and explain why the distinction matters.",
+              "Identify the implied audience of a dramatic monologue.",
+              "Analyse how a speaker's omissions create meaning."
+            ],
+            "body": [
+              { "type": "p", "text": "The most common first error in poetry analysis is writing 'the author feels'. A poem is a made thing with a voice inside it, and that voice — the **speaker** — is a construction. Browning's Duke in 'My Last Duchess' is not Browning." },
+              { "type": "h", "text": "Why the distinction earns marks" },
+              { "type": "p", "text": "Once you treat the speaker as a character, ordinary analytical tools apply. The Duke's careful politeness becomes a technique for revealing menace; his digressions become evasions. You can ask what he is trying to achieve with his listener, and what he cannot bring himself to say." },
+              { "type": "h", "text": "The implied listener" },
+              { "type": "p", "text": "In a **dramatic monologue** the speaker addresses someone who never speaks. That listener's presence explains the poem's tone: the Duke is performing control for an envoy negotiating a marriage. Every courtesy is a transaction." },
+              { "type": "callout", "kind": "example", "label": "What is not said", "text": "'My Last Duchess' never states that the Duchess was killed. The speaker circles it — 'I gave commands; / Then all smiles stopped together' — and the reader does the arithmetic. Analysing the ellipsis is stronger than asserting the fact." },
+              { "type": "callout", "kind": "warning", "label": "Lyric versus dramatic", "text": "Not every poem has a dramatic speaker. A lyric 'I' may be closer to a voice of feeling than to a character. The safe move is to describe what the voice does — insists, hesitates, apostrophises — rather than to invent a biography for it." }
+            ],
+            "vocabulary": [
+              { "term": "Speaker", "definition": "The voice in a poem, distinct from the poet." },
+              { "term": "Dramatic monologue", "definition": "A poem in which a character addresses a silent listener, revealing themselves in the process." },
+              { "term": "Apostrophe", "definition": "Directly addressing an absent person, abstraction or object." },
+              { "term": "Persona", "definition": "The assumed identity of the speaker." }
+            ],
+            "mistakes": [
+              "Writing 'the author feels' when you mean 'the speaker says'.",
+              "Reading a dramatic monologue as the poet's own opinion.",
+              "Ignoring the implied listener and treating the poem as a soliloquy to nobody."
+            ],
+            "review": [
+              "Why does 'the speaker' rather than 'the poet' matter?",
+              "What is a dramatic monologue and who is present in it?",
+              "How can an omission become an analytical point?"
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "In Robert Browning's 'My Last Duchess', the most accurate analytical framing is that:",
+              "choices": [
+                "Browning reveals his own contempt for the aristocracy",
+                "the speaker, a Duke addressing a silent envoy, reveals his own possessiveness through the careful courtesy of his speech",
+                "the poem is a straightforward narrative about a painting",
+                "the Duchess is the speaker and she is defending herself"
+              ],
+              "answer": 1,
+              "explanation": "The poem is a dramatic monologue: the Duke's performance of civility for an envoy is what exposes him. Attributing the sentiment to Browning, or reducing the poem to plot description, misses the construction entirely.",
+              "difficulty": 3
+            },
+            {
+              "kind": "mcq",
+              "prompt": "Which sentence is the strongest opening move for a poetry analysis essay?",
+              "choices": [
+                "This poem is about a man who is angry about his wife.",
+                "The poet uses many literary devices to convey emotion.",
+                "The speaker's obsessive attention to the painting's curtain — who 'durst' draw it but him — turns a work of art into a mechanism of control, which is how the poem indicts ownership disguised as taste.",
+                "The poem has an interesting tone and strong imagery."
+              ],
+              "answer": 2,
+              "explanation": "It identifies a specific textual choice, quotes it, and connects it to an interpretive claim about the poem's meaning. The alternatives summarise topic or gesture vaguely at technique.",
+              "difficulty": 4
+            }
+          ]
+        },
+        { "code": "2.2", "title": "Setting in Poetry", "summary": "How a poem's scene functions beyond background.", "keyIdeas": ["Setting in poetry is often compressed into a single image.", "Season and time of day carry conventional weight, which poets may subvert.", "A shifting setting can trace a shift in the speaker's state."] },
+        { "code": "2.3", "title": "Structure in Poetry", "summary": "Form, stanza, line and the volta.", "keyIdeas": ["A sonnet's volta marks a turn in argument.", "Enjambment creates momentum; end-stopped lines create weight.", "Free verse is not formless — its line breaks are decisions."] },
+        { "code": "2.4", "title": "Narration and the Speaker's Distance", "summary": "Tense, address and intimacy.", "keyIdeas": ["Past tense often signals reflection; present tense signals immediacy.", "Direct address shifts the poem from statement to conversation.", "A sudden change in tense or address usually marks the turn."] },
+        {
+          "code": "2.5",
+          "title": "Figurative Language in Poetry",
+          "summary": "Metaphor, simile, symbol and imagery — and how to analyse rather than identify them.",
+          "keyIdeas": [
+            "A metaphor is an argument about resemblance; unpack the comparison.",
+            "Recurring images form the poem's symbolic structure.",
+            "Name the figure only as the start of the sentence, never the end."
+          ],
+          "lesson": {
+            "minutes": 12,
+            "objectives": [
+              "Unpack a metaphor into the claim it makes.",
+              "Trace a recurring image across a poem.",
+              "Write an analysis sentence that goes beyond naming a device."
+            ],
+            "body": [
+              { "type": "p", "text": "Naming a device is the least valuable thing you can do in a poetry essay. 'The poet uses metaphor' tells the reader nothing they could not see. What matters is what the comparison *asserts*." },
+              { "type": "h", "text": "Unpacking a metaphor" },
+              { "type": "p", "text": "Every metaphor claims that two unlike things resemble each other in some specific respect. Your job is to state that respect and then ask why this comparison and not another." },
+              { "type": "callout", "kind": "example", "label": "From naming to analysing", "text": "Naming: 'The speaker describes hope as a bird.'\nUnpacking: 'By making hope a bird that \"perches in the soul\" and sings \"without the words,\" Dickinson separates hope from language and reason — it persists without argument, which is why it can survive conditions that would end an argument.'\nThe second sentence is worth four times the first." },
+              { "type": "h", "text": "Recurring images" },
+              { "type": "p", "text": "If an image appears twice, it is probably an image. If it appears four times, it is the poem's structural spine. Track water, light, enclosure, weather and bodies; when one recurs, the poem has told you what it is about." },
+              { "type": "h", "text": "Sound as figure" },
+              { "type": "p", "text": "Assonance and consonance are not decoration. A run of long vowels slows a line; a cluster of hard stops breaks it. Say what the sound does to the reading, then connect it to sense — 'the closed vowels in *cold stone wall* make the reader's mouth do the confinement the line describes'." },
+              { "type": "callout", "kind": "warning", "label": "Do not over-read", "text": "Not every repetition is meaningful and not every image is a symbol. If you cannot point to emphasis or recurrence, drop the claim. A modest, defensible reading beats an elaborate one the text will not support." }
+            ],
+            "vocabulary": [
+              { "term": "Metaphor", "definition": "An implicit comparison asserting resemblance between unlike things." },
+              { "term": "Conceit", "definition": "An extended, often elaborate metaphor developed across a passage or poem." },
+              { "term": "Assonance", "definition": "Repetition of vowel sounds within words." },
+              { "term": "Consonance", "definition": "Repetition of consonant sounds within or at the ends of words." }
+            ],
+            "mistakes": [
+              "Stopping at the name of the device.",
+              "Asserting symbolic meaning without recurrence or emphasis to support it.",
+              "Treating sound devices as decoration rather than as carriers of meaning."
+            ],
+            "review": [
+              "What does it mean to 'unpack' a metaphor?",
+              "How do you decide whether an image is a symbol?",
+              "Rewrite 'the poet uses alliteration' as an analytical sentence."
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "Which sentence best analyses a metaphor rather than merely naming it?",
+              "choices": [
+                "The poet uses a metaphor comparing hope to a bird.",
+                "There are several examples of figurative language in the poem, including metaphor and simile.",
+                "By making hope a bird that sings 'without the words,' the speaker detaches hope from reason, which explains how it can persist in conditions that would defeat an argument.",
+                "The bird metaphor is effective because birds are beautiful."
+              ],
+              "answer": 2,
+              "explanation": "Only the third states what the comparison asserts and connects it to the poem's meaning. The others name, catalogue, or offer an unsupported aesthetic judgement.",
+              "difficulty": 3
+            },
+            {
+              "kind": "short-answer",
+              "prompt": "In one sentence, explain how you would decide whether a recurring image in a poem functions as a symbol.",
+              "answer": { "accepted": ["repetition", "emphasis", "recurs", "pattern", "position"] },
+              "explanation": "Look for recurrence and emphasis: an image that returns at structurally significant points, or that the poem lingers on, has been marked as carrying meaning beyond itself. A single passing image usually has not.",
+              "difficulty": 3
+            }
+          ]
+        },
+        { "code": "2.6", "title": "Building an Argument from Poetry", "summary": "Turning close reading into a defensible thesis.", "keyIdeas": ["Read the poem twice before writing anything.", "Your thesis should be about what the poem does, not what it is about.", "Quote sparingly but precisely."] }
+      ]
+    },
+    {
+      "code": "3",
+      "title": "Longer Fiction or Drama I",
+      "summary": "Novels and plays sustain character and structure across time, which changes what you can argue.",
+      "examWeight": "15–18% (with Units 6 and 9)",
+      "topics": [
+        { "code": "3.1", "title": "Interpreting Character Description and Perspective", "summary": "How a longer work accumulates a character through many small disclosures.", "keyIdeas": ["Repetition across scenes builds a pattern a single scene cannot.", "Drama reveals character only through speech and action.", "Stage directions are a limited but powerful window in a play."] },
+        { "code": "3.2", "title": "Character Evolution Throughout a Narrative", "summary": "Change, stasis, and the significance of a character who does not change.", "keyIdeas": ["Identify the moment and the mechanism of change.", "Stasis can be the point — some characters refuse to develop.", "Change is measured against the character's opening position."] },
+        { "code": "3.3", "title": "Conflict and Plot Development", "summary": "Internal and external conflict, and how structure paces revelation.", "keyIdeas": ["External conflict reveals internal conflict.", "Rising action, crisis and resolution are shaped by what is withheld.", "Subplot usually mirrors or complicates the main conflict."] },
+        { "code": "3.4", "title": "Interpreting Symbolism", "summary": "Objects, places and images that carry meaning across a whole work.", "keyIdeas": ["Symbols recur; single mentions are usually just detail.", "Symbols often carry contradictory meanings at once.", "In drama, props and set are the primary symbolic instruments."] },
+        { "code": "3.5", "title": "Evidence and Literary Argument", "summary": "Supporting an interpretation of a full-length work without summarising it.", "keyIdeas": ["Select three to four moments, not a chronological tour.", "Assume your reader knows the plot.", "Every quotation must be analysed, not displayed."] }
+      ]
+    },
+    {
+      "code": "4",
+      "title": "Short Fiction II",
+      "summary": "Deeper character work and more ambitious narrative technique.",
+      "examWeight": "42–49% (with Units 1 and 7)",
+      "topics": [
+        { "code": "4.1", "title": "Protagonists, Antagonists, and Conflict", "summary": "Relationship as the engine of meaning.", "keyIdeas": ["An antagonist may be a system rather than a person.", "Relationships reveal what a character cannot say about themselves.", "Foil characters exist to make a quality visible by contrast."] },
+        { "code": "4.2", "title": "Character and Setting", "summary": "How place shapes who a character can be.", "keyIdeas": ["A confined setting narrows a character's options and raises the stakes.", "Social setting constrains as much as physical setting.", "Leaving a setting is often the story's turning point."] },
+        { "code": "4.3", "title": "Archetypes in Literature", "summary": "Recurring figures and patterns — and the limits of applying them.", "keyIdeas": ["Archetypes name patterns; they are not explanations.", "A story may deploy an archetype in order to subvert it.", "Prefer specific textual evidence to archetypal labels."] },
+        { "code": "4.4", "title": "Modes of Narration", "summary": "Stream of consciousness, epistolary form, and second person.", "keyIdeas": ["Stream of consciousness renders thought rather than reporting it.", "Form imposes a way of knowing the character.", "An unusual mode is always a deliberate choice worth analysing."] },
+        { "code": "4.5", "title": "Narrative Distance, Tone, and Perspective", "summary": "How close the narration stands to the character's mind.", "keyIdeas": ["Distance can shift within a single paragraph.", "Close distance produces sympathy; wide distance produces irony.", "Tone is the narrator's attitude, distinct from the character's."] }
+      ]
+    },
+    {
+      "code": "5",
+      "title": "Poetry II",
+      "summary": "Structure and figurative language at greater complexity.",
+      "examWeight": "36–45% (with Units 2 and 8)",
+      "topics": [
+        { "code": "5.1", "title": "Structure: Form, Stanza, and Line", "summary": "What a chosen form makes possible and what it costs.", "keyIdeas": ["Fixed forms carry expectations the poet may fulfil or break.", "Stanza breaks are the poem's paragraphs.", "Line length controls breath and therefore pace."] },
+        { "code": "5.2", "title": "Extended Figurative Language", "summary": "Conceits and sustained metaphors across a whole poem.", "keyIdeas": ["An extended metaphor organises the poem's argument.", "Track where the comparison is stretched and where it breaks.", "The strain in a conceit is often the point."] },
+        { "code": "5.3", "title": "Sound Devices", "summary": "Meter, rhyme, alliteration, assonance and their rhetorical effect.", "keyIdeas": ["Meter sets an expectation; deviation from it creates emphasis.", "Rhyme links ideas whether or not the sense does.", "Say what the sound makes the reader's mouth and attention do."] },
+        { "code": "5.4", "title": "Comparing Two Poems", "summary": "The paired-poem task, and how to structure a comparison.", "keyIdeas": ["Compare treatment of a shared theme, not topic summaries.", "Organise by idea, not poem by poem.", "Name the difference precisely — it is usually one of tone or form."] }
+      ]
+    },
+    {
+      "code": "6",
+      "title": "Longer Fiction or Drama II",
+      "summary": "Point of view, atmosphere and motif in sustained works.",
+      "examWeight": "15–18% (with Units 3 and 9)",
+      "topics": [
+        { "code": "6.1", "title": "Point of View in Longer Works", "summary": "Multiple narrators, unreliable narration and withheld knowledge.", "keyIdeas": ["Competing narrators produce competing truths.", "What a narrator cannot see is structurally important.", "In drama, point of view belongs to the audience rather than a narrator."] },
+        { "code": "6.2", "title": "Setting and Atmosphere", "summary": "Sustained mood across a whole work.", "keyIdeas": ["Atmosphere accumulates through repeated detail.", "Historical setting constrains what characters can imagine.", "A house, island or city often functions as the work's central symbol."] },
+        { "code": "6.3", "title": "Symbolism and Motif", "summary": "Recurring images as the work's argument.", "keyIdeas": ["A motif is a recurring element; a symbol carries meaning beyond itself.", "Motifs often pair in opposition — light and dark, enclosure and escape.", "The final appearance of a motif usually resolves the work's meaning."] },
+        { "code": "6.4", "title": "Themes and Literary Argument", "summary": "Moving from theme statement to defensible interpretation.", "keyIdeas": ["A theme is a subject; a thesis is an argument about it.", "'The theme is isolation' is not a thesis.", "Support an interpretation with three specific moments, analysed."] }
+      ]
+    },
+    {
+      "code": "7",
+      "title": "Short Fiction III",
+      "summary": "Context, ambiguity and comparative reading.",
+      "examWeight": "42–49% (with Units 1 and 4)",
+      "topics": [
+        { "code": "7.1", "title": "Historical and Cultural Context", "summary": "Using context to sharpen — not replace — textual analysis.", "keyIdeas": ["Context explains a choice; it does not substitute for one.", "Be cautious about reading biography as meaning.", "Historical detail is most useful when it explains something the text does."] },
+        { "code": "7.2", "title": "Complex Characters", "summary": "Contradiction, ambivalence and characters who resist reading.", "keyIdeas": ["Contradiction is usually intentional.", "Hold two readings at once rather than choosing prematurely.", "Ambivalence in the text often becomes ambivalence in your thesis — which is sophistication."] },
+        { "code": "7.3", "title": "Ambiguity and Irony", "summary": "What a story declines to settle.", "keyIdeas": ["Ambiguity is a structural feature, not a failure of reading.", "Dramatic irony depends on the reader knowing more than a character.", "An unresolved ending usually asks the reader to supply the meaning."] },
+        { "code": "7.4", "title": "Comparative Analysis", "summary": "Reading two short works against each other.", "keyIdeas": ["Choose a shared formal element to compare.", "Organise by idea, alternating evidence from both texts.", "The comparison must produce a claim neither text supports alone."] }
+      ]
+    },
+    {
+      "code": "8",
+      "title": "Poetry III",
+      "summary": "The most demanding poems: structural complexity, extended figure, and paradox.",
+      "examWeight": "36–45% (with Units 2 and 5)",
+      "topics": [
+        { "code": "8.1", "title": "Complex Structure", "summary": "Shifts, interruptions and non-linear argument in verse.", "keyIdeas": ["Locate the shifts before you claim a progression.", "Punctuation and white space are structural signals.", "A poem may argue by accumulation rather than by sequence."] },
+        { "code": "8.2", "title": "Extended Figurative Language", "summary": "Conceits developed to the point of strain.", "keyIdeas": ["Track the comparison across the whole poem.", "Notice where the poet pushes the figure past plausibility.", "The failure of a metaphor can be its subject."] },
+        { "code": "8.3", "title": "Ambiguity and Paradox", "summary": "Language that means two things at once, deliberately.", "keyIdeas": ["Paradox is apparent contradiction that resolves at a deeper level.", "Puns and double meanings are usually intentional in poetry.", "Your thesis can hold both readings if the poem does."] },
+        { "code": "8.4", "title": "The Poetry Essay", "summary": "Forty minutes, one unseen poem, one defensible reading.", "keyIdeas": ["Read twice, annotate the second time.", "Write the thesis before the introduction.", "Spend the last three minutes checking that every paragraph has analysis."] }
+      ]
+    },
+    {
+      "code": "9",
+      "title": "Longer Fiction or Drama III",
+      "summary": "The literary argument essay: what you know well, argued precisely.",
+      "examWeight": "15–18% (with Units 3 and 6)",
+      "topics": [
+        { "code": "9.1", "title": "Nuanced Character Analysis", "summary": "Arguing about contradiction rather than personality.", "keyIdeas": ["A character's inconsistency is usually the interpretive key.", "Trace a character through three moments, not chronologically.", "Compare how other characters read them with how they act."] },
+        { "code": "9.2", "title": "Structural Complexity", "summary": "Non-linear narrative, framing devices and dramatic form.", "keyIdeas": ["A frame narrative creates distance and judgement.", "Non-linear order usually withholds the cause until the effect is felt.", "In drama, entrances, exits and staging are structural events."] },
+        { "code": "9.3", "title": "Multiple Interpretations", "summary": "Holding competing readings without collapsing them.", "keyIdeas": ["Sophistication usually lives in the tension between two readings.", "State the rival reading, then show why yours is better supported.", "Never present a reading the text cannot support, however interesting."] },
+        { "code": "9.4", "title": "The Literary Argument Essay", "summary": "Choosing your works and practising the argument you will write under pressure.", "keyIdeas": ["Know six works deeply rather than thirty superficially.", "Practise writing about a work you have not prepared for that prompt.", "Plot summary is the fastest way to cap your score."] }
+      ]
+    }
+  ],
+  "externalResources": [
+    { "label": "AP English Literature and Composition — official course page", "url": "https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition", "kind": "official" },
+    { "label": "AP Literature scoring guidelines and sample responses", "url": "https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/exam", "kind": "official" },
+    { "label": "Public domain literature — Project Gutenberg", "url": "https://www.gutenberg.org/", "kind": "public-domain" },
+    { "label": "Poetry Foundation (free, licensed archive)", "url": "https://www.poetryfoundation.org/", "kind": "reference" }
+  ]
+}
