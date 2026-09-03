@@ -399,10 +399,27 @@ would not expose a single row.
 | `npm run start` | Serve the production build |
 | `npm run lint` | ESLint (flat config, Next 16 native) |
 | `npm run typecheck` | `tsc --noEmit` |
+| `npm run test` | Vitest — 40 tests over mastery, grading, pacing and id derivation |
 | `npm run db:push` | Apply `supabase/migrations/*.sql` via the Management API |
 | `npm run seed` | Upsert `content/courses/*.json` via PostgREST |
 
 Both database scripts accept `--dry-run`.
+
+### Tests
+
+`npm run test` covers the logic that would be expensive to get wrong and is cheap to verify:
+
+- **`src/lib/utils/mastery.test.ts`** — mastery is earned on accuracy and recency, never on hours
+  logged; a high self-rating cannot promote a topic; a low one can hold it back; staleness demotes
+  Mastered to Strong.
+- **`src/lib/practice/grading.test.ts`** — MCQ matches an index (including the string form that
+  arrives from a form); short answer accepts any listed term; FRQ is never auto-graded; and an
+  unanswered question returns `null` rather than being marked wrong.
+- **`src/lib/pacing/schedule.test.ts`** — every topic is scheduled exactly once, the plan is
+  deterministic, calendar mode balances the load, time mode respects the weekly budget, and
+  behind-by counts topics that should already be done.
+- **`tests/deterministic-id.test.ts`** — pins the exact id values, because the app and
+  `scripts/seed.mjs` must agree byte-for-byte or every seeded foreign key breaks.
 
 ---
 
