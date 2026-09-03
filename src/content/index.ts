@@ -2,6 +2,7 @@ import stats from '../../content/courses/ap-statistics.json';
 import gov from '../../content/courses/ap-us-government-and-politics.json';
 import lang from '../../content/courses/ap-english-language-and-composition.json';
 import lit from '../../content/courses/ap-english-literature-and-composition.json';
+import psych from '../../content/courses/ap-psychology.json';
 
 /* ------------------------------------------------------------------ *
  * Curriculum content is authored as JSON in /content and loaded here
@@ -333,7 +334,7 @@ function buildCourse(raw: Record<string, unknown>): Course {
   };
 }
 
-const RAW: Record<string, unknown>[] = [stats, gov, lang, lit];
+const RAW: Record<string, unknown>[] = [stats, gov, lang, lit, psych];
 
 export const COURSES: Course[] = RAW.map(buildCourse);
 

@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     'AP US Government',
     'AP English Language',
     'AP English Literature',
+    'AP Psychology',
     'study planner',
     'exam preparation',
   ],

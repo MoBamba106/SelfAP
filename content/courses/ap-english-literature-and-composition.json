@@ -7,10 +7,10 @@
   "subject": "english",
   "accent": "lit",
   "exam": {
-    "date": "2027-05-07",
-    "provisional": true,
+    "date": "2027-05-05",
+    "provisional": false,
     "durationMinutes": 180,
-    "summary": "Three hours. Section I is 55 multiple-choice questions across five passages in 60 minutes. Section II is three free-response essays in 120 minutes: a short fiction analysis, a poetry analysis, and a literary argument on a full-length work of your choice. Confirm the exact date once College Board publishes the 2027 schedule.",
+    "summary": "Three hours. Section I is 55 multiple-choice questions across five passages in 60 minutes. Section II is three free-response essays in 120 minutes: a short fiction analysis, a poetry analysis, and a literary argument on a full-length work of your choice. Scheduled for Wednesday 5 May 2027, Session 1, on the published 2027 AP exam schedule.",
     "sections": [
       { "name": "Section I — Multiple choice", "count": "55 questions", "time": "60 min", "weight": "45%" },
       { "name": "Section II — Free response", "count": "3 essays", "time": "120 min", "weight": "55%" }

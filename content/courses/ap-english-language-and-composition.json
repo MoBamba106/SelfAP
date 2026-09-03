@@ -8,9 +8,9 @@
   "accent": "lang",
   "exam": {
     "date": "2027-05-12",
-    "provisional": true,
+    "provisional": false,
     "durationMinutes": 195,
-    "summary": "Three hours and fifteen minutes. Section I is 45 multiple-choice questions on two to five passages in 60 minutes. Section II gives 15 minutes of reading and 120 minutes to write three essays: synthesis, rhetorical analysis, and argument. Confirm the exact date once College Board publishes the 2027 schedule.",
+    "summary": "Three hours and fifteen minutes. Section I is 45 multiple-choice questions on two to five passages in 60 minutes. Section II gives 15 minutes of reading and 120 minutes to write three essays: synthesis, rhetorical analysis, and argument. Scheduled for Wednesday 12 May 2027, Session 1, on the published 2027 AP exam schedule.",
     "sections": [
       { "name": "Section I — Multiple choice", "count": "45 questions", "time": "60 min", "weight": "45%" },
       { "name": "Section II — Free response", "count": "3 essays", "time": "135 min", "weight": "55%" }

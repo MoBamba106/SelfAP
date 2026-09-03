@@ -21,7 +21,7 @@ const TOPICS = [
   },
   {
     title: 'A course you want added',
-    body: 'The architecture is not tied to the four launch courses. Tell us which AP you are sitting and when.',
+    body: 'The architecture is not tied to the launch courses. Tell us which AP you are sitting and when.',
   },
 ];
 

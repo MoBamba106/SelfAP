@@ -1,0 +1,1856 @@
+{
+  "slug": "ap-psychology",
+  "code": "AP Psychology",
+  "shortName": "Psychology",
+  "tagline": "Name the concept, then apply it to a person who is actually in the room.",
+  "description": "The 2024 AP Psychology framework reorganised the course into five units aligned with the APA Introductory Psychology Initiative — biological bases, cognition, development and learning, social psychology and personality, and mental and physical health — with each unit weighted equally. Research methods and data interpretation moved out of a unit and into the science practices that are tested throughout, and the two free-response questions are now the Article Analysis Question and the Evidence-Based Question. This course is built around that structure: apply concepts to scenarios, read studies critically, and argue from evidence.",
+  "subject": "science",
+  "accent": "psych",
+  "exam": {
+    "date": "2027-05-14",
+    "provisional": false,
+    "durationMinutes": 160,
+    "summary": "Fully digital in Bluebook; no calculator is needed or permitted. Scheduled for Friday 14 May 2027, Session 2, on the published 2027 AP exam schedule — confirm with your AP coordinator, since late testing moves it to 21 May.",
+    "sections": [
+      { "name": "Section I — Multiple choice", "count": "75 questions, 4 choices", "time": "90 min", "weight": "66.7%" },
+      { "name": "Section II — Free response", "count": "2 questions (AAQ, EBQ)", "time": "70 min", "weight": "33.3%" }
+    ],
+    "frqs": [
+      {
+        "label": "Q1",
+        "title": "Article Analysis Question (AAQ)",
+        "kind": "article-analysis",
+        "minutes": 25,
+        "prompt": "You are given one summarised, peer-reviewed psychology study. Respond to the parts: (A) identify the type of research design and explain how you know; (B) identify the independent and dependent variables, or explain why the study has neither; (C) identify a statistic reported in the study and explain what it means, or calculate and interpret a measure of central tendency, variation or percentile rank from the data; (D) identify an ethical consideration the researchers addressed or failed to address; (E) identify one limitation of the study and explain how it restricts what can be concluded; (F) explain how a named psychological concept relates to the study's findings or to their real-world application.",
+        "rubric": [
+          "Name the design precisely — experiment, correlational study, naturalistic observation, case study or meta-analysis — and point at the feature that decides it: manipulation plus random assignment means experimental.",
+          "Operationalise both variables. A dependent variable that is not measurable, or an independent variable with no levels, loses the point.",
+          "Read the number the study reports rather than the number you expected. A negative correlation is a relationship, not the absence of one; effect size is strength, statistical significance is unlikeliness under chance.",
+          "Ethics: informed consent or assent, protection from harm, confidentiality, permitted deception plus debriefing, and institutional review. Say which one the scenario shows.",
+          "Limitations must be a limitation, not a complaint. Sample size, sampling method, self-report bias, directionality and third variables, and confounds all count; 'it was in a lab' alone does not.",
+          "Part F is a concept-application point: define the concept and tie it explicitly to the study, not to psychology in general."
+        ]
+      },
+      {
+        "label": "Q2",
+        "title": "Evidence-Based Question (EBQ)",
+        "kind": "evidence-based",
+        "minutes": 45,
+        "prompt": "You are given three short research studies on a shared topic and a prompt asking you to take a position. Write an argument that (A) makes a defensible claim responding to the prompt, (B) supports it with specific evidence from at least two of the sources, and (C) uses at least one psychological concept accurately, defining it and connecting it to your reasoning.",
+        "rubric": [
+          "The claim is a sentence that takes a side. 'Research is mixed' is a summary, not a claim.",
+          "Use two different sources and cite what each actually found — the finding, not just the study name.",
+          "Acknowledge the source that complicates your claim and explain why it does not defeat it. That is where the argument earns its keep.",
+          "The psychological concept must be defined correctly and applied to the evidence, not dropped in as decoration.",
+          "Write in prose. The reader is not awarding points for headings, bullets or restating the prompt."
+        ]
+      }
+    ]
+  },
+  "tools": ["reference", "frq"],
+  "reference": [
+    {
+      "group": "The four science practices",
+      "entries": [
+        { "term": "1 · Concept application", "expression": "apply perspectives, theories, concepts and research findings to a scenario (~65% of the multiple-choice section)" },
+        { "term": "2 · Research methods and design", "expression": "identify designs, variables, sampling, controls, bias and ethics (~25% of the multiple-choice section)" },
+        { "term": "3 · Data interpretation", "expression": "read tables, graphs and figures; central tendency, variation, percentile rank, normal curve, correlation, effect size (~10% of the multiple-choice section)" },
+        { "term": "4 · Argumentation", "expression": "propose a defensible claim and support it with scientific evidence — assessed only in the free-response section" }
+      ]
+    },
+    {
+      "group": "Research design decision table",
+      "entries": [
+        { "term": "Experiment", "expression": "researcher manipulates an IV and randomly assigns participants to conditions → can support causation" },
+        { "term": "Correlational study", "expression": "measures two variables as they are, reports r → predicts, never causes; directionality and third-variable problems" },
+        { "term": "Naturalistic observation", "expression": "behaviour recorded in its own setting, nothing manipulated → rich description, no control, observer effects" },
+        { "term": "Case study", "expression": "one individual or group in depth → rare conditions; little generalisability" },
+        { "term": "Survey", "expression": "self-report from a sample → cheap and broad; wording effects, self-report and social-desirability bias" },
+        { "term": "Meta-analysis", "expression": "statistically combines many studies on one question → stronger estimate; limited by the studies it includes" },
+        { "term": "Random sampling", "expression": "how participants are chosen → supports generalising to the population" },
+        { "term": "Random assignment", "expression": "how participants are put into conditions → balances confounds; only possible in an experiment" }
+      ]
+    },
+    {
+      "group": "Statistics you will be asked to read",
+      "entries": [
+        { "term": "Mean / median / mode", "expression": "mean moves with outliers, median does not; the mode is the only one that works for categories" },
+        { "term": "Range", "expression": "highest − lowest; describes spread, ignores everything in between" },
+        { "term": "Standard deviation", "expression": "typical distance from the mean; small s = tightly clustered scores" },
+        { "term": "Normal curve", "expression": "≈68% of scores fall within 1 SD of the mean, ≈95% within 2 SD" },
+        { "term": "Percentile rank", "expression": "the percentage of scores at or below this one — not the percentage correct" },
+        { "term": "Correlation coefficient r", "expression": "−1 to +1; sign is direction, absolute value is strength; r = 0 means no linear relationship" },
+        { "term": "Effect size", "expression": "strength of a relationship or difference: small ≈ 0.2, medium ≈ 0.3–0.7, large ≥ 0.8" },
+        { "term": "Statistical significance", "expression": "the result is unlikely to be due to chance — it says nothing about how large or how important the effect is" }
+      ]
+    },
+    {
+      "group": "Landmark studies worth citing in an EBQ",
+      "entries": [
+        { "term": "Pavlov (classical conditioning)", "expression": "dogs learned to salivate to a tone paired with food → learning by association" },
+        { "term": "Skinner (operant conditioning)", "expression": "behaviour shaped by its consequences → reinforcement schedules explain persistence" },
+        { "term": "Bandura (Bobo doll, 1961)", "expression": "children imitated an aggressive adult model → learning by observation, without direct reinforcement" },
+        { "term": "Asch (1951)", "expression": "about a third of critical trials produced agreement with an obviously wrong majority → normative conformity" },
+        { "term": "Milgram (1963)", "expression": "a majority of participants continued to the highest shock level under an authority's instruction → situational power over obedience" },
+        { "term": "Latané and Darley (1968)", "expression": "help arrived more slowly as bystanders increased → diffusion of responsibility" },
+        { "term": "Festinger and Carlsmith (1959)", "expression": "the $1 group rated a dull task more enjoyable than the $20 group → cognitive dissonance" },
+        { "term": "Loftus (misinformation)", "expression": "leading wording altered what witnesses recalled → memory is reconstructive, not a recording" },
+        { "term": "Ainsworth (Strange Situation)", "expression": "classified infant attachment as secure, avoidant or resistant; later disorganised → caregiver sensitivity predicts pattern" },
+        { "term": "Harlow (1958)", "expression": "infant monkeys preferred the cloth surrogate over the wire one that provided milk → contact comfort, not feeding, drives attachment" },
+        { "term": "Seligman (learned helplessness)", "expression": "dogs given inescapable shock later failed to escape avoidable shock → uncontrollability, not pain, produced the deficit" },
+        { "term": "Rosenhan (1973)", "expression": "'pseudopatients' admitted on one false symptom kept being read as ill → diagnostic labels bias interpretation" }
+      ]
+    },
+    {
+      "group": "Ethics checklist for any scenario",
+      "entries": [
+        { "term": "Institutional review", "expression": "was the study reviewed before it ran, for human or non-human animal participants?" },
+        { "term": "Informed consent / assent", "expression": "were participants told enough to agree, and did minors assent?" },
+        { "term": "Protection from harm", "expression": "physical and psychological; risk no greater than ordinary experience" },
+        { "term": "Confidentiality", "expression": "identifiable data kept private; anonymity is stronger than confidentiality" },
+        { "term": "Deception", "expression": "permitted only when justified and necessary, never about risks" },
+        { "term": "Debriefing", "expression": "required after deception, and as soon as practicable afterwards" }
+      ]
+    }
+  ],
+  "externalResources": [
+    {
+      "label": "AP Psychology Course and Exam Description (effective Fall 2024)",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-psychology-course-and-exam-description.pdf",
+      "kind": "official"
+    },
+    {
+      "label": "AP Psychology — College Board course home (exam format, released FRQs, scoring)",
+      "url": "https://apcentral.collegeboard.org/courses/ap-psychology",
+      "kind": "official"
+    },
+    {
+      "label": "APA Introductory Psychology Initiative",
+      "url": "https://www.apa.org/ed/precollege/undergrad/initiative",
+      "kind": "official"
+    },
+    {
+      "label": "National Institute of Mental Health — topic pages",
+      "url": "https://www.nimh.nih.gov/health/topics",
+      "kind": "external"
+    }
+  ],
+  "units": [
+    {
+      "code": "1",
+      "title": "Biological Bases of Behavior",
+      "summary": "Heredity and environment, the nervous system, neurons, the brain, sleep and sensation — the machinery that makes behaviour possible.",
+      "examWeight": "15–25%",
+      "topics": [
+        {
+          "code": "1.1",
+          "title": "Interaction of Heredity and Environment",
+          "summary": "Behaviour genetics asks not whether genes or environment matter, but how they interact — and how the design of a study decides what it can claim.",
+          "keyIdeas": [
+            "Heredity supplies a range of possible outcomes; environment determines where inside that range a trait lands.",
+            "Behaviour genetics uses twin, adoption and family studies to estimate how much variation in a trait is attributable to genetic variation.",
+            "Identical (monozygotic) twins share essentially all their DNA; fraternal (dizygotic) twins share about half, which is what makes the comparison informative.",
+            "Twin studies confound genes with shared environment unless the design separates them — twins raised apart do that.",
+            "Heritability describes a population's variation, never one individual's trait, and it changes when the environment changes.",
+            "Epigenetics: experience can change how genes are expressed without changing the DNA sequence."
+          ],
+          "lesson": {
+            "title": "Heredity, environment, and what a twin study can actually prove",
+            "minutes": 14,
+            "objectives": [
+              "Explain how behaviour genetics separates genetic from environmental influence.",
+              "Read a twin or adoption design and state exactly what it can and cannot conclude.",
+              "Distinguish heritability of a trait in a population from the causes of that trait in a person.",
+              "Give an example of gene–environment interaction and of epigenetic change."
+            ],
+            "body": [
+              { "type": "p", "text": "Every AP Psychology question about nature and nurture is secretly a question about **research design**. If you can name the design and what it controls for, you can answer it; if you argue from intuition about which side 'wins', you will lose the point." },
+              { "type": "h", "text": "The comparison that does the work" },
+              { "type": "p", "text": "Identical twins come from one fertilised egg and share effectively all of their DNA. Fraternal twins come from two eggs and share about half, like any pair of siblings. Both kinds of twin usually share a household, an income, a school and a pair of parents. So if identical twins resemble each other on a trait more than fraternal twins do, that extra resemblance has somewhere to come from: the extra DNA." },
+              { "type": "callout", "kind": "warning", "label": "The confound", "text": "Twins raised together share genes **and** environment. A high identical-twin correlation is consistent with genetics, but it is also consistent with a shared environment that happens to affect identical twins more — parents and strangers treat identical twins more alike than fraternal twins. Adoption and twins-raised-apart designs are what break that tie, because they hold the environment roughly constant while varying relatedness, or the reverse." },
+              { "type": "h", "text": "Heritability is not what people think it means" },
+              { "type": "p", "text": "Heritability is the proportion of the **variation** in a trait, **in a population**, that is associated with genetic variation. It is not a statement about an individual, and it is not fixed." },
+              { "type": "callout", "kind": "example", "label": "Worked example", "text": "Imagine every child in a country receives the same excellent nutrition. Height is still highly heritable — the remaining differences are largely genetic. Now imagine nutrition becomes wildly unequal. Heritability of height **falls**, because the environment is now doing more of the explaining. Nothing changed in anyone's DNA." },
+              { "type": "h", "text": "Interaction, not addition" },
+              { "type": "ul", "items": [
+                "**Gene–environment interaction**: the same environment produces different outcomes depending on genotype, and the same genotype produces different outcomes depending on environment. A genetic susceptibility to depression may never appear without a triggering stressor.",
+                "**Gene–environment correlation**: people select and shape environments that match their dispositions — a sociable child seeks out groups, which builds further sociability.",
+                "**Epigenetics**: chemical marks on DNA change whether a gene is read, and some of those marks respond to experience. The sequence is unchanged; the expression is not."
+              ] },
+              { "type": "callout", "kind": "mistake", "label": "Common mistake", "text": "'Heritability of 0.6 for intelligence means 60% of my intelligence is genetic.' It does not. It means 60% of the differences between people in that population, at that time, are associated with genetic differences. Say 'variation in the population' and you keep the point." },
+              { "type": "p", "text": "Where this shows up on the exam: a short paragraph describing a study, then 'which conclusion is best supported?' The distractors are almost always claims the design cannot carry — causation from a correlational design, individual-level claims from a population statistic, or an environment conclusion from a design that held the environment constant." }
+            ],
+            "vocabulary": [
+              { "term": "Behaviour genetics", "definition": "The study of how genetic and environmental variation produce variation in behaviour and traits." },
+              { "term": "Monozygotic twins", "definition": "Twins from a single fertilised egg; genetically identical." },
+              { "term": "Dizygotic twins", "definition": "Twins from two separate eggs; genetically like ordinary siblings." },
+              { "term": "Heritability", "definition": "The proportion of variation in a trait within a population associated with genetic variation." },
+              { "term": "Epigenetics", "definition": "Changes in gene expression caused by chemical modification of DNA or its packaging, without a change in sequence." },
+              { "term": "Gene–environment interaction", "definition": "When the effect of the environment on a trait depends on genotype, or vice versa." }
+            ],
+            "formulas": [],
+            "mistakes": [
+              "Treating heritability as a property of an individual rather than of variation across a population.",
+              "Reading 'genes and environment interact' as 'genes and environment each contribute a share' — interaction means the effect of one depends on the other.",
+              "Assuming identical twins prove a genetic cause without considering that identical twins are treated more alike.",
+              "Ignoring that heritability estimates shift when environments become more or less uniform."
+            ],
+            "review": [
+              "Why does comparing identical with fraternal twins isolate genetic influence?",
+              "What is the heritability of a trait in a population where everyone has the same environment?",
+              "Give one example each of gene–environment interaction and epigenetic change."
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A researcher reports that identical twins raised apart correlate more highly on shyness than fraternal twins raised together. Which conclusion does this design best support?",
+              "choices": [
+                "Shyness is caused entirely by genes and cannot be changed by experience.",
+                "Genetic variation is associated with variation in shyness, because resemblance persists without a shared home.",
+                "Being raised apart causes children to become shyer.",
+                "Shyness in one individual is 60% genetic."
+              ],
+              "answer": 1,
+              "explanation": "Twins raised apart remove the shared-environment explanation, so the remaining resemblance points to genetic variation. The design still cannot support a claim about a single person's trait (choice D), a cause 'entirely' from genes (A), or an effect of being raised apart (C).",
+              "difficulty": 3
+            },
+            {
+              "kind": "mcq",
+              "prompt": "Two countries have equally heritable height, but in one the heritability estimate is far higher. Which difference between the countries best explains it?",
+              "choices": [
+                "One country has taller parents on average.",
+                "One country's children receive much more uniform nutrition than the other's.",
+                "One country measures height more accurately.",
+                "One country has more identical twins."
+              ],
+              "answer": 1,
+              "explanation": "Heritability is the share of variation attributable to genetic variation. When the environment becomes more uniform, environmental variation shrinks, so the genetic share of what remains grows — with no change in anyone's DNA.",
+              "difficulty": 4
+            }
+          ]
+        },
+        {
+          "code": "1.2",
+          "title": "Overview of the Nervous System",
+          "summary": "The central and peripheral systems, their subdivisions, and the glia and plasticity that support them.",
+          "keyIdeas": [
+            "Central nervous system = brain and spinal cord; peripheral nervous system = everything else.",
+            "The somatic system controls voluntary skeletal muscle; the autonomic system controls glands and internal organs.",
+            "Sympathetic arousal prepares the body for action; parasympathetic activity restores and conserves.",
+            "Sensory (afferent) neurons carry information in; motor (efferent) neurons carry commands out; interneurons connect them.",
+            "Glial cells support, insulate and nourish neurons; myelin speeds conduction.",
+            "Neuroplasticity is the nervous system's capacity to reorganise after experience or injury, greatest early in life."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "After narrowly avoiding a collision, a driver's heart is pounding; ten minutes later it slows and digestion resumes. Which pair of systems produced this sequence?",
+              "choices": [
+                "Parasympathetic, then sympathetic",
+                "Somatic, then autonomic",
+                "Sympathetic, then parasympathetic",
+                "Central, then peripheral"
+              ],
+              "answer": 2,
+              "explanation": "Sympathetic division mobilises for action; the parasympathetic division then calms and restores. Both are branches of the autonomic nervous system, which is itself part of the peripheral nervous system.",
+              "difficulty": 2
+            }
+          ]
+        },
+        {
+          "code": "1.3",
+          "title": "The Neuron and Neural Firing",
+          "summary": "How a single neuron converts chemistry into electricity and back, and how drugs change the message.",
+          "keyIdeas": [
+            "Dendrites receive, the soma integrates, the axon carries, terminal buttons release neurotransmitter.",
+            "Resting potential is negative inside; depolarisation opens the way to an action potential.",
+            "Action potentials are all-or-none: a stronger stimulus fires more neurons and more often, not a bigger spike.",
+            "The refractory period limits how soon a neuron can fire again and keeps the impulse travelling in one direction.",
+            "Myelin insulates the axon; the impulse jumps between nodes, which is why myelinated fibres conduct faster.",
+            "Neurotransmitters cross the synapse; agonists increase and antagonists block their effect; reuptake and enzymes end the signal.",
+              "Selective serotonin reuptake inhibitors work by slowing reuptake, leaving more transmitter available in the synapse."
+          ],
+          "lesson": {
+            "title": "From resting potential to a drug in the synapse",
+            "minutes": 15,
+            "objectives": [
+              "Trace a signal from dendrite to synapse and name each structure's job.",
+              "Explain the all-or-none principle and what stimulus strength actually changes.",
+              "Describe how myelin, the refractory period and the synapse shape transmission.",
+              "Predict the effect of an agonist, an antagonist or a reuptake inhibitor."
+            ],
+            "body": [
+              { "type": "p", "text": "The neuron is a cable that runs on chemistry at both ends and electricity in the middle. Nothing here is metaphorical — the exam asks you to be precise about which part is which." },
+              { "type": "h", "text": "The electrical half" },
+              { "type": "p", "text": "At rest, a neuron holds a negative charge inside relative to outside, maintained by pumps and by the membrane being far more permeable to potassium than to sodium. Stimulation opens channels; enough positive charge flowing in reaches a **threshold**, and an action potential fires. Below threshold, nothing happens at all." },
+              { "type": "formula", "label": "All-or-none", "expression": "stimulus below threshold → no action potential;  stimulus at or above threshold → full action potential, always the same size" },
+              { "type": "callout", "kind": "warning", "label": "The point students lose", "text": "A stronger stimulus does **not** produce a taller action potential. Intensity is coded by **how many** neurons fire and **how often** they fire. If an answer choice says 'a larger action potential', it is wrong." },
+              { "type": "p", "text": "Immediately after firing, the neuron is briefly unable to fire again — the **refractory period** — which also keeps the impulse moving away from the cell body rather than backwards. **Myelin** wraps the axon in insulating segments; the impulse leaps from node to node, which is far faster than continuous conduction, and damage to myelin slows or blocks signals." },
+              { "type": "h", "text": "The chemical half" },
+              { "type": "p", "text": "When the impulse reaches the terminal buttons, vesicles release **neurotransmitter** into the synaptic gap. Molecules bind to receptors on the receiving neuron, opening channels that push it toward or away from its own threshold. The signal ends by **reuptake** into the sending neuron, by enzymatic breakdown, or by diffusion." },
+              { "type": "table", "head": ["Agent", "Mechanism", "Net effect"], "rows": [
+                ["Agonist", "mimics or increases a transmitter", "more activity at that receptor"],
+                ["Antagonist", "blocks the receptor site", "less activity at that receptor"],
+                ["Reuptake inhibitor", "slows removal from the synapse", "transmitter lingers, effect is prolonged"],
+                ["Enzyme inhibitor", "slows chemical breakdown of the transmitter", "transmitter lingers, effect is prolonged"]
+              ] },
+              { "type": "callout", "kind": "example", "label": "Apply it", "text": "An SSRI blocks the reuptake of serotonin. It does not create serotonin and does not bind the postsynaptic receptor as an agonist — it simply keeps the serotonin that was already released in the gap for longer. Predicting that mechanism is the whole question." },
+              { "type": "callout", "kind": "mistake", "label": "Common mistake", "text": "Confusing **excitatory** with **agonist**. Excitatory and inhibitory describe what a transmitter does at the receiving cell. Agonist and antagonist describe whether a drug increases or blocks a transmitter's action. An agonist of an inhibitory transmitter increases inhibition." }
+            ],
+            "vocabulary": [
+              { "term": "Action potential", "definition": "The brief reversal of charge that travels along an axon once threshold is reached." },
+              { "term": "Threshold", "definition": "The level of depolarisation required to trigger an action potential." },
+              { "term": "Refractory period", "definition": "The brief interval after firing during which a neuron cannot fire again." },
+              { "term": "Myelin sheath", "definition": "Fatty insulation along an axon that speeds conduction by allowing the impulse to jump between nodes." },
+              { "term": "Synapse", "definition": "The junction where a sending neuron communicates with a receiving cell by chemical means." },
+              { "term": "Reuptake", "definition": "Reabsorption of a neurotransmitter by the sending neuron, ending its action." },
+              { "term": "Agonist / antagonist", "definition": "A drug that increases / blocks the action of a neurotransmitter." }
+            ],
+            "formulas": [
+              { "label": "Intensity coding", "expression": "stronger stimulus → more neurons firing and a higher firing rate, never a larger action potential" }
+            ],
+            "mistakes": [
+              "Saying a stronger stimulus produces a larger action potential.",
+              "Treating the refractory period only as a limit on rate, when it also enforces one-way travel.",
+              "Calling every drug that boosts a transmitter an agonist, including reuptake inhibitors.",
+              "Forgetting that an agonist of an inhibitory transmitter produces more inhibition."
+            ],
+            "review": [
+              "What does stimulus intensity change, if not the size of the action potential?",
+              "Why does myelination speed conduction?",
+              "How does an SSRI differ in mechanism from a serotonin agonist?"
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A researcher doubles the intensity of a stimulus applied to a sensory neuron already firing above threshold. What happens?",
+              "choices": [
+                "Each action potential becomes twice as large.",
+                "The neuron fires more frequently.",
+                "The refractory period is abolished.",
+                "The action potential travels in both directions."
+              ],
+              "answer": 1,
+              "explanation": "Action potentials are all-or-none, so amplitude is fixed. Intensity is coded by firing rate and by the number of neurons recruited.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "A drug blocks the transporter that returns dopamine to the presynaptic neuron. What is the expected effect?",
+              "choices": [
+                "Less dopamine in the synapse, because release is blocked.",
+                "Dopamine receptors on the receiving neuron are blocked.",
+                "More dopamine remains in the synapse for longer, prolonging its effect.",
+                "Dopamine is broken down faster by enzymes."
+              ],
+              "answer": 2,
+              "explanation": "Blocking reuptake leaves released dopamine in the gap longer, so its effect is prolonged. Release, receptor binding and enzymatic breakdown are untouched.",
+              "difficulty": 3
+            },
+            {
+              "kind": "short-answer",
+              "prompt": "Name the structure that speeds conduction by allowing the impulse to move between gaps in the insulation.",
+              "choices": [],
+              "answer": { "accepted": ["myelin", "myelin sheath"] },
+              "explanation": "Myelin insulates the axon, and the impulse jumps from node to node — saltatory conduction — which is much faster than continuous conduction.",
+              "difficulty": 1
+            }
+          ]
+        },
+        {
+          "code": "1.4",
+          "title": "The Brain",
+          "summary": "Structures and their functions, how imaging and lesion studies reveal them, and how the brain reorganises itself.",
+          "keyIdeas": [
+            "Brainstem (medulla, pons) handles survival functions; the cerebellum coordinates movement and non-verbal learning.",
+            "The limbic system includes the amygdala (fear, aggression), hippocampus (new explicit memories) and hypothalamus (drives, hormones, reward).",
+            "Four cerebral lobes: frontal (planning, judgement, motor cortex), parietal (somatosensory), occipital (vision), temporal (audition, language comprehension).",
+            "Broca's area supports speech production; Wernicke's area supports comprehension.",
+            "Split-brain research shows that information presented to one visual field is processed by the opposite hemisphere.",
+            "Methods differ in what they buy: lesion and TMS studies show necessity, fMRI and PET show correlates, EEG has millisecond resolution but poor localisation.",
+            "Neuroplasticity allows functions to reorganise after damage; neurogenesis is limited and region-specific."
+          ],
+          "lesson": {
+            "title": "Brain structures, and what each method can actually show",
+            "minutes": 16,
+            "objectives": [
+              "Match a structure to its function and recognise the deficit that follows damage to it.",
+              "Explain lateralisation and what split-brain findings demonstrate.",
+              "Choose the right imaging or intervention method for a research question and justify the choice.",
+              "Describe evidence for plasticity and its limits."
+            ],
+            "body": [
+              { "type": "p", "text": "Two skills are tested here: knowing what a structure does, and knowing what a method can prove. The second one separates the top scores." },
+              { "type": "h", "text": "Structures worth memorising in pairs" },
+              { "type": "table", "head": ["Structure", "If it works", "If it is damaged"], "rows": [
+                ["Medulla", "heartbeat, breathing", "life-threatening autonomic failure"],
+                ["Cerebellum", "smooth, timed movement, balance", "clumsy, uncoordinated movement; impaired non-verbal learning"],
+                ["Amygdala", "fear and aggression responses", "reduced fear conditioning and threat detection"],
+                ["Hippocampus", "forming new explicit memories", "cannot form new explicit memories; older ones may survive"],
+                ["Hypothalamus", "drives, body regulation, hormone release", "disturbed hunger, thirst, temperature and hormonal control"],
+                ["Broca's area", "producing fluent speech", "halting, effortful speech with intact comprehension"],
+                ["Wernicke's area", "comprehending language", "fluent but meaningless speech and poor comprehension"]
+              ] },
+              { "type": "callout", "kind": "example", "label": "The classic case", "text": "Patient H.M. had his hippocampi removed to control epilepsy. He could hold a conversation and learn new motor skills, but could not form new explicit memories. That dissociation — procedural learning intact, explicit memory gone — is why the hippocampus is tied to forming new explicit memories rather than to 'memory' in general." },
+              { "type": "h", "text": "Lateralisation without overclaiming" },
+              { "type": "p", "text": "Each hemisphere controls the opposite side of the body, and each visual field projects to the opposite hemisphere. In split-brain patients, whose corpus callosum has been severed, an object shown to the left visual field can be picked up with the left hand but not named, because the language areas sit in the other hemisphere." },
+              { "type": "callout", "kind": "warning", "label": "Do not overclaim", "text": "'Left-brained people are logical' is not a finding. Lateralisation means some functions are stronger in one hemisphere for most people; healthy brains integrate constantly, and individual differences are far smaller than the pop-psychology version suggests." },
+              { "type": "h", "text": "Method matching" },
+              { "type": "table", "head": ["Question you want answered", "Best method", "Why"], "rows": [
+                ["Is this region necessary for the behaviour?", "lesion study or TMS", "removing or disrupting the region tests necessity"],
+                ["Which regions are active during the task?", "fMRI", "good spatial resolution, non-invasive, but correlational and slow"],
+                ["When exactly does the response occur?", "EEG / ERP", "millisecond timing, poor localisation"],
+                ["Which chemical processes are involved?", "PET", "tracks labelled molecules; involves radiation"],
+                ["Is structure related to behaviour?", "MRI, CT", "anatomy only, not function"]
+              ] },
+              { "type": "callout", "kind": "mistake", "label": "Common mistake", "text": "Answering 'fMRI' when the question asks whether a region is **necessary**. Imaging shows what is active while something happens; only disruption or damage can show that the activity is required." },
+              { "type": "p", "text": "**Neuroplasticity** is the payoff concept: after injury, neighbouring regions and even the opposite hemisphere can take over some functions, most readily in children. Constraint-induced therapy and recovery after stroke are the standard evidence. Plasticity is real and substantial; it is not unlimited." }
+            ],
+            "vocabulary": [
+              { "term": "Corpus callosum", "definition": "The fibre bundle connecting the two hemispheres; severed in split-brain surgery." },
+              { "term": "Lateralisation", "definition": "The tendency for some functions to be stronger in one hemisphere." },
+              { "term": "Neuroplasticity", "definition": "The brain's capacity to reorganise structure and function in response to experience or injury." },
+              { "term": "TMS", "definition": "Transcranial magnetic stimulation: temporarily disrupts or enhances a region, testing necessity." },
+              { "term": "fMRI", "definition": "Functional MRI: measures blood-oxygen changes to localise activity; correlational." },
+              { "term": "ERP", "definition": "Event-related potential from EEG: precise timing of brain responses, imprecise location." }
+            ],
+            "formulas": [],
+            "mistakes": [
+              "Choosing an imaging method when the question asks about necessity.",
+              "Saying the hippocampus stores all long-term memory rather than being needed to form new explicit memories.",
+              "Repeating pop-psychology left/right-brain personality claims.",
+              "Treating plasticity as unlimited recovery."
+            ],
+            "review": [
+              "Which method answers 'is this region necessary?' and why can't fMRI?",
+              "Why can a split-brain patient hold an object seen in the left visual field but not name it?",
+              "What did patient H.M. show about procedural versus explicit memory?"
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A patient speaks fluently and grammatically, but the sentences carry little meaning and she cannot follow spoken instructions. Damage is most likely in which area?",
+              "choices": ["Broca's area", "Wernicke's area", "The cerebellum", "The occipital lobe"],
+              "answer": 1,
+              "explanation": "Fluent but meaningless speech with poor comprehension is the signature of Wernicke's area damage. Broca's damage gives effortful, halting speech with comprehension preserved.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "A researcher wants to know whether the right parietal cortex is necessary for a spatial attention task. Which method is most appropriate?",
+              "choices": [
+                "fMRI while participants perform the task",
+                "EEG recorded during the task",
+                "TMS applied over the right parietal cortex during the task",
+                "A structural MRI comparison between high and low scorers"
+              ],
+              "answer": 2,
+              "explanation": "Disrupting a region tests necessity. fMRI, EEG and structural MRI can only show what is active or present — correlates, not causes.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "code": "1.5",
+          "title": "Sleep",
+          "summary": "Stages and cycles, why we sleep, what disrupts it, and what happens when we do not get enough.",
+          "keyIdeas": [
+            "Cycles of about 90 minutes alternate N1, N2, N3 and REM across the night; deep sleep dominates early, REM later.",
+            "N3 slow-wave sleep is hardest to wake from; vivid dreaming is most common in REM.",
+            "Circadian rhythms are entrained by light through the suprachiasmatic nucleus, which regulates melatonin.",
+            "Theories of sleep's function include restoration, memory consolidation, energy conservation and protection.",
+            "Disorders include insomnia, narcolepsy, sleep apnea, night terrors, sleepwalking and REM sleep behaviour disorder.",
+            "Deprivation impairs attention, learning, consolidation, mood and immune function, and can produce microsleeps."
+          ],
+          "lesson": {
+            "title": "Sleep architecture, and the disorders that map onto it",
+            "minutes": 13,
+            "objectives": [
+              "Identify the sleep stages and what distinguishes them.",
+              "Explain how circadian rhythms are set and how they are disrupted.",
+              "Match a sleep disorder to the stage or mechanism it involves.",
+              "State the effects of sleep deprivation and the leading theories of sleep's function."
+            ],
+            "body": [
+              { "type": "p", "text": "Sleep questions reward structure. Learn the cycle once, and most items become pattern matching." },
+              { "type": "h", "text": "The architecture" },
+              { "type": "table", "head": ["Stage", "Signature", "Notes"], "rows": [
+                ["N1", "light, drifting, hypnagogic sensations", "brief; easy to wake; may include the sensation of falling"],
+                ["N2", "sleep spindles and K-complexes", "the largest share of a normal adult night"],
+                ["N3", "slow delta waves, deep sleep", "hardest to wake from; growth hormone release; night terrors and sleepwalking occur here"],
+                ["REM", "rapid eye movements, vivid dreams, muscle atonia", "longer in the second half of the night; most dreaming reported here"]
+              ] },
+              { "type": "callout", "kind": "warning", "label": "The discrimination the exam loves", "text": "**Night terrors** occur in N3, mostly in children, and are rarely remembered. **Nightmares** occur in REM, are vividly remembered, and are common at any age. Pick the right one and the item is over." },
+              { "type": "h", "text": "Rhythms" },
+              { "type": "p", "text": "Light detected by the retina signals the **suprachiasmatic nucleus**, which adjusts the pineal gland's release of **melatonin**. This is why bright evening light delays sleepiness, why jet lag resolves in the direction of light exposure, and why shift work is genuinely hard on health." },
+              { "type": "h", "text": "Why sleep at all" },
+              { "type": "ul", "items": [
+                "**Restoration**: tissue repair and growth hormone release during deep sleep.",
+                "**Memory consolidation**: sleep after learning improves retention; REM and slow-wave sleep support different kinds of memory.",
+                "**Conservation and protection**: reduced energy use and reduced exposure during the most vulnerable hours."
+              ] },
+              { "type": "h", "text": "What deprivation costs" },
+              { "type": "p", "text": "Attention lapses and **microsleeps**, slower reaction time, worse encoding and worse consolidation, irritability and low mood, impaired immune response, and — with total deprivation — hallucinations and disorientation. A driver who feels 'fine' after short sleep is a poor judge of their own impairment, which is itself a deprivation effect." },
+              { "type": "callout", "kind": "example", "label": "Apply it", "text": "A student studies all night and reports 'knowing' the material the next morning. Predict the exam result and justify it: encoding may have succeeded, but consolidation depends on sleep, and the state in which she takes the test is depleted — so performance is likely to understate what was learned." }
+            ],
+            "vocabulary": [
+              { "term": "Circadian rhythm", "definition": "An approximately 24-hour biological cycle, set largely by light." },
+              { "term": "Suprachiasmatic nucleus", "definition": "Hypothalamic clock that responds to light and regulates melatonin release." },
+              { "term": "Melatonin", "definition": "Hormone released by the pineal gland in darkness, promoting sleepiness." },
+              { "term": "REM atonia", "definition": "Muscle paralysis during REM that prevents acting out dreams." },
+              { "term": "Narcolepsy", "definition": "Sudden, uncontrollable entry into REM-like sleep during waking." },
+              { "term": "Sleep apnea", "definition": "Repeated airway obstruction during sleep causing brief arousals and fragmented sleep." },
+              { "term": "Microsleep", "definition": "A few seconds of involuntary sleep, typical of deprivation." }
+            ],
+            "formulas": [],
+            "mistakes": [
+              "Confusing night terrors (N3, unremembered) with nightmares (REM, vividly remembered).",
+              "Assuming most dreaming happens in N3 rather than REM.",
+              "Treating melatonin as a sleep hormone that causes sleep rather than one that signals darkness and promotes sleepiness.",
+              "Underestimating deprivation effects on consolidation rather than only on alertness."
+            ],
+            "review": [
+              "Which stage contains sleep spindles, and which contains most reported dreaming?",
+              "How does light control melatonin release?",
+              "Why might all-night studying produce worse results than the student's familiarity suggests?"
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A seven-year-old bolts upright screaming an hour after falling asleep, cannot be comforted, and has no memory of the event the next morning. This is most consistent with which?",
+              "choices": ["A nightmare during REM", "A night terror during N3", "Narcolepsy", "REM sleep behaviour disorder"],
+              "answer": 1,
+              "explanation": "Night terrors occur in N3 early in the night, are common in children, resist comforting and are rarely remembered. Nightmares occur in REM, later in the night, and are vividly recalled.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "A traveller flying east several time zones finds it hardest to stay awake in the evening and wakes far too early. Which intervention targets the underlying rhythm?",
+              "choices": [
+                "Caffeine late in the afternoon",
+                "A heavier evening meal",
+                "Timed bright light exposure in the morning",
+                "Longer daytime naps"
+              ],
+              "answer": 2,
+              "explanation": "The suprachiasmatic nucleus is entrained by light, so timed morning light shifts the circadian phase. Caffeine and naps mask sleepiness without shifting the rhythm, and long naps reduce night-time sleep pressure.",
+              "difficulty": 3
+            },
+            {
+              "kind": "short-answer",
+              "prompt": "Name the hypothalamic structure that receives light information and acts as the body's clock.",
+              "choices": [],
+              "answer": { "accepted": ["suprachiasmatic nucleus", "scn"] },
+              "explanation": "The suprachiasmatic nucleus of the hypothalamus receives retinal input and regulates melatonin release from the pineal gland, setting the circadian rhythm.",
+              "difficulty": 1
+            }
+          ]
+        },
+        {
+          "code": "1.6",
+          "title": "Sensation",
+          "summary": "Transduction, thresholds, adaptation, and why detecting a stimulus is a decision and not a reading.",
+          "keyIdeas": [
+            "Transduction converts physical energy into neural signals; each system has its own receptors.",
+            "Absolute threshold is the weakest stimulus detected half the time; the difference threshold is the smallest detectable change.",
+            "Weber's law: the just-noticeable difference is a constant proportion of the original intensity, not a fixed amount.",
+            "Sensory adaptation reduces sensitivity to unchanging stimulation.",
+            "Signal detection theory: detection depends on sensitivity and on the observer's criterion, motivation and expectations.",
+            "Subliminal stimulation may prime briefly but does not produce powerful hidden persuasion."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A participant can just notice adding 5 g to a 100 g weight. According to Weber's law, roughly how much must be added to a 200 g weight to be just noticeable?",
+              "choices": ["2.5 g", "5 g", "10 g", "20 g"],
+              "answer": 2,
+              "explanation": "Weber's law says the just-noticeable difference is a constant proportion. 5 g of 100 g is 5%, so 5% of 200 g is 10 g.",
+              "difficulty": 3
+            },
+            {
+              "kind": "mcq",
+              "prompt": "In a hearing test, a participant who is anxious about missing tones reports hearing faint sounds that are not there. Signal detection theory describes this as which?",
+              "choices": [
+                "A lower absolute threshold caused by anxiety",
+                "A more liberal response criterion, producing more false alarms",
+                "Sensory adaptation to the tones",
+                "Subliminal perception"
+              ],
+              "answer": 1,
+              "explanation": "Signal detection theory separates sensitivity from the decision rule. Willingness to say 'yes' increases hits and false alarms together; the ear has not become more sensitive.",
+              "difficulty": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "2",
+      "title": "Cognition",
+      "summary": "Perception, thinking and judgement, and the whole memory system — encoding, storage, retrieval, and how it fails.",
+      "examWeight": "15–25%",
+      "topics": [
+        {
+          "code": "2.1",
+          "title": "Perception",
+          "summary": "How the brain turns sensation into an organised, stable, meaningful world — and why it is sometimes wrong.",
+          "keyIdeas": [
+            "Bottom-up processing builds from features; top-down processing applies expectations and context.",
+            "Gestalt principles: figure–ground, proximity, similarity, continuity, closure.",
+            "Depth cues are binocular (retinal disparity, convergence) or monocular (interposition, relative size, linear perspective, texture gradient, relative height and motion).",
+            "Perceptual constancy keeps size, shape, colour and brightness stable as conditions change.",
+            "Perceptual set and context shape what we see; illusions are systematic, not random errors.",
+            "Perceptual adaptation shows perception adjusts to changed input, such as inverting lenses."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A row of dots is seen as two groups rather than one because the spacing between some of them is larger. Which principle explains this?",
+              "choices": ["Closure", "Proximity", "Continuity", "Figure–ground"],
+              "answer": 1,
+              "explanation": "Proximity groups elements that are near each other. Closure completes incomplete figures, continuity follows smooth lines, and figure–ground separates an object from its background.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "A car drives away and its image on the retina shrinks, yet you perceive it as the same size moving off. Which concept is at work?",
+              "choices": ["Size constancy", "Retinal disparity", "Linear perspective", "Sensory adaptation"],
+              "answer": 0,
+              "explanation": "Size constancy maintains perceived size despite changes in retinal image size, using distance information. The other options are depth cues or a change in sensitivity.",
+              "difficulty": 2
+            }
+          ]
+        },
+        {
+          "code": "2.2",
+          "title": "Thinking, Problem-Solving, Judgments, and Decision-Making",
+          "summary": "Concepts, prototypes, heuristics, and the biases that make judgement fast and predictably wrong.",
+          "keyIdeas": [
+            "Algorithms guarantee a solution; heuristics are fast and usually good enough.",
+            "Availability: judge frequency by how easily examples come to mind.",
+            "Representativeness: judge category membership by similarity to a prototype, ignoring base rates.",
+            "Confirmation bias seeks confirming evidence; belief perseverance survives disproof; overconfidence inflates accuracy.",
+            "Framing changes decisions with identical outcomes; the overjustification of 'loss aversion' makes losses weigh more heavily than equivalent gains.",
+            "Functional fixedness and mental sets block creative problem solving; incubation and restructuring relieve them."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "After seeing three news reports about plane crashes, a traveller decides flying is far more dangerous than driving. Which heuristic is most at work?",
+              "choices": ["Representativeness", "Availability", "Anchoring", "Functional fixedness"],
+              "answer": 1,
+              "explanation": "Vivid, easily recalled examples inflate judged frequency — availability. Representativeness would be judging by similarity to a stereotype instead.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "A participant is told a person is quiet, orderly and detail-oriented, then asked whether she is more likely a librarian or a salesperson. Ignoring that salespeople vastly outnumber librarians is which error?",
+              "choices": ["Ignoring base rates in favour of representativeness", "The availability heuristic", "Hindsight bias", "Confirmation bias"],
+              "answer": 0,
+              "explanation": "Judging by resemblance to a prototype while neglecting prior probabilities is the classic representativeness-plus-base-rate error.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "code": "2.3",
+          "title": "Introduction to Memory",
+          "summary": "The architecture: sensory registers, working memory, long-term memory, and the distinction between explicit and implicit.",
+          "keyIdeas": [
+            "Atkinson–Shiffrin: sensory memory → short-term store → long-term store, with rehearsal moving information along.",
+            "Working memory (Baddeley) is not a passive buffer: it manipulates information, with phonological, visuospatial and executive components.",
+            "Long-term memory divides into explicit (episodic, semantic) and implicit (procedural, priming, conditioning).",
+            "Capacity of short-term memory is small; chunking expands it by recoding.",
+            "Amnesia can be anterograde (cannot form new explicit memories) or retrograde (loss of memories before the event).",
+            "Implicit memory can survive damage that destroys explicit memory."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A patient with hippocampal damage learns a new mirror-tracing skill over several days but denies having practised it before. This shows that which?",
+              "choices": [
+                "Procedural memory can be intact while explicit memory fails",
+                "Rehearsal is unnecessary for explicit memory",
+                "Short-term memory has unlimited capacity",
+                "The damage is retrograde amnesia"
+              ],
+              "answer": 0,
+              "explanation": "Skill learning is implicit and depends on other structures; the inability to report having practised reflects the explicit-memory deficit. Retrograde amnesia would be loss of memories formed before the damage.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "code": "2.4",
+          "title": "Encoding Memories",
+          "summary": "Getting information in: attention, levels of processing, and the study habits that follow from the evidence.",
+          "keyIdeas": [
+            "Encoding can be automatic or effortful; effortful encoding needs attention.",
+            "Levels of processing: semantic encoding beats acoustic, which beats visual.",
+            "The spacing effect: distributed practice outperforms massed practice for the same total time.",
+            "The testing effect: retrieving information strengthens it more than re-reading.",
+            "Elaboration, self-reference, and organising material into meaningful groups improve encoding.",
+            "Serial position: primacy reflects transfer to long-term storage, recency reflects the short-term store."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "Two students spend four hours each preparing. One reads the chapter four times; the other reads once and spends the rest self-testing. Which is better supported, and by which effect?",
+              "choices": [
+                "Re-reading, by the spacing effect",
+                "Self-testing, by the testing effect",
+                "Re-reading, by the serial position effect",
+                "Neither; total time is all that matters"
+              ],
+              "answer": 1,
+              "explanation": "Retrieval practice produces better retention than re-exposure to the same material — the testing effect. The spacing effect favours spreading the same four hours across days, which is compatible but a different point.",
+              "difficulty": 2
+            }
+          ]
+        },
+        {
+          "code": "2.5",
+          "title": "Storing Memories",
+          "summary": "What keeps a memory available: consolidation, organisation, and the biology that supports it.",
+          "keyIdeas": [
+            "Consolidation stabilises memories over time and depends on sleep and on the hippocampus early on.",
+            "Memories are organised by meaning and by association, not stored as intact recordings.",
+            "Long-term potentiation in synaptic transmission is the leading cellular account of memory formation.",
+            "Stress hormones can strengthen emotionally significant memories while impairing accuracy of peripheral detail.",
+            "Reconsolidation: recalled memories can be altered before being stored again."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A witness to a frightening event recalls the weapon in sharp detail but misremembers faces and the sequence of events. Which is the best explanation?",
+              "choices": [
+                "Arousal narrows attention to the central, threatening detail at the cost of peripheral accuracy",
+                "The witness is deliberately lying",
+                "Long-term potentiation failed",
+                "Proactive interference from earlier memories"
+              ],
+              "answer": 0,
+              "explanation": "High arousal focuses encoding on the source of threat, which improves central detail and degrades peripheral detail. Interference and biological failure do not explain this selective pattern.",
+              "difficulty": 4
+            }
+          ]
+        },
+        {
+          "code": "2.6",
+          "title": "Retrieving Memories",
+          "summary": "Getting information back out: cues, context, and why recognition is easier than recall.",
+          "keyIdeas": [
+            "Retrieval cues trigger recall; more and better-matched cues help.",
+            "Context-dependent and state-dependent memory: retrieval is easier when the context or internal state matches encoding.",
+            "Recognition is easier than recall because the item itself acts as a cue.",
+            "Priming is the automatic activation of associated representations.",
+            "Tip-of-the-tongue states reflect partial retrieval, not absence of the memory."
+          ],
+          "questions": [
+            {
+              "kind": "short-answer",
+              "prompt": "Name the phenomenon in which material learned in a particular room is remembered better back in that room.",
+              "choices": [],
+              "answer": { "accepted": ["context-dependent memory", "context dependent memory", "context-dependent retrieval", "encoding specificity"] },
+              "explanation": "Retrieval is easier when the external context at recall matches the context at encoding — context-dependent memory, an instance of encoding specificity.",
+              "difficulty": 2
+            }
+          ]
+        },
+        {
+          "code": "2.7",
+          "title": "Forgetting and Other Memory Challenges",
+          "summary": "Why memories fail, how suggestion reshapes them, and how the failures are distinguished on an exam.",
+          "keyIdeas": [
+            "Encoding failure: the information was never stored — the most common everyday 'forgetting'.",
+            "Storage decay and retrieval failure are distinct; the memory may be available but inaccessible.",
+            "Proactive interference: old learning disrupts new. Retroactive interference: new learning disrupts old.",
+            "The misinformation effect: post-event information alters recollection.",
+            "Source amnesia: remembering content but not where it came from; a basis for unintentional plagiarism and false familiarity.",
+            "Motivated forgetting and repression remain contested; false memories can be implanted by suggestion.",
+            "The Ebbinghaus forgetting curve: rapid early loss that then levels off."
+          ],
+          "lesson": {
+            "title": "Four ways to forget, and how to tell them apart",
+            "minutes": 12,
+            "objectives": [
+              "Classify a forgetting scenario as encoding failure, decay, interference or retrieval failure.",
+              "Distinguish proactive from retroactive interference in either direction.",
+              "Explain the misinformation effect and source amnesia with evidence.",
+              "Evaluate a claim about recovered memories using what the research supports."
+            ],
+            "body": [
+              { "type": "p", "text": "Almost every forgetting item on this exam is a **classification** problem. Learn the four categories and the discriminating question for each." },
+              { "type": "table", "head": ["Kind", "Discriminating question", "Example"], "rows": [
+                ["Encoding failure", "Was it ever attended to and stored?", "You cannot recall the pattern on a coin you have used for years"],
+                ["Storage decay", "Did the trace fade with disuse over time?", "A language unused since childhood becomes inaccessible"],
+                ["Retrieval failure", "Is the memory there but unreachable without the right cue?", "Tip-of-the-tongue; the name returns later unprompted"],
+                ["Interference", "Is competing material the obstacle?", "You enter a room and forget why, because the new context displaced the intention"]
+              ] },
+              { "type": "callout", "kind": "warning", "label": "Interference direction", "text": "**Proactive** = old interferes with new (your previous address intrudes when you write the new one). **Retroactive** = new interferes with old (learning the new address makes the old one hard to recall). Ask which memory you are trying to retrieve and which is intruding: the intruder's age names the type." },
+              { "type": "h", "text": "Memory is reconstructive" },
+              { "type": "p", "text": "Loftus showed that the wording of a question changes what people report: participants who heard 'smashed' estimated higher speeds and more often reported broken glass that was never there. Later information is not merely added — it becomes part of the memory. **Source amnesia** is the related failure: the content is retained, the origin is not, which is why a rumour can come to feel like a first-hand memory." },
+              { "type": "callout", "kind": "mistake", "label": "Common mistake", "text": "Writing 'memory works like a video recording that can be corrupted'. Say instead that memory is reconstructive: each recall rebuilds the event from fragments plus expectations, which is exactly why suggestion can alter it." },
+              { "type": "h", "text": "The contested claim" },
+              { "type": "p", "text": "Traumatic memories can be intrusive and can also be delayed in their full impact; that much is well supported. The stronger claim — that accurate memories of abuse can be repressed and then recovered intact in therapy — is not well supported, and suggestive therapeutic techniques have demonstrably produced false memories in both laboratory and clinical settings. The exam rewards the distinction, not a verdict in either direction." }
+            ],
+            "vocabulary": [
+              { "term": "Proactive interference", "definition": "Previously learned material disrupts recall of newly learned material." },
+              { "term": "Retroactive interference", "definition": "Newly learned material disrupts recall of previously learned material." },
+              { "term": "Misinformation effect", "definition": "Incorporating misleading post-event information into a memory of the event." },
+              { "term": "Source amnesia", "definition": "Retaining content while losing memory of where it came from." },
+              { "term": "Encoding failure", "definition": "Information never entered long-term storage because it was not attended to or processed." },
+              { "term": "Forgetting curve", "definition": "Ebbinghaus's finding that forgetting is rapid at first and then levels off." }
+            ],
+            "formulas": [],
+            "mistakes": [
+              "Reversing proactive and retroactive interference.",
+              "Attributing everyday forgetting to decay when the usual cause is encoding failure.",
+              "Describing memory as a recording rather than a reconstruction.",
+              "Conflating delayed recall of trauma with evidence for accurate repressed and recovered memories."
+            ],
+            "review": [
+              "Which kind of forgetting is behind failing to recall a detail you never attended to?",
+              "You keep writing your old password into a new form. Proactive or retroactive?",
+              "How does the wording of a question change a witness's report?"
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A student who learned Spanish in high school now struggles to recall French vocabulary learned this year. This is which?",
+              "choices": ["Retroactive interference", "Proactive interference", "Source amnesia", "Encoding failure"],
+              "answer": 1,
+              "explanation": "The older Spanish is intruding on the newer French, which is proactive interference. If the new French were displacing recall of the Spanish, it would be retroactive.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "Witnesses asked whether they saw 'the broken headlight' are more likely to report one than witnesses asked about 'a broken headlight', even when there was none. Which effect does this demonstrate?",
+              "choices": ["Retroactive interference", "The misinformation effect", "Proactive interference", "State-dependent memory"],
+              "answer": 1,
+              "explanation": "Post-event wording supplied a detail that witnesses incorporated into the memory — the misinformation effect, evidence that memory is reconstructive.",
+              "difficulty": 2
+            }
+          ]
+        },
+        {
+          "code": "2.8",
+          "title": "Intelligence and Achievement",
+          "summary": "What intelligence tests measure, how they are validated, and the arguments about bias and heritability.",
+          "keyIdeas": [
+            "Spearman's g as a general factor; Gardner's multiple intelligences; Sternberg's triarchic theory.",
+            "Fluid intelligence (novel reasoning) declines with age; crystallised knowledge does not.",
+            "Tests are standardised against norms; a score's meaning comes from the comparison group.",
+            "Reliability is consistency; validity is measuring what the test claims to measure — including predictive validity.",
+            "The Flynn effect: scores rose across the twentieth century, which argues against a purely genetic reading.",
+            "Stereotype threat can depress performance in a testing situation.",
+            "Test bias debates concern both content and predictive fairness; achievement tests measure learned content, aptitude tests predict learning."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A test predicts first-year university grades equally well for two groups, but the mean scores differ. Under a predictive-validity standard, the test is best described as which?",
+              "choices": [
+                "Biased, because the means differ",
+                "Unbiased on this standard, because it predicts equally well for both groups",
+                "Invalid, because means differ",
+                "Unreliable, because means differ"
+              ],
+              "answer": 1,
+              "explanation": "Predictive validity asks whether the test forecasts the criterion equally well across groups. A mean difference is not, by itself, evidence of bias on that standard — though content bias and access are separate questions.",
+              "difficulty": 4
+            },
+            {
+              "kind": "mcq",
+              "prompt": "Which best explains the Flynn effect?",
+              "choices": [
+                "A rapid genetic change in the population over a few generations",
+                "Environmental changes such as schooling, nutrition and cognitively demanding environments",
+                "A statistical error in early norms",
+                "Improved test-taking instruction only"
+              ],
+              "answer": 1,
+              "explanation": "Score gains over decades are far too fast for genetic change and too broad to be an artefact, so environmental change is the standard explanation — which is also why the effect complicates purely genetic accounts of group differences.",
+              "difficulty": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "3",
+      "title": "Development and Learning",
+      "summary": "How people change across the lifespan, and the mechanisms — conditioning, observation, language — by which they learn.",
+      "examWeight": "15–25%",
+      "topics": [
+        {
+          "code": "3.1",
+          "title": "Themes and Methods in Developmental Psychology",
+          "summary": "Continuity and stages, stability and change, and the designs used to study development.",
+          "keyIdeas": [
+            "Continuity versus stages: is development gradual or marked by qualitative shifts?",
+            "Stability versus change: which traits persist across the lifespan?",
+            "Nature and nurture interact throughout development; sensitive and critical periods differ in rigidity.",
+            "Cross-sectional designs compare age groups at one time — fast, but confounded by cohort effects.",
+            "Longitudinal designs follow one cohort over time — informative, but slow, costly and exposed to attrition.",
+            "Teratogens and prenatal environment shape development before birth."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A study compares the memory performance of 20-year-olds and 70-year-olds tested today and concludes that memory declines with age. What is the main weakness?",
+              "choices": [
+                "Attrition",
+                "Cohort effects: the groups differ in education, health and experience as well as age",
+                "The study is longitudinal and therefore unreliable",
+                "Random assignment was not used"
+              ],
+              "answer": 1,
+              "explanation": "This is a cross-sectional design, so any difference could reflect the generations the groups grew up in rather than ageing itself. A longitudinal design would follow one cohort but is exposed to attrition.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "code": "3.2",
+          "title": "Physical Development Across the Lifespan",
+          "summary": "Prenatal development, motor milestones, and the physical changes of adolescence, adulthood and ageing.",
+          "keyIdeas": [
+            "Prenatal sequence: zygote, embryo, fetus; teratogens such as alcohol cause lasting damage.",
+            "Fetal alcohol spectrum disorder is a leading preventable cause of intellectual disability.",
+            "Motor milestones follow a cephalocaudal and proximodistal sequence, with individual variation in timing.",
+            "Adolescent brain development: the limbic system matures ahead of the prefrontal cortex, which helps explain risk-taking.",
+            "Ageing brings declines in fluid abilities and sensory acuity, with stability or growth in crystallised knowledge.",
+            "Menopause, and the distinction between normal ageing and neurocognitive disorder."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "Which best explains why adolescents take more physical risks than adults, despite knowing the risks?",
+              "choices": [
+                "They have not learned what the risks are",
+                "The limbic system matures earlier than the prefrontal cortex, so reward sensitivity outpaces inhibitory control",
+                "Their fluid intelligence has declined",
+                "They lack object permanence"
+              ],
+              "answer": 1,
+              "explanation": "Reward and emotion systems develop ahead of the prefrontal control system, so knowledge of risk does not translate into control under arousal. It is a developmental mismatch, not ignorance.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "code": "3.3",
+          "title": "Gender and Sexual Orientation",
+          "summary": "How gender identity, gender roles and sexual orientation develop, and how biology and culture each contribute.",
+          "keyIdeas": [
+            "Sex is biological; gender identity is a person's sense of being male, female, both, neither or another gender.",
+            "Gender roles and stereotypes are culturally shaped and vary across time and place.",
+            "Gender typing emerges early and is influenced by biology, cognition and socialisation together.",
+            "Gender schema theory: children organise information by category and adjust behaviour to fit it.",
+            "Sexual orientation is not a choice and is not produced by parenting style; it is stable for most people.",
+            "Prejudice against gender-nonconforming and LGBTQ+ people is a social phenomenon with measurable health effects."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A child insists that trucks are 'for boys' and refuses to play with one, having learned the category early. Which theory best accounts for this?",
+              "choices": ["Gender schema theory", "Object permanence", "Social loafing", "Learned helplessness"],
+              "answer": 0,
+              "explanation": "Gender schema theory holds that children build categories for gender and then filter information and behaviour to fit them.",
+              "difficulty": 2
+            }
+          ]
+        },
+        {
+          "code": "3.4",
+          "title": "Cognitive Development Across the Lifespan",
+          "summary": "Piaget's stages and what later research revised, Vygotsky's social account, and theory of mind.",
+          "keyIdeas": [
+            "Piaget: sensorimotor, preoperational, concrete operational, formal operational; schemas, assimilation, accommodation.",
+            "Object permanence emerges in the sensorimotor stage; conservation in the concrete operational stage; abstract and hypothetical reasoning in formal operations.",
+            "Egocentrism in the preoperational stage limits perspective taking.",
+            "Later research shows competencies appear earlier than Piaget proposed, and stage boundaries are softer.",
+            "Vygotsky: the zone of proximal development and scaffolding — learning is social before it is individual.",
+            "Theory of mind — understanding that others have different beliefs — develops in early childhood and is tested by false-belief tasks."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A child agrees that two identical glasses hold the same amount of water, then says the taller, narrower glass holds more after the water is poured. Which is missing?",
+              "choices": ["Object permanence", "Conservation", "Egocentrism", "Theory of mind"],
+              "answer": 1,
+              "explanation": "Conservation — understanding that quantity is unchanged by a change in appearance — is typically absent in the preoperational stage and present in concrete operations.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "A teacher gives a student a problem just beyond what she can solve alone, then withdraws support as she improves. Which concept does this illustrate?",
+              "choices": ["Assimilation", "Scaffolding within the zone of proximal development", "Operant shaping", "Centration"],
+              "answer": 1,
+              "explanation": "Vygotsky's zone of proximal development is the range of tasks a learner can do with help, and scaffolding is the graduated support provided there.",
+              "difficulty": 2
+            }
+          ]
+        },
+        {
+          "code": "3.5",
+          "title": "Communication and Language Development",
+          "summary": "How language is acquired on a timetable, and the nativist–learning debate behind it.",
+          "keyIdeas": [
+            "Sequence: babbling → one-word → two-word → telegraphic speech → full syntax, with striking cross-cultural regularity.",
+            "Chomsky: an innate language acquisition device and universal grammar; poverty of the stimulus.",
+            "Learning accounts: imitation, reinforcement and statistical learning from input.",
+            "A critical or sensitive period: language acquired late, after severe deprivation, is rarely fully acquired.",
+            "Whorf's linguistic determinism in its strong form is not supported; a weaker version — language influences thought — has some support.",
+            "Receptive language develops ahead of productive language."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "Children across unrelated languages produce similar babbling and pass through the same one-word and two-word stages, and they generate sentences they have never heard. Which position does this most support?",
+              "choices": [
+                "Language is learned entirely by imitation and reinforcement",
+                "Humans have a biological preparedness for language acquisition",
+                "Language shapes thought in a deterministic way",
+                "Language is acquired only after age seven"
+              ],
+              "answer": 1,
+              "explanation": "Universal sequences plus novel, unimitated productions are the poverty-of-the-stimulus argument for an innate capacity. Imitation alone cannot explain productivity.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "code": "3.6",
+          "title": "Social-Emotional Development Across the Lifespan",
+          "summary": "Attachment, temperament, parenting, moral development and identity across the lifespan.",
+          "keyIdeas": [
+            "Harlow's surrogate-mother studies showed contact comfort matters beyond feeding.",
+            "Ainsworth's Strange Situation classifies attachment as secure, avoidant or resistant; disorganised was added later.",
+            "Attachment patterns relate to caregiver sensitivity and predict later social functioning, without determining it.",
+            "Temperament is biologically based and observable early; it interacts with parenting.",
+            "Baumrind's styles: authoritative (high demand, high warmth) is most consistently associated with competence; authoritarian, permissive and neglectful fare worse.",
+            "Kohlberg's moral stages (preconventional, conventional, postconventional) and Gilligan's care-oriented critique.",
+            "Erikson's psychosocial stages run across the whole lifespan, from trust to integrity."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "In the Strange Situation, an infant explores freely with the caregiver present, is distressed at separation and is quickly comforted on return. This pattern is which?",
+              "choices": ["Avoidant attachment", "Secure attachment", "Resistant (ambivalent) attachment", "Disorganised attachment"],
+              "answer": 1,
+              "explanation": "Secure attachment uses the caregiver as a safe base: exploration when present, protest at departure, easy comfort on return. Avoidant infants show little distress; resistant infants are not easily soothed.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "Parents set clear, consistently enforced expectations, explain the reasons behind them and are responsive to the child's perspective. Which style is this?",
+              "choices": ["Authoritarian", "Permissive", "Authoritative", "Neglectful"],
+              "answer": 2,
+              "explanation": "Authoritative parenting combines high demandingness with high warmth. Authoritarian is high demand with low warmth; permissive is warmth without demands.",
+              "difficulty": 2
+            }
+          ]
+        },
+        {
+          "code": "3.7",
+          "title": "Classical Conditioning",
+          "summary": "Learning by association: what the elements are, how the association changes, and how it is used clinically.",
+          "keyIdeas": [
+            "Unconditioned stimulus produces an unconditioned response; a neutral stimulus paired with it becomes a conditioned stimulus producing a conditioned response.",
+            "Acquisition builds the association; extinction weakens it when the CS is presented alone.",
+            "Spontaneous recovery shows extinction suppresses rather than erases the association.",
+            "Generalisation spreads the response to similar stimuli; discrimination narrows it.",
+            "Higher-order conditioning pairs a new CS with an established one.",
+            "Taste aversion can form after a single pairing with a long delay — an exception to standard contingency rules.",
+            "Applications: counterconditioning, systematic desensitisation, aversion therapy, and the conditioned component of drug cues and immunity."
+          ],
+          "lesson": {
+            "title": "Identifying the four elements, every time",
+            "minutes": 14,
+            "objectives": [
+              "Label US, UR, CS and CR in any scenario.",
+              "Explain acquisition, extinction, spontaneous recovery, generalisation and discrimination.",
+              "Account for taste aversion as a genuine exception to standard rules.",
+              "Describe clinical applications such as systematic desensitisation."
+            ],
+            "body": [
+              { "type": "p", "text": "Every classical conditioning item is solved the same way. Find the reflex first, then find the signal." },
+              { "type": "h", "text": "The four elements" },
+              { "type": "table", "head": ["Element", "Test", "In Pavlov's dogs"], "rows": [
+                ["Unconditioned stimulus (US)", "produces the response automatically, before any learning", "food"],
+                ["Unconditioned response (UR)", "the automatic response to the US", "salivation to food"],
+                ["Conditioned stimulus (CS)", "a previously neutral stimulus that now predicts the US", "the tone"],
+                ["Conditioned response (CR)", "the learned response to the CS", "salivation to the tone"]
+              ] },
+              { "type": "callout", "kind": "warning", "label": "The trick that catches people", "text": "The UR and the CR often look identical — salivating either way. They are different responses with different causes. The UR is unlearned and triggered by the US; the CR is learned and triggered by the CS, and it is usually weaker and more anticipatory. If an answer calls the CR 'the same thing as the UR', read it carefully." },
+              { "type": "h", "text": "How the association changes" },
+              { "type": "ul", "items": [
+                "**Acquisition** strengthens as CS and US are paired, fastest with short, reliable, predictive pairings. Forward conditioning (CS first) works; backward conditioning barely does.",
+                "**Extinction**: repeated CS without US reduces the CR. Extinction is new learning, not erasure.",
+                "**Spontaneous recovery**: after a rest, the extinguished CR returns weakly — the direct evidence that extinction suppressed it.",
+                "**Generalisation**: similar stimuli elicit the response (Little Albert's fear spreading to other furry objects).",
+                "**Discrimination**: learning which similar stimuli do not predict the US.",
+                "**Higher-order conditioning**: a new neutral stimulus paired with an established CS becomes a CS itself, usually more weakly."
+              ] },
+              { "type": "callout", "kind": "example", "label": "The exception worth memorising", "text": "Taste aversion forms after **one** pairing, tolerates a delay of **hours** between the taste and the illness, and is selective — nausea attaches to taste far more readily than to a sound or a light. Garcia's work showed that organisms are biologically prepared for some associations, which is why conditioning is not a single general-purpose law." },
+              { "type": "h", "text": "What it is used for" },
+              { "type": "p", "text": "**Systematic desensitisation** pairs relaxation with a graded hierarchy of feared stimuli, counterconditioning the fear response. **Aversion therapy** pairs a stimulus with an unpleasant response. Conditioned cues also explain why drug-related contexts provoke craving, and why tolerance is partly situational." },
+              { "type": "callout", "kind": "mistake", "label": "Common mistake", "text": "Calling the CS a 'reward'. Classical conditioning has no reward — the CS predicts something that already happens. Reward and consequence belong to operant conditioning. Mixing the two up is the single most common error in this unit." }
+            ],
+            "vocabulary": [
+              { "term": "Unconditioned stimulus / response", "definition": "A stimulus that automatically produces a response, and that response." },
+              { "term": "Conditioned stimulus / response", "definition": "A formerly neutral stimulus that now predicts the US, and the learned response it elicits." },
+              { "term": "Extinction", "definition": "Weakening of the CR when the CS is repeatedly presented without the US." },
+              { "term": "Spontaneous recovery", "definition": "Reappearance of an extinguished CR after a rest period." },
+              { "term": "Generalisation / discrimination", "definition": "Responding to similar stimuli / learning not to respond to stimuli that do not predict the US." },
+              { "term": "Counterconditioning", "definition": "Pairing a feared stimulus with a new, incompatible response such as relaxation." },
+              { "term": "Biological preparedness", "definition": "The tendency to form some associations more easily than others because of evolutionary history." }
+            ],
+            "formulas": [],
+            "mistakes": [
+              "Calling the conditioned stimulus a reward.",
+              "Treating extinction as erasure rather than new inhibitory learning.",
+              "Forgetting that taste aversion breaks the one-trial and short-delay rules.",
+              "Confusing the CR with the UR because the behaviour looks the same."
+            ],
+            "review": [
+              "In a scenario where a nurse's white coat predicts an injection, which is the CS and which is the CR?",
+              "Why does spontaneous recovery matter theoretically?",
+              "How does systematic desensitisation use counterconditioning?"
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A patient feels anxious on entering a clinic waiting room where she previously received a painful injection. In classical conditioning terms, the waiting room is which?",
+              "choices": ["The unconditioned stimulus", "The conditioned stimulus", "The conditioned response", "A primary reinforcer"],
+              "answer": 1,
+              "explanation": "The waiting room was neutral and now predicts the painful injection, so it is the CS. The pain is the US, the anxiety is the CR, and nothing here is a reinforcer — that is operant conditioning.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "A conditioned fear response is extinguished, then returns weakly a week later with no further pairings. What does this show?",
+              "choices": [
+                "Extinction erased the original association",
+                "Extinction suppressed the association rather than erasing it",
+                "The association was never acquired",
+                "Discrimination has occurred"
+              ],
+              "answer": 1,
+              "explanation": "Spontaneous recovery is the classic evidence that extinction is new inhibitory learning layered over the original association, not deletion of it.",
+              "difficulty": 3
+            },
+            {
+              "kind": "mcq",
+              "prompt": "A person becomes nauseated by a food eaten six hours before a stomach illness, but does not develop an aversion to the music playing at the time. Which principle does this illustrate?",
+              "choices": [
+                "Biological preparedness: taste associates with nausea more readily than sound does",
+                "Backward conditioning",
+                "Spontaneous recovery",
+                "The Premack principle"
+              ],
+              "answer": 0,
+              "explanation": "Taste aversion forms after one trial, across long delays, and selectively for taste — evidence that organisms are prepared for some associations rather than learning any pairing equally.",
+              "difficulty": 4
+            }
+          ]
+        },
+        {
+          "code": "3.8",
+          "title": "Operant Conditioning",
+          "summary": "Learning by consequence: reinforcement, punishment, schedules, and why the distinctions matter.",
+          "keyIdeas": [
+            "Reinforcement increases behaviour; punishment decreases it. Both come in positive (add) and negative (remove) forms.",
+            "Negative reinforcement is not punishment — removing something aversive to increase a behaviour.",
+            "Primary reinforcers satisfy biological needs; conditioned reinforcers gain value by association.",
+            "Shaping reinforces successive approximations toward a target behaviour.",
+            "Schedules: fixed and variable, ratio and interval. Variable ratio produces the highest, most persistent responding and the strongest resistance to extinction.",
+            "Latent learning (Tolman) and intrinsic motivation show that behaviour is not only reinforcement-driven; the overjustification effect shows extrinsic rewards can undermine it.",
+            "Learned helplessness follows repeated uncontrollable aversive events."
+          ],
+          "lesson": {
+            "title": "Positive, negative, reinforcement, punishment — a method that never fails",
+            "minutes": 15,
+            "objectives": [
+              "Classify any consequence as positive/negative reinforcement or positive/negative punishment using a two-question method.",
+              "Predict behaviour from a reinforcement schedule.",
+              "Explain shaping, latent learning and the overjustification effect.",
+              "Evaluate why punishment is used despite its limitations."
+            ],
+            "body": [
+              { "type": "p", "text": "Two questions, asked in this order, classify every scenario on the exam." },
+              { "type": "ol", "items": [
+                "Did the behaviour **increase or decrease** afterwards? Increase → reinforcement. Decrease → punishment.",
+                "Was something **added or removed**? Added → positive. Removed → negative."
+              ] },
+              { "type": "table", "head": ["", "Something added", "Something removed"], "rows": [
+                ["Behaviour increases", "Positive reinforcement — praise after studying", "Negative reinforcement — a headache stops after taking a tablet"],
+                ["Behaviour decreases", "Positive punishment — a fine after speeding", "Negative punishment — losing phone privileges"]
+              ] },
+              { "type": "callout", "kind": "warning", "label": "The one everyone loses", "text": "Negative reinforcement **increases** behaviour by removing something unpleasant. Taking a painkiller is negatively reinforced; so is giving in to a child's whining, which is why the whining continues. It is never punishment." },
+              { "type": "h", "text": "Schedules" },
+              { "type": "table", "head": ["Schedule", "Rule", "Pattern"], "rows": [
+                ["Fixed ratio", "reinforce every nth response", "high rate with a pause after reinforcement; piecework pay"],
+                ["Variable ratio", "reinforce after an unpredictable number of responses", "highest, most persistent rate; very resistant to extinction; gambling"],
+                ["Fixed interval", "reinforce the first response after a set time", "scalloped pattern; responding rises as the interval ends; weekly pay"],
+                ["Variable interval", "reinforce the first response after an unpredictable time", "steady, moderate rate; pop quizzes, checking a feed"]
+              ] },
+              { "type": "p", "text": "If a question asks which schedule makes a behaviour hardest to extinguish, the answer is **variable ratio**. Unpredictability is what keeps responding going through long stretches without reward." },
+              { "type": "h", "text": "Beyond the box" },
+              { "type": "ul", "items": [
+                "**Shaping**: reinforce successive approximations, raising the criterion as the animal improves.",
+                "**Latent learning** (Tolman): rats explored a maze without reward and demonstrated the learning immediately once reward appeared — cognition, not just reinforcement.",
+                "**Overjustification effect**: rewarding an already intrinsically enjoyable activity can reduce later interest in it once the reward stops.",
+                "**Learned helplessness** (Seligman): after inescapable shock, animals failed to escape avoidable shock — uncontrollability, not pain, produced the deficit, and it models part of depression."
+              ] },
+              { "type": "callout", "kind": "mistake", "label": "Why punishment underperforms", "text": "Punishment suppresses behaviour without teaching a replacement, produces fear and avoidance of the punisher, models aggression, and works only while it is delivered consistently. Reinforcing an incompatible alternative behaviour is usually the better answer on the exam and in practice." }
+            ],
+            "vocabulary": [
+              { "term": "Negative reinforcement", "definition": "Increasing a behaviour by removing an aversive stimulus." },
+              { "term": "Positive punishment", "definition": "Decreasing a behaviour by presenting an aversive stimulus." },
+              { "term": "Conditioned reinforcer", "definition": "A neutral stimulus that gains reinforcing value through association, such as money or grades." },
+              { "term": "Shaping", "definition": "Reinforcing successive approximations toward a target behaviour." },
+              { "term": "Variable ratio schedule", "definition": "Reinforcement after an unpredictable number of responses; highest and most persistent rate." },
+              { "term": "Latent learning", "definition": "Learning that occurs without reinforcement and is demonstrated only when there is a reason to." },
+              { "term": "Overjustification effect", "definition": "External rewards reducing intrinsic interest in an already enjoyable activity." },
+              { "term": "Learned helplessness", "definition": "Passivity after repeated uncontrollable aversive events." }
+            ],
+            "formulas": [],
+            "mistakes": [
+              "Calling negative reinforcement punishment.",
+              "Confusing ratio with interval schedules — ratio counts responses, interval waits for time.",
+              "Assuming punishment teaches the correct behaviour rather than only suppressing the wrong one.",
+              "Forgetting that the overjustification effect runs the other way to standard reinforcement."
+            ],
+            "review": [
+              "Apply the two questions to: a driver fastens a seatbelt to stop the warning chime.",
+              "Which schedule best explains persistent gambling?",
+              "Why is punishment a poor long-term strategy on its own?"
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A student studies hard and her parents cancel her Saturday chores. Her studying increases. This is which?",
+              "choices": ["Positive reinforcement", "Negative reinforcement", "Positive punishment", "Negative punishment"],
+              "answer": 1,
+              "explanation": "Something aversive was removed (the chores) and the behaviour increased — negative reinforcement. Nothing unpleasant was presented, so it is not punishment.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "Which schedule produces the highest, most persistent rate of responding and the greatest resistance to extinction?",
+              "choices": ["Fixed interval", "Variable interval", "Fixed ratio", "Variable ratio"],
+              "answer": 3,
+              "explanation": "Unpredictable reinforcement after a variable number of responses keeps responding high through unrewarded stretches, which is why gambling machines are built on it.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "A child who loved drawing is given a reward for each picture. When the rewards stop, she draws less than before. This is which?",
+              "choices": ["Extinction of a classically conditioned response", "The overjustification effect", "Learned helplessness", "Latent learning"],
+              "answer": 1,
+              "explanation": "An external reward applied to an intrinsically motivated activity can displace the internal reason for doing it, so interest drops below baseline once the reward is withdrawn.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "code": "3.9",
+          "title": "Social, Cognitive, and Neurological Factors in Learning",
+          "summary": "Observational learning, expectancies and self-efficacy, and the brain systems that make learning stick.",
+          "keyIdeas": [
+            "Bandura's observational learning: attention, retention, reproduction and motivation; modelling of prosocial and antisocial behaviour.",
+            "The Bobo doll studies showed imitation of aggression without direct reinforcement; vicarious reinforcement and punishment matter.",
+            "Reciprocal determinism: behaviour, cognition and environment each influence the others.",
+            "Self-efficacy — belief in one's capability — predicts persistence and performance.",
+            "Mirror neuron research suggests a neural basis for imitation, though its interpretation is contested.",
+            "Memory consolidation during sleep, the role of the hippocampus and dopamine-based reward prediction in learning."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "Children who watched an adult model attack a doll later imitated the aggression, having received no reinforcement themselves. Which account does this support?",
+              "choices": [
+                "Learning requires direct reinforcement of the learner's own behaviour",
+                "Learning can occur through observation of a model and its consequences",
+                "Aggression is entirely innate",
+                "Classical conditioning explains aggression"
+              ],
+              "answer": 1,
+              "explanation": "Bandura's Bobo doll studies demonstrated observational learning: the children acquired and reproduced the behaviour without being reinforced for it.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "Two students with equal skill approach a difficult exam. One believes she can handle it, the other doubts her capability. The first studies longer and persists after a setback. Which construct best captures the difference?",
+              "choices": ["Self-efficacy", "Locus of external control", "Fluid intelligence", "Cognitive dissonance"],
+              "answer": 0,
+              "explanation": "Self-efficacy is the belief in one's capability to succeed in a specific situation, and it predicts effort and persistence independently of actual skill.",
+              "difficulty": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "title": "Social Psychology and Personality",
+      "summary": "How other people shape behaviour and belief, and how enduring individual differences are described and measured.",
+      "examWeight": "15–25%",
+      "topics": [
+        {
+          "code": "4.1",
+          "title": "Attribution Theory and Person Perception",
+          "summary": "How we explain behaviour, and the systematic errors we make while doing it.",
+          "keyIdeas": [
+            "Dispositional attributions locate the cause in the person; situational attributions locate it in the context.",
+            "The fundamental attribution error: overestimating disposition and underestimating situation when explaining others.",
+            "Actor–observer difference: we explain our own behaviour more situationally than others do.",
+            "The self-serving bias takes credit for success and deflects blame for failure.",
+            "First impressions, the halo effect and implicit associations shape person perception, often outside awareness.",
+            "Culture moderates these errors: individualist cultures show stronger dispositional bias."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A driver cut off in traffic concludes the other driver is a reckless person rather than considering a medical emergency. This is which?",
+              "choices": ["The self-serving bias", "The fundamental attribution error", "Cognitive dissonance", "Groupthink"],
+              "answer": 1,
+              "explanation": "Attributing another's behaviour to disposition while neglecting situational pressure is the fundamental attribution error.",
+              "difficulty": 2
+            }
+          ]
+        },
+        {
+          "code": "4.2",
+          "title": "Attitude Formation and Attitude Change",
+          "summary": "Where attitudes come from, how they are changed, and what happens when they clash with behaviour.",
+          "keyIdeas": [
+            "Attitudes form through direct experience, socialisation, conditioning and observation.",
+            "Cognitive dissonance: inconsistency between attitude and behaviour produces discomfort, which people reduce by changing one or the other.",
+            "Festinger and Carlsmith: the $1 group rated a dull task more enjoyable than the $20 group, because insufficient justification forced an attitude change.",
+            "Persuasion runs through a central route (arguments, durable change) and a peripheral route (cues such as attractiveness and length of message).",
+            "The elaboration likelihood model predicts which route is used, based on motivation and ability to process.",
+            "Mere exposure increases liking; foot-in-the-door works by securing a small commitment first.",
+            "Attitudes predict behaviour best when they are specific, strongly held and formed by direct experience."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "Paid $1 to tell the next participant a boring task was fun, a person later reports enjoying it; a person paid $20 does not. Which explains the difference?",
+              "choices": [
+                "The $20 group experienced operant conditioning",
+                "The $1 group had insufficient external justification and so reduced dissonance by changing the attitude",
+                "The $1 group had a more favourable attitude before the study",
+                "Peripheral route persuasion"
+              ],
+              "answer": 1,
+              "explanation": "With little external justification for the lie, the $1 participants reduced the inconsistency between what they said and what they believed by convincing themselves the task was enjoyable.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "code": "4.3",
+          "title": "Psychology of Social Situations",
+          "summary": "Conformity, obedience, group performance, helping and aggression — the situational forces that override disposition.",
+          "keyIdeas": [
+            "Asch's line studies: a substantial minority of responses conformed to an obviously wrong majority; unanimity and group size matter.",
+            "Milgram's obedience studies: a majority continued to the maximum shock under an authority's instruction; proximity and institutional context shifted the rate.",
+            "Deindividuation reduces self-awareness and restraint in crowds and online.",
+            "Groupthink: cohesion and pressure for agreement suppress dissent and produce poor decisions.",
+            "Group polarisation pushes a group's average position further in its initial direction; social facilitation improves performance on easy or well-learned tasks and impairs it on hard ones.",
+            "Social loafing: reduced effort when individual output cannot be identified.",
+            "Bystander effect and diffusion of responsibility (Latané and Darley): more bystanders, slower help.",
+            "Aggression: frustration–aggression, modelling, media effects debates, and situational triggers such as heat and provocation.",
+            "Prejudice reduction: superordinate goals, contact under conditions of equal status, and the limits of each."
+          ],
+          "lesson": {
+            "title": "Conformity, obedience and helping: three studies, three mechanisms",
+            "minutes": 15,
+            "objectives": [
+              "Explain what Asch, Milgram and Latané and Darley each demonstrated and what varied the outcome.",
+              "Distinguish conformity, compliance and obedience.",
+              "Predict group performance from task type and identifiability.",
+              "Evaluate the ethics and the modern criticisms of these classic studies."
+            ],
+            "body": [
+              { "type": "p", "text": "These three studies carry a disproportionate share of the exam. Learn the finding, the variable that changed it, and the criticism — that combination answers almost any question built on them." },
+              { "type": "h", "text": "Asch: conformity to a wrong majority" },
+              { "type": "p", "text": "Participants judged line lengths alongside confederates who unanimously gave an obviously wrong answer. About a third of the critical trials produced agreement with the majority, and most participants conformed at least once. Two variables mattered most: **unanimity** — a single dissenting ally collapsed conformity — and **group size**, which mattered up to about three and then flattened." },
+              { "type": "callout", "kind": "example", "label": "The detail that earns the point", "text": "When asked why they conformed, some participants reported doubting their own perception (informational influence) and others reported not wanting to stand out (normative influence). Naming both gives you the mechanism, not just the number." },
+              { "type": "h", "text": "Milgram: obedience to authority" },
+              { "type": "p", "text": "Participants, told the study concerned learning, administered what they believed were escalating electric shocks to a learner on an experimenter's instruction. A majority continued to the highest level. Obedience fell when the learner was in the room, when the experimenter gave instructions by telephone, and when the study moved out of a prestigious institutional setting." },
+              { "type": "callout", "kind": "warning", "label": "How to treat this study today", "text": "Milgram's study is a legitimate finding about situational pressure and a serious ethical failure at once: deception, no genuine right to withdraw, and real psychological distress. Modern replications with weaker, ethicalised procedures find broadly similar obedience, but the original cannot be repeated and should be described as historically important rather than as a template. Say both halves." },
+              { "type": "h", "text": "Latané and Darley: why nobody helps" },
+              { "type": "p", "text": "Participants who believed others could also hear an emergency helped less and more slowly as the perceived number of bystanders grew. Two mechanisms: **diffusion of responsibility** — the obligation is spread thin — and **pluralistic ignorance** — nobody acts, so each takes everyone's calm as evidence that nothing is wrong." },
+              { "type": "callout", "kind": "example", "label": "Apply it", "text": "Someone collapses in a crowded station and nobody moves. Predict what single intervention is most likely to produce help: pointing at one person and giving a specific instruction. It removes both diffusion and ambiguity at once, which is exactly what the research predicts." },
+              { "type": "h", "text": "Groups: which way does performance go?" },
+              { "type": "table", "head": ["Phenomenon", "Condition", "Effect"], "rows": [
+                ["Social facilitation", "being observed, easy or well-learned task", "performance improves"],
+                ["Social inhibition", "being observed, hard or novel task", "performance declines"],
+                ["Social loafing", "individual output unidentifiable in a group", "effort declines"],
+                ["Group polarisation", "like-minded group discussion", "positions become more extreme in the initial direction"],
+                ["Groupthink", "cohesive group, insulation, directive leader", "dissent suppressed, decisions degrade"]
+              ] },
+              { "type": "callout", "kind": "mistake", "label": "Common mistake", "text": "Writing that 'being in a group reduces performance'. It depends on identifiability and task type. A group with individually attributable output on a well-practised task can outperform individuals." }
+            ],
+            "vocabulary": [
+              { "term": "Conformity", "definition": "Adjusting behaviour or belief toward a group standard." },
+              { "term": "Compliance", "definition": "Agreeing to a request from someone without authority over you." },
+              { "term": "Obedience", "definition": "Following the instructions of a perceived authority." },
+              { "term": "Normative social influence", "definition": "Conforming to be accepted and avoid rejection." },
+              { "term": "Informational social influence", "definition": "Conforming because others are taken as evidence about reality." },
+              { "term": "Diffusion of responsibility", "definition": "Reduced sense of personal obligation when others are present." },
+              { "term": "Pluralistic ignorance", "definition": "Each person interprets others' inaction as evidence that nothing is wrong." },
+              { "term": "Deindividuation", "definition": "Loss of self-awareness and restraint in groups or anonymity." },
+              { "term": "Superordinate goals", "definition": "Shared goals requiring cooperation across groups, shown to reduce intergroup hostility." }
+            ],
+            "formulas": [],
+            "mistakes": [
+              "Reporting Milgram without noting both the finding and the ethical problems.",
+              "Saying the bystander effect shows people are uncaring rather than that the situation suppresses helping.",
+              "Conflating conformity, compliance and obedience.",
+              "Claiming group presence always harms performance."
+            ],
+            "review": [
+              "What single feature of Asch's situation most reduced conformity?",
+              "Which two mechanisms explain the bystander effect?",
+              "Under what conditions does social facilitation become social inhibition?"
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "In Asch's studies, conformity dropped sharply when which change was made?",
+              "choices": [
+                "The task was made more difficult",
+                "One confederate gave the correct answer, breaking unanimity",
+                "The group size increased from three to ten",
+                "Participants were told the study was about vision"
+              ],
+              "answer": 1,
+              "explanation": "Unanimity is what drives conformity; a single ally gives the participant permission to dissent. Increasing group size beyond about three has little further effect.",
+              "difficulty": 3
+            },
+            {
+              "kind": "mcq",
+              "prompt": "A person collapses in a busy station and nobody helps. Which pair of mechanisms best explains this?",
+              "choices": [
+                "Social loafing and group polarisation",
+                "Diffusion of responsibility and pluralistic ignorance",
+                "Groupthink and deindividuation",
+                "Fundamental attribution error and self-serving bias"
+              ],
+              "answer": 1,
+              "explanation": "Responsibility is spread across bystanders, and each person's inaction reads to the others as evidence that nothing is wrong. Both are established components of the bystander effect.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "Which best states the ethical problem with Milgram's obedience studies?",
+              "choices": [
+                "Participants were not randomly assigned",
+                "Participants were deceived and subjected to significant distress without a genuine opportunity to withdraw",
+                "The sample was too small to generalise",
+                "The dependent variable was not operationalised"
+              ],
+              "answer": 1,
+              "explanation": "The core problems are deception about the true purpose and the shocks, substantial psychological distress, and pressure that undermined the right to withdraw. Sample size and measurement were not the central criticisms.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "code": "4.4",
+          "title": "Psychodynamic and Humanistic Theories of Personality",
+          "summary": "Freud's structural model and defences, the neo-Freudians, and the humanistic alternative.",
+          "keyIdeas": [
+            "Id, ego and superego; the ego mediates between instinct, reality and conscience.",
+            "Defence mechanisms: repression, denial, projection, displacement, rationalisation, reaction formation, sublimation.",
+            "Psychosexual stages and fixation; the Oedipus complex.",
+            "Neo-Freudians shifted weight from drives to social and cultural forces: Adler (inferiority), Horney (anxiety), Jung (collective unconscious).",
+            "Humanistic theories: Rogers' self-concept, congruence and unconditional positive regard; Maslow's hierarchy and self-actualisation.",
+            "Both traditions are influential but weakly falsifiable, and projective tests such as the Rorschach have poor reliability and validity."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A student who is furious with a professor instead shouts at her roommate. Which defence mechanism is this?",
+              "choices": ["Repression", "Displacement", "Projection", "Sublimation"],
+              "answer": 1,
+              "explanation": "Displacement redirects an impulse toward a safer target. Projection would be attributing her own anger to someone else; sublimation would be channelling it into a socially valued activity.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "Which is the strongest methodological criticism of psychodynamic theory?",
+              "choices": [
+                "It relies too heavily on controlled experiments",
+                "Its central claims are difficult or impossible to falsify, and explanations can be constructed after the fact",
+                "It ignores childhood experience entirely",
+                "It has no clinical applications"
+              ],
+              "answer": 1,
+              "explanation": "Any behaviour can be reinterpreted to fit the theory, which makes it hard to specify an observation that would refute it. That is the standard scientific criticism, distinct from any claim about its clinical value.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "code": "4.5",
+          "title": "Social-Cognitive and Trait Theories of Personality",
+          "summary": "Describing personality with traits, predicting behaviour with cognitive processes, and measuring both.",
+          "keyIdeas": [
+            "The Big Five (openness, conscientiousness, extraversion, agreeableness, neuroticism) is the dominant empirically derived model.",
+            "Traits are relatively stable, heritable to a moderate degree, and predictive of real outcomes such as work performance and health.",
+            "Eysenck proposed fewer, biologically grounded dimensions.",
+            "Bandura's reciprocal determinism: person, behaviour and environment mutually influence one another.",
+            "Self-efficacy and expectancies shape which situations people enter and how they persist.",
+            "The person–situation debate: traits predict averages across situations; situations predict specific acts.",
+            "Objective inventories such as the MMPI use empirically derived items; self-report measures are open to impression management."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A person high in which Big Five trait is most likely to meet deadlines consistently and plan ahead?",
+              "choices": ["Extraversion", "Conscientiousness", "Openness to experience", "Agreeableness"],
+              "answer": 1,
+              "explanation": "Conscientiousness covers self-discipline, orderliness and achievement striving, and it is one of the best trait predictors of job and academic performance.",
+              "difficulty": 1
+            },
+            {
+              "kind": "mcq",
+              "prompt": "A researcher finds that a trait predicts a person's average behaviour across many situations but not what they do in any single one. This is consistent with which?",
+              "choices": [
+                "The resolution of the person–situation debate: traits predict aggregates, situations predict single acts",
+                "Reciprocal determinism",
+                "The overjustification effect",
+                "Trait theory being disproved"
+              ],
+              "answer": 0,
+              "explanation": "Aggregating across occasions reveals stable trait effects that single observations bury. This reconciles the debate rather than settling it for either side.",
+              "difficulty": 4
+            }
+          ]
+        },
+        {
+          "code": "4.6",
+          "title": "Motivation",
+          "summary": "What directs and sustains behaviour: drives, incentives, needs, and the physiology of hunger and achievement.",
+          "keyIdeas": [
+            "Drive-reduction theory: physiological need creates tension that behaviour reduces; homeostasis is the goal.",
+            "Incentive theory: behaviour is pulled by anticipated rewards, not only pushed by internal states.",
+            "Arousal theory and the Yerkes–Dodson law: moderate arousal optimises performance, lower for difficult tasks.",
+            "Maslow's hierarchy: physiological, safety, belonging, esteem, self-actualisation — influential but not well supported as a strict sequence.",
+            "Self-determination: autonomy, competence and relatedness support intrinsic motivation.",
+            "Hunger involves ghrelin, leptin, glucose and hypothalamic circuits; set-point and body weight are regulated, not simply chosen.",
+            "Achievement motivation and the distinction between mastery and performance goals."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A pianist performs well before a small audience but badly before a large one on a difficult new piece. Which principle explains this?",
+              "choices": [
+                "Drive reduction",
+                "The Yerkes–Dodson law: high arousal impairs performance on difficult tasks",
+                "The overjustification effect",
+                "Homeostasis"
+              ],
+              "answer": 1,
+              "explanation": "Optimal arousal is lower for complex or unfamiliar tasks, so the same audience that helps on a well-practised piece can disrupt a difficult one.",
+              "difficulty": 3
+            }
+          ]
+        },
+        {
+          "code": "4.7",
+          "title": "Emotion",
+          "summary": "Theories of how emotion arises, the role of physiology and cognition, and how emotion is expressed and detected.",
+          "keyIdeas": [
+            "James–Lange: physiological response first, then the feeling that follows from perceiving it.",
+            "Cannon–Bard: physiological arousal and subjective experience occur together and independently.",
+            "Schachter–Singer two-factor: arousal plus a cognitive label; the same arousal can be labelled differently depending on context.",
+            "Zajonc and LeDoux: some emotional responses occur rapidly without conscious appraisal.",
+            "Lazarus: cognitive appraisal is necessary even for the simplest emotion.",
+            "Facial expressions for basic emotions are recognised across cultures; facial feedback suggests expression influences feeling.",
+            "Polygraph measures arousal, not deception, so it produces false positives with anxious truthful people."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A man's heart races after crossing a shaky bridge, and he attributes the arousal to attraction toward the woman who met him there. Which theory does this illustrate?",
+              "choices": ["James–Lange", "Cannon–Bard", "Schachter–Singer two-factor", "Opponent-process"],
+              "answer": 2,
+              "explanation": "Two-factor theory holds that arousal must be cognitively labelled; misattributed arousal from the bridge was labelled as attraction, exactly as in Dutton and Aron's study.",
+              "difficulty": 3
+            },
+            {
+              "kind": "short-answer",
+              "prompt": "Name the theory that says we feel afraid because we notice our heart pounding.",
+              "choices": [],
+              "answer": { "accepted": ["james-lange", "james lange", "the james-lange theory"] },
+              "explanation": "James–Lange proposes that the perception of physiological arousal constitutes the emotion; Cannon–Bard and two-factor theories disagree about whether cognition is needed.",
+              "difficulty": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "5",
+      "title": "Mental and Physical Health",
+      "summary": "Stress and coping, positive psychology, and how psychological disorders are explained, classified and treated.",
+      "examWeight": "15–25%",
+      "topics": [
+        {
+          "code": "5.1",
+          "title": "Introduction to Health Psychology",
+          "summary": "Stress, appraisal, coping and the behaviours that carry most of the health risk.",
+          "keyIdeas": [
+            "Selye's general adaptation syndrome: alarm, resistance, exhaustion.",
+            "Lazarus: stress depends on appraisal — whether a demand is seen as exceeding resources.",
+            "Stressors vary in type: catastrophes, major life changes and daily hassles, with daily hassles being a strong predictor.",
+            "Chronic stress elevates cortisol and suppresses immune function.",
+            "Coping is problem-focused or emotion-focused; effective coping depends on whether the situation is controllable.",
+            "Social support, exercise, sleep and perceived control buffer stress; the tend-and-befriend response complements fight-or-flight.",
+            "Health behaviour change follows models such as the transtheoretical stages of change."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A student facing an unchangeable exam date decides to manage her anxiety rather than try to remove the stressor. Which coping style is this?",
+              "choices": ["Problem-focused coping", "Emotion-focused coping", "Learned helplessness", "Displacement"],
+              "answer": 1,
+              "explanation": "Emotion-focused coping regulates the emotional response when the stressor itself cannot be changed. Problem-focused coping targets the source, which is the better fit when the situation is controllable.",
+              "difficulty": 2
+            }
+          ]
+        },
+        {
+          "code": "5.2",
+          "title": "Positive Psychology",
+          "summary": "What makes life go well: strengths, meaning, flow, gratitude and resilience — studied empirically rather than assumed.",
+          "keyIdeas": [
+            "Seligman's PERMA: positive emotion, engagement, relationships, meaning, accomplishment.",
+            "Flow: absorption when challenge matches skill.",
+            "Character strengths and virtues as measurable dispositions, distinct from the absence of disorder.",
+            "Gratitude practice, savoring and self-compassion show measurable but modest effects.",
+            "Resilience is ordinary rather than exceptional — most people recover from adversity.",
+            "Limits: self-esteem inflation and forced positivity can backfire; effects are real but not transformational."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A rock climber loses track of time on a route that is difficult but within her ability. Which concept best describes this state?",
+              "choices": ["Learned helplessness", "Flow", "Mania", "Sublimation"],
+              "answer": 1,
+              "explanation": "Flow occurs when challenge and skill are closely matched, producing deep absorption. Tasks far above skill produce anxiety; far below produce boredom.",
+              "difficulty": 2
+            }
+          ]
+        },
+        {
+          "code": "5.3",
+          "title": "Explaining and Classifying Psychological Disorders",
+          "summary": "What counts as a disorder, how classification works, and the competing explanations for why disorders arise.",
+          "keyIdeas": [
+            "Disorder criteria include distress, impairment, deviance from norms and dysfunction — no single criterion is sufficient.",
+            "The DSM-5-TR classifies by symptom patterns; the ICD serves international and billing use.",
+            "Classification improves communication and research but risks over-pathologising and label effects.",
+            "Comorbidity is the rule, not the exception; transdiagnostic processes cut across categories.",
+            "Models: biological, psychological, sociocultural, and the biopsychosocial integration; diathesis–stress combines vulnerability with triggering experience.",
+            "Rosenhan's 'On Being Sane in Insane Places' showed how labels bias interpretation of normal behaviour.",
+            "Culture shapes both expression and diagnosis; culture-bound presentations exist and diagnostic criteria carry cultural assumptions."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A person carries a genetic vulnerability to schizophrenia that never produces symptoms because his environment is stable and low-stress. Which framework does this fit?",
+              "choices": ["The medical model alone", "Diathesis–stress", "The behavioural model alone", "Learned helplessness"],
+              "answer": 1,
+              "explanation": "Diathesis–stress holds that an underlying vulnerability produces disorder only when sufficient stress is present — neither factor alone is sufficient.",
+              "difficulty": 3
+            },
+            {
+              "kind": "mcq",
+              "prompt": "Rosenhan's pseudopatients were admitted after reporting a single false symptom and then behaved normally. Staff continued to interpret their ordinary behaviour as pathological. What does this demonstrate?",
+              "choices": [
+                "That diagnostic labels bias the interpretation of subsequent behaviour",
+                "That hospital staff are untrained",
+                "That schizophrenia is not a real condition",
+                "That self-report is always accurate"
+              ],
+              "answer": 0,
+              "explanation": "Once applied, a label became the lens through which the same behaviour was read — the danger of diagnostic labelling. The study does not show that the disorders themselves are unreal.",
+              "difficulty": 4
+            }
+          ]
+        },
+        {
+          "code": "5.4",
+          "title": "Selection of Categories of Psychological Disorders",
+          "summary": "The major diagnostic categories: anxiety, OCD, trauma, mood, schizophrenia, dissociative, somatic, personality, neurodevelopmental and eating disorders.",
+          "keyIdeas": [
+            "Anxiety disorders: generalised anxiety, panic disorder and specific phobias are distinguished by focus, timing and triggers.",
+            "Obsessive-compulsive disorder: obsessions are intrusive thoughts, compulsions are the acts performed to neutralise them.",
+            "Post-traumatic stress disorder follows a traumatic event and includes intrusion, avoidance, negative cognitions and arousal.",
+            "Major depressive disorder requires persistent low mood or anhedonia with additional symptoms; bipolar disorder adds manic or hypomanic episodes.",
+            "Schizophrenia: positive symptoms (delusions, hallucinations, disorganisation) and negative symptoms (avolition, flat affect); dopamine hypotheses and diathesis–stress; expressed emotion predicts relapse.",
+            "Dissociative disorders include dissociative identity disorder, the most contested category in the DSM.",
+            "Somatic symptom disorder centres on distress about bodily symptoms.",
+            "Neurodevelopmental disorders include ADHD and autism spectrum disorder; earlier 'Asperger's' is subsumed into the spectrum.",
+            "Eating disorders: anorexia nervosa, bulimia nervosa and binge-eating disorder differ in restriction, compensation and weight.",
+            "Personality disorders are enduring, inflexible patterns; antisocial and borderline are the most frequently examined.",
+            "Symptoms in this content are described for study purposes only and are never a basis for self-diagnosis."
+          ],
+          "lesson": {
+            "title": "Separating the categories that look alike",
+            "minutes": 16,
+            "objectives": [
+              "Distinguish the anxiety disorders from one another and from OCD.",
+              "Separate major depression from bipolar disorder and from normal low mood.",
+              "Describe schizophrenia's positive and negative symptoms and the evidence behind them.",
+              "Distinguish the eating disorders by restriction, compensation and weight status."
+            ],
+            "body": [
+              { "type": "callout", "kind": "warning", "label": "Read this first", "text": "This topic describes diagnostic criteria for study. It is not clinical advice, and recognising a symptom in yourself is not a diagnosis. If something here is worrying you, talk to a qualified clinician or a trusted adult — that is a normal thing to do, not a sign of anything." },
+              { "type": "p", "text": "The exam does not ask you to recite criteria. It gives a vignette and asks which category fits, so the skill is **discrimination** between neighbours." },
+              { "type": "h", "text": "Anxiety, OCD, trauma" },
+              { "type": "table", "head": ["Disorder", "Distinguishing feature"], "rows": [
+                ["Generalised anxiety disorder", "persistent, diffuse worry across many domains for months, hard to control"],
+                ["Panic disorder", "recurrent abrupt panic attacks plus worry about further attacks"],
+                ["Specific phobia", "immediate, disproportionate fear cued by a particular object or situation, actively avoided"],
+                ["Obsessive-compulsive disorder", "intrusive unwanted thoughts (obsessions) and repetitive acts performed to reduce the distress they cause (compulsions)"],
+                ["PTSD", "follows a traumatic event: intrusion, avoidance, negative mood and cognition, heightened arousal, lasting more than a month"]
+              ] },
+              { "type": "callout", "kind": "example", "label": "The OCD discrimination", "text": "A compulsion is defined by its function: it is performed to neutralise anxiety or prevent a dreaded event, and it is experienced as excessive. A careful habit that the person enjoys and would be annoyed to lose is not a compulsion." },
+              { "type": "h", "text": "Mood disorders" },
+              { "type": "p", "text": "**Major depressive disorder** requires persistent depressed mood or loss of interest, plus changes in sleep, appetite, energy, concentration, worthlessness or thoughts of death, causing impairment. **Bipolar disorder** is defined by the presence of manic or hypomanic episodes — elevated or irritable mood with reduced need for sleep, grandiosity and pressured activity — not by the depth of the depression. The single question that separates them: has there ever been a distinct period of abnormally elevated mood and energy?" },
+              { "type": "h", "text": "Schizophrenia" },
+              { "type": "p", "text": "**Positive symptoms** add something: delusions, hallucinations, disorganised speech and behaviour. **Negative symptoms** subtract something: reduced expression, avolition, alogia, social withdrawal — and they predict long-term functioning better than the positive ones. The **dopamine hypothesis** links excess dopamine activity to positive symptoms and is the basis of typical antipsychotics; **diathesis–stress** explains onset; high **expressed emotion** in families predicts relapse." },
+              { "type": "h", "text": "Eating disorders" },
+              { "type": "table", "head": ["Disorder", "Restriction", "Compensatory behaviour", "Typical weight"], "rows": [
+                ["Anorexia nervosa", "yes, severe", "may or may not be present", "significantly low"],
+                ["Bulimia nervosa", "between binges", "yes — vomiting, laxatives, exercise", "normal or above"],
+                ["Binge-eating disorder", "no", "no regular compensation", "often above"]
+              ] },
+              { "type": "callout", "kind": "mistake", "label": "Common mistake", "text": "Assuming low weight is required for an eating disorder diagnosis. Bulimia nervosa and binge-eating disorder occur across the weight range, and restricting behaviour without low weight still warrants attention. Body weight is not a measure of severity." },
+              { "type": "h", "text": "The contested one" },
+              { "type": "p", "text": "Dissociative identity disorder involves two or more distinct personality states with gaps in recall. It is genuinely contested: prevalence rose sharply after media coverage, diagnostic criteria changed over time, and clinicians disagree about how much is iatrogenic. The exam rewards stating that the controversy exists and what each side argues." }
+            ],
+            "vocabulary": [
+              { "term": "Obsession", "definition": "An intrusive, unwanted thought, image or urge that causes distress." },
+              { "term": "Compulsion", "definition": "A repetitive act performed to reduce the distress caused by an obsession." },
+              { "term": "Manic episode", "definition": "A distinct period of abnormally elevated or irritable mood with increased energy and reduced need for sleep." },
+              { "term": "Positive symptom", "definition": "A behaviour or experience added to normal functioning, such as a hallucination." },
+              { "term": "Negative symptom", "definition": "A reduction or loss of normal functioning, such as flat affect or avolition." },
+              { "term": "Expressed emotion", "definition": "Critical, hostile or emotionally over-involved family communication that predicts relapse in schizophrenia." },
+              { "term": "Comorbidity", "definition": "The presence of two or more disorders in the same person at the same time." }
+            ],
+            "formulas": [],
+            "mistakes": [
+              "Confusing obsessions with compulsions, or calling any careful habit a compulsion.",
+              "Defining bipolar disorder by the severity of depression rather than by the presence of mania.",
+              "Assuming eating disorders require low body weight.",
+              "Treating dissociative identity disorder as settled rather than contested.",
+              "Using this content to diagnose oneself or other people."
+            ],
+            "review": [
+              "Which question separates major depressive disorder from bipolar disorder?",
+              "What distinguishes a specific phobia from generalised anxiety disorder?",
+              "Why do negative symptoms matter more than positive ones for long-term outcome?"
+            ]
+          },
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A person checks the stove repeatedly each morning because an intrusive image of the house burning will not leave until he does. Which pairing is correct?",
+              "choices": [
+                "The image is the compulsion; the checking is the obsession",
+                "The image is the obsession; the checking is the compulsion",
+                "Both are obsessions",
+                "Both are compulsions"
+              ],
+              "answer": 1,
+              "explanation": "The intrusive, unwanted image is the obsession; the repetitive checking performed to neutralise the distress is the compulsion.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "A person reports several weeks of almost no sleep, rapid speech, grand plans and high energy, followed by weeks of low mood and fatigue. Which is most consistent with this pattern?",
+              "choices": ["Major depressive disorder", "Bipolar disorder", "Generalised anxiety disorder", "Schizophrenia"],
+              "answer": 1,
+              "explanation": "The presence of a distinct manic or hypomanic episode is what defines bipolar disorder, regardless of how severe the depressive periods are.",
+              "difficulty": 3
+            },
+            {
+              "kind": "mcq",
+              "prompt": "Which feature of schizophrenia best predicts long-term social and occupational functioning?",
+              "choices": ["Intensity of delusions", "Severity of negative symptoms", "Frequency of hallucinations", "Age at first hospitalisation alone"],
+              "answer": 1,
+              "explanation": "Negative symptoms — avolition, flat affect, social withdrawal — track functional outcome more closely than positive symptoms, which respond better to medication.",
+              "difficulty": 4
+            }
+          ]
+        },
+        {
+          "code": "5.5",
+          "title": "Treatment of Psychological Disorders",
+          "summary": "Insight, behavioural, cognitive and biomedical treatments; what the evidence supports; and how care is delivered and funded.",
+          "keyIdeas": [
+            "Insight therapies: psychoanalysis, client-centred therapy (Rogers), and psychodynamic approaches aim at understanding.",
+            "Behavioural therapies: exposure, systematic desensitisation, aversion therapy, token economies — built directly on conditioning.",
+            "Cognitive and cognitive-behavioural therapies (Beck, Ellis) target distorted thinking and behaviour together; CBT has the broadest evidence base across disorders.",
+            "Biomedical: SSRIs and other antidepressants, antipsychotics, mood stabilisers such as lithium, ECT for severe depression, TMS, and psychosurgery as a rare last resort.",
+            "Third-wave approaches: mindfulness-based and acceptance-based therapies, dialectical behaviour therapy for borderline personality disorder.",
+            "Common factors: the therapeutic alliance predicts outcome across orientations; placebo effects are real and substantial.",
+            "Evidence-based practice integrates research evidence, clinical expertise and patient characteristics.",
+            "Deinstitutionalisation moved care to the community with mixed results; involuntary commitment raises legal and ethical questions about autonomy and risk.",
+            "Access is shaped by cost, insurance, workforce supply and stigma; cultural competence affects both engagement and outcome."
+          ],
+          "questions": [
+            {
+              "kind": "mcq",
+              "prompt": "A therapist gradually pairs relaxation with increasingly feared stimuli until the client can face the phobic object. This treatment is built directly on which learning principle?",
+              "choices": ["Operant shaping", "Classical counterconditioning", "Latent learning", "Learned helplessness"],
+              "answer": 1,
+              "explanation": "Systematic desensitisation replaces the fear response with an incompatible relaxation response by pairing them — counterconditioning through classical conditioning.",
+              "difficulty": 2
+            },
+            {
+              "kind": "mcq",
+              "prompt": "Two therapists using very different orientations achieve similar outcomes, and both report that the quality of the relationship matters most. Which finding does this reflect?",
+              "choices": [
+                "Placebo effects disprove psychotherapy",
+                "Common factors such as the therapeutic alliance account for much of the shared benefit",
+                "Only biomedical treatments work",
+                "Outcome research is unreliable"
+              ],
+              "answer": 1,
+              "explanation": "Common-factors research finds that alliance, empathy, expectations and structure contribute substantially across orientations, alongside technique-specific effects.",
+              "difficulty": 3
+            },
+            {
+              "kind": "short-answer",
+              "prompt": "Name the treatment approach with the broadest evidence base that combines changing distorted thinking with changing behaviour.",
+              "choices": [],
+              "answer": { "accepted": ["cbt", "cognitive behavioural therapy", "cognitive-behavioral therapy", "cognitive behavioral therapy", "cognitive behaviour therapy"] },
+              "explanation": "Cognitive-behavioural therapy, from Beck's cognitive therapy and Ellis's rational emotive behaviour therapy, has the widest empirical support across anxiety, depression and many other conditions.",
+              "difficulty": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

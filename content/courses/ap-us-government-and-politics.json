@@ -8,9 +8,9 @@
   "accent": "gov",
   "exam": {
     "date": "2027-05-04",
-    "provisional": true,
+    "provisional": false,
     "durationMinutes": 180,
-    "summary": "Three hours: 55 multiple-choice questions in 80 minutes, then four free-response questions in 100 minutes. The four FRQs are fixed types — concept application, quantitative analysis, SCOTUS comparison, and argument essay. Confirm the exact date once College Board publishes the 2027 schedule.",
+    "summary": "Three hours: 55 multiple-choice questions in 80 minutes, then four free-response questions in 100 minutes. The four FRQs are fixed types — concept application, quantitative analysis, SCOTUS comparison, and argument essay. Scheduled for Tuesday 4 May 2027, Session 1, on the published 2027 AP exam schedule.",
     "sections": [
       { "name": "Section I — Multiple choice", "count": "55 questions", "time": "80 min", "weight": "50%" },
       { "name": "Section II — Free response", "count": "4 questions", "time": "100 min", "weight": "50%" }

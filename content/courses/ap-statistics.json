@@ -7,10 +7,10 @@
   "subject": "math",
   "accent": "stat",
   "exam": {
-    "date": "2027-05-13",
-    "provisional": true,
+    "date": "2027-05-11",
+    "provisional": false,
     "durationMinutes": 180,
-    "summary": "Fully digital in Bluebook. A graphing calculator with statistical capabilities is expected in both sections, and the official formula sheet and tables are provided. Confirm the exact date once College Board publishes the 2027 schedule.",
+    "summary": "Fully digital in Bluebook. A graphing calculator with statistical capabilities is expected in both sections, and the official formula sheet and tables are provided. Scheduled for Tuesday 11 May 2027, Session 2, on the published 2027 AP exam schedule. Fully digital in Bluebook from May 2027, with no free-response booklets.",
     "sections": [
       { "name": "Section I — Multiple choice", "count": "42 questions", "time": "90 min", "weight": "50%" },
       { "name": "Section II — Free response", "count": "4 questions", "time": "90 min", "weight": "50%" }

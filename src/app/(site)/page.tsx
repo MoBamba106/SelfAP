@@ -142,7 +142,7 @@ export default async function LandingPage() {
             <div>
               <p className="eyebrow mb-2">Ships with</p>
               <h2 className="font-display text-3xl font-semibold text-ink">
-                Four courses, {COURSES.reduce((n, c) => n + c.topicCount, 0)} topics
+                {COURSES.length} courses, {COURSES.reduce((n, c) => n + c.topicCount, 0)} topics
               </h2>
             </div>
             <p className="max-w-sm text-sm text-inksoft">

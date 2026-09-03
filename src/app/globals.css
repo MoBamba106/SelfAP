@@ -56,6 +56,7 @@
   --t-gov: #a2594a;    --t-gov-soft: #f0dfd9;
   --t-lang: #7b5a88;   --t-lang-soft: #e9dfea;
   --t-lit: #7f6a2e;    --t-lit-soft: #eee5cd;
+  --t-psych: #5a6394;  --t-psych-soft: #e1e3f0;
   --t-sci: #3f7a78;    --t-sci-soft: #dbe9e6;
   --t-hist: #8a6a4f;   --t-hist-soft: #ecdfd2;
 
@@ -105,6 +106,7 @@ html[data-theme="ink"] {
   --t-gov: #d5927f;  --t-gov-soft: #3a2b26;
   --t-lang: #b596c2; --t-lang-soft: #322a37;
   --t-lit: #c2a85f;  --t-lit-soft: #352e20;
+  --t-psych: #9ba3d8; --t-psych-soft: #2b2c3e;
   --t-sci: #74bdb9;  --t-sci-soft: #233332;
   --t-hist: #c09a79; --t-hist-soft: #342b23;
 
@@ -589,6 +591,22 @@ button, a { -webkit-tap-highlight-color: transparent; }
   text-underline-offset: 2px;
 }
 .prose-legal strong { color: var(--ink); font-weight: 600; }
+
+/* Command blocks on the setup page. Paper-sunk so they read as a terminal
+ * without pretending to be a dark IDE. */
+.code-block {
+  margin: 0 0 1em;
+  padding: .8rem 1rem;
+  overflow-x: auto;
+  background: var(--paper-sunk);
+  border: 1px solid var(--line-soft);
+  border-radius: 7px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  line-height: 1.75;
+  color: var(--ink);
+  white-space: pre;
+}
 
 .formula {
   margin: 1.1em 0;

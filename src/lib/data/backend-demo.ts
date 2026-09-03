@@ -296,6 +296,7 @@ const GOALS: Record<string, number> = {
   'ap-us-government-and-politics': 120,
   'ap-english-language-and-composition': 120,
   'ap-english-literature-and-composition': 120,
+  'ap-psychology': 120,
 };
 
 function isoWeekStart(date: Date, weekStartDay: number): Date {
@@ -389,6 +390,7 @@ function seedTables(): Map<string, Row[]> {
     'ap-us-government-and-politics': 17,
     'ap-english-language-and-composition': 12,
     'ap-english-literature-and-composition': 8,
+    'ap-psychology': 12,
   };
 
   for (const course of COURSES) {
